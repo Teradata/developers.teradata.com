@@ -852,8 +852,9 @@ div.list-item-top-picks {
 }
 .stay-connected-icon {
   position: relative;
-  margin-left: 160px;
+  margin-left: 100px;
   width: 70px;
+  height: 70px;
 }
 .stay-connected-icon-1 {
   position: relative;
@@ -862,7 +863,12 @@ div.list-item-top-picks {
 }
 .stay-connected-icon-2 {
   position: relative;
-  margin-left: 160px;
+  margin-left: 100px;
+}
+.stay-connected-icon-medium {
+  position: relative;
+  margin-left: 100px;
+  width: 70px;
 }
 .stay-connected-font {
   font-family: 'Poppins-SemiBold';
@@ -899,7 +905,7 @@ div.list-item-top-picks {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  margin-top: -55px;
+  margin-top: -35px;
   margin-left: 330px;
   display: flex;
   justify-content: center;
