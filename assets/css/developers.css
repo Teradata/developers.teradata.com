@@ -1161,3 +1161,8 @@ form.example button {
   border-left: none;
   cursor: pointer;
 }
+
+
+.move-left{
+  margin-left: -20px;
+}

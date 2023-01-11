@@ -14,8 +14,9 @@
 <script>
   function myFunction() {
     var x = document.getElementById("mySearch").value;
-    //document.getElementById("demo").innerHTML = x;
-    alert(x);
+    var url ="https://support.teradata.com/csm?id=search#q="+x;
+    searchTextBox.setAttribute("action", url);
+    searchTextBox.submit()
   }
   </script>
 </head>
@@ -86,7 +87,7 @@
           </li>
           <li class="header-nav-mobile__menu-item">
             <header class="header-nav-mobile__menu-item__header">
-              <a href="https://downloads.teradata.com/" class="nav-link">Downloads</a>
+              <a href="https://downloads.teradata.com/" class="nav-link move-left">Downloads</a>
             </header>
           </li>
           <li class="header-nav-mobile__menu-item">
@@ -169,15 +170,15 @@
 <!--Close Banner-->
 
 <!--Open Search Bar-->
-<!--
+
 <section>
   <div class="search">
-    <form class="example" action="https://support.teradata.com/csm?id=kb_search#q=TPT">
+    <form id="searchTextBox" class="example">
       <input type="text" placeholder="Search Teradata Developer Portal" name="search" class="search-bar" id="mySearch">
       <button type="submit" onclick="myFunction()" class="search-icon"><div></div></button>
     </form>
   </div>
-  -->
+
 <!--
 <div>
   <div class="search">
