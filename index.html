@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Developers</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Developers Home Page</title>
 <link rel="stylesheet" href="assets/css/site.css">
 <link rel="stylesheet" href="assets/css/navbar.css">
 <link rel="stylesheet" href="assets/css/developers.css">
+<script type="text/javascript" id="tdv9csaId" src="https://celebrus.teradata.com/JavascriptInsert.js"></script>
+<script charset="utf-8" src="https://siteintercept.qualtrics.com/dxjsmodule/13.7ca37fd749ece40e6b66.chunk.js?Q_CLIENTVERSION=1.82.1&amp;Q_CLIENTTYPE=web&amp;Q_BRANDID=developers.teradata.com"></script>
+<script charset="utf-8" src="https://siteintercept.qualtrics.com/dxjsmodule/6.4163748cda0759be4763.chunk.js?Q_CLIENTVERSION=1.82.1&amp;Q_CLIENTTYPE=web&amp;Q_BRANDID=teradata"></script>
+<script charset="utf-8" src="https://siteintercept.qualtrics.com/dxjsmodule/1.7d5648fd7c0291d649aa.chunk.js?Q_CLIENTVERSION=1.82.1&amp;Q_CLIENTTYPE=web&amp;Q_BRANDID=teradata"></script>
+<script>
+  function myFunction() {
+    var x = document.getElementById("mySearch").value;
+    //document.getElementById("demo").innerHTML = x;
+    alert(x);
+  }
+  </script>
 </head>
 <body>
 
@@ -57,52 +70,35 @@
         <ul>
           <li class="header-nav-mobile__menu-item">
             <header class="header-nav-mobile__menu-item__header">
-              <a href="https://quickstarts.teradata.com/" class="font">Getting Started</a>
+              <a href="https://quickstarts.teradata.com/" class="font nav-link">Getting Started</a>
             </header>
           </li>
-          <!--
-          <li class="header-nav-mobile__menu-item">
-            <header class="header-nav-mobile__menu-item__header" style="display: inline-flex;">
-              <a>Docs</a><button class="navbar-arrow-down"><img class="navbar-arrow" src="assets/images/icons/arrow_drop_down.svg" alt="down arrow"></button>
-            </header>
-            <div id="docmenu" style="display: block;">
-              <div class="header-nav-mobile__menu-item__links">
-                <ul>
-                  <li>
-                    <a href="https://docs.teradata.com/p/VantageCloud/Lake">VantageCloud Lake Documentation</a>
-                  </li>
-                  <li>
-                    <a href="https://docs.teradata.com/">All Documentation</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          -->
           <li class="header-nav-mobile__menu-item">
             <div class="dropdown">
               <header class="header-nav-mobile__menu-item__header" style="display: inline-flex;">
-                <a>Docs</a><button class="navbar-arrow-down"><img class="navbar-arrow" src="assets/images/icons/arrow_drop_down.svg" alt="down arrow"></button>
+                <a class="nav-link">Docs</a><button class="navbar-arrow-down"><img class="navbar-arrow" src="assets/images/icons/arrow_drop_down.svg" alt="down arrow"></button>
               </header>
               <div class="dropdown-content">
-                <a href="#">VantageCloud Lake Documentation</a>
-                <a href="#">All Documentation</a>
+                <a href="https://docs.teradata.com/p/VantageCloud/Lake" class="">VantageCloud Lake Documentation</a>
+                <a href="https://docs.teradata.com/" class="">All Documentation</a>
               </div>
             </div> 
           </li>
           <li class="header-nav-mobile__menu-item">
             <header class="header-nav-mobile__menu-item__header">
-              <a href="https://downloads.teradata.com/">Downloads</a>
+              <a href="https://downloads.teradata.com/" class="nav-link">Downloads</a>
             </header>
           </li>
           <li class="header-nav-mobile__menu-item">
             <div class="dropdown">
               <header class="header-nav-mobile__menu-item__header" style="display: inline-flex;">
-                <a>Community</a><button class="navbar-arrow-down"><img class="navbar-arrow" src="assets/images/icons/arrow_drop_down.svg" alt="down arrow"></button>
+                <a class="nav-link">Community</a><button class="navbar-arrow-down"><img class="navbar-arrow" src="assets/images/icons/arrow_drop_down.svg" alt="down arrow"></button>
               </header>
               <div class="dropdown-content">
-                <a href="https://support.teradata.com/community?id=community_forum_list">Forums</a>
-                <a href="https://support.teradata.com/community?id=community_forum&sys_id=c42a7b554f6df300903211ff0310c7d0">Technical Blogs</a>
+                <a href="https://support.teradata.com/community" class="dropdown-item">Teradata Community</a>
+                <a href="https://support.teradata.com/community?id=community_forum&amp;sys_id=c42a7b554f6df300903211ff0310c7d0" class="">Technical Blogs</a>
+                <a href="https://github.com/Teradata" title="Teradata on GitHub" class="dropdown-item">GitHub</a>
+                <a href="https://stackoverflow.com/questions/tagged/teradata" title="Stack Overflow Teradata questions" class="">Stack Overflow</a>
               </div>
             </div> 
           </li>
@@ -130,7 +126,7 @@
               <button class="slide-button">learn more</button>  
             </div>
           </div>
-          
+          <!--
           <div class="mySlides fade" style="display: block;">
             <div class="slideimage2">
               <img src="assets/images/icons/play.svg">
@@ -151,17 +147,21 @@
               <p>The complete cloud analytics and data platform, now with next-generation, cloud-native deployment and expanded analytics capabilities.</p>
               <button class="slide-button">learn more</button>  
              </div>
+            -->
           </div>
           
-          
+          <!--
           <div style="text-align:center">
               <span class="dot" onclick="currentSlide(1)"></span> 
               <span class="dot active" onclick="currentSlide(2)"></span> 
               <span class="dot" onclick="currentSlide(3)"></span> 
-          </div>  
+          </div>
+          -->  
        </div>
+       <!--
        <a class="prev" onclick="plusSlides(-1)">❮</a>
        <a class="next" onclick="plusSlides(1)">❯</a>
+       -->
             
         
           
@@ -169,15 +169,23 @@
 <!--Close Banner-->
 
 <!--Open Search Bar-->
-<!-- 
+<!--
 <section>
+  <div class="search">
+    <form class="example" action="https://support.teradata.com/csm?id=kb_search#q=TPT">
+      <input type="text" placeholder="Search Teradata Developer Portal" name="search" class="search-bar" id="mySearch">
+      <button type="submit" onclick="myFunction()" class="search-icon"><div></div></button>
+    </form>
+  </div>
+  -->
+<!--
 <div>
   <div class="search">
     <input type="search" class="search-bar search-icon" value="Search Teradata Developer Portal">
   </div>
-</div>  
+</div>
+-->  
 </section>
--->
 <!--Close Search Bar-->
 
 <!--Open Jumpin-->
@@ -453,7 +461,7 @@
       <div class="items-list">
         <div class="list-item-top-picks">
           <div class="top-picks">
-            <div class"subject">Vantage Streams – V1</div> 
+            <div>Vantage Streams – V1</div> 
             <div class="circle">
               <img class="icon-1"  src="assets/images/icons/tools-icon.svg" alt="tools-icon">
             </div>
@@ -566,10 +574,11 @@
           </a>
         </div>
         <div class="stay-connected">
-          <img src="assets/images/icons/stackoverflow-1.svg" alt="Stack Overflow" class="stay-connected-icon-1">
-          <img src="assets/images/icons/stackoverflow-2.svg" alt="Stack Overflow" class="stay-connected-icon-2">
-    
-          <p class="stay-connected-font">Stack Overflow </p>
+          <a href="https://stackoverflow.com/questions/tagged/teradata" class="NoDec" target="_blank">
+            <img src="assets/images/icons/stackoverflow-1.svg" alt="Stack Overflow" class="stay-connected-icon-1">
+            <img src="assets/images/icons/stackoverflow-2.svg" alt="Stack Overflow" class="stay-connected-icon-2">
+            <p class="stay-connected-font">Stack Overflow </p>
+          </a>
         </div>
       </div>
       </section>
@@ -817,8 +826,7 @@
   </div>
 </section>
 
+<script type="text/javascript" src="assets/js/show-slides.js"></script>  
+<script type="text/javascript" src="assets/js/open-link.js"></script>
 </body>
 </html>
-<script src="assets/js/show-slides.js"></script>  
-<script src="assets/js/open-link.js"></script>
-<script src="assets/js/build-global-navbar.js"></script>
