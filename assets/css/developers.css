@@ -183,7 +183,7 @@ body {
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .jumpin-text {
   font-family: 'Poppins-SemiBold';
@@ -308,7 +308,7 @@ div.list-item {
   position: relative;
   width: 230px;
   height: 80px;
-  font-family: 'Arial';
+/*  font-family: 'Arial'; */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -425,6 +425,16 @@ div.items-list {
   margin-bottom: 0;
   margin-left: auto;
 }
+.tools-for-the-job{
+  max-width: 1236px;
+  width: 100%;
+  display: flex;
+  float: center;
+  flex-direction: row;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
 div.list-item-1 {
 /*  width: 395.8px;*/
   height: 203px;
@@ -458,7 +468,7 @@ div.item-name p:nth-child(1) {
 div.item-name p:nth-child(2) {
   width: 289px;
   height: 84px;
-  font-family: 'Arial';
+/* font-family: 'Arial';*/
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -620,7 +630,7 @@ div.bottom-anchor-link a {
   height: 60px;
   left: 585px;
   top: 138px;
-  font-family: 'Arial';
+/*  font-family: 'Arial';*/
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -695,7 +705,7 @@ body {
 .quickstart-textcontainer p:nth-child(2) {
   width: 1236px;
   height: 40px;
-  font-family: 'Arial';
+/*  font-family: 'Arial';*/
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -768,7 +778,7 @@ div.list-item-top-picks {
 .top-picks {
   margin-left: 16px;
   margin-top: 22px;
-  font-family: 'Arial';
+/*  font-family: 'Arial';*/
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -778,7 +788,7 @@ div.list-item-top-picks {
 .top-picks-3 {
   margin-left: 16px;
   margin-top: 22px;
-  font-family: 'Arial';
+/*  font-family: 'Arial';*/
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -790,7 +800,7 @@ div.list-item-top-picks {
   width: 302px;
   height: 55px;
   margin-left: 16px;
-  font-family: 'Arial';
+/*  font-family: 'Arial';*/
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -818,7 +828,7 @@ div.list-item-top-picks {
   border-radius: 16px;
   width: auto;
   padding: 6px 12px;
-  font-family: 'Arial';
+/*  font-family: 'Arial';*/
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1173,4 +1183,24 @@ form.example button {
 
 .move-left{
   margin-left: -20px;
+}
+.top-picks-from-teradata{
+  max-width: 1236px;
+  width: 100%;
+  height: 36px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-top: 80px;
+}
+.stay-connected-section{
+  max-width: 1236px;
+  width: 100%;
+  height: 36px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-top: 80px;
 }
