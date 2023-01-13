@@ -183,7 +183,7 @@ body {
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .jumpin-text {
   font-family: 'Poppins-SemiBold';
@@ -1214,4 +1214,25 @@ form.example button {
 
 .move-left{
   margin-left: -20px;
+}
+
+.top-picks-teradata{
+  max-width: 1236px;
+  width: 100%;
+  height: 36px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-top: 80px;
+}
+.stay-connected-section{
+  max-width: 1236px;
+  width: 100%;
+  height: 36px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-top: 80px;
 }
