@@ -183,7 +183,7 @@ body {
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 .jumpin-text {
   font-family: 'Poppins-SemiBold';
@@ -192,7 +192,7 @@ body {
   font-size: 24px;
   line-height: 36px;
   color: rgba(0, 0, 0, 0.87);
-  margin-left: 10px;
+  /*margin-left: 10px;*/
 }
 /*Close Jumpin Section*/
 /**/
@@ -206,13 +206,22 @@ body {
   margin-bottom: 0;
   margin-left: auto;
 }
-div.list-item {
-  width: 400px;
+div.list-item:nth-child(1), div.list-item:nth-child(2), div.list-item:nth-child(3) {
+  width: 280px;
   height: 280px;
   /*box-shadow: 0px 0px 2px rgb(0 0 0 / 14%), 0px 2px 2px rgb(0 0 0 / 12%), 0px 1px 3px rgb(0 0 0 / 20%);*/
   border-radius: 8px 8px 8px 8px;
   border-top: 5px solid transparent;
-  margin: 0.75em;
+  margin: 0.75em 2em 0.75em 0;
+  flex: 1 1 auto;
+}
+div.list-item:nth-child(4) {
+  width: 280px;
+  height: 280px;
+  /*box-shadow: 0px 0px 2px rgb(0 0 0 / 14%), 0px 2px 2px rgb(0 0 0 / 12%), 0px 1px 3px rgb(0 0 0 / 20%);*/
+  border-radius: 8px 8px 8px 8px;
+  border-top: 5px solid transparent;
+  margin: 0.75em 0em 0.75em 0;
   flex: 1 1 auto;
 }
 .header {
@@ -308,7 +317,7 @@ div.list-item {
   position: relative;
   width: 230px;
   height: 80px;
-/*  font-family: 'Arial'; */
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -355,6 +364,15 @@ div.list-item {
   margin-bottom: 50px;
   object-fit: cover;
   margin-top: 30px;
+}
+
+/*To hold the lake banner at one place for different screen size*/
+.inside-lake-documentation {
+    max-width: 1236px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
  
@@ -413,7 +431,7 @@ div.td-right-tools-text p {
   font-size: 24px;
   line-height: 36px;
   color: rgba(0, 0, 0, 0.87);
-  margin-left: 10px;
+  /*margin-left: 10px;*/
 }
 div.items-list {
   max-width: 1236px;
@@ -425,17 +443,7 @@ div.items-list {
   margin-bottom: 0;
   margin-left: auto;
 }
-.tools-for-the-job{
-  max-width: 1236px;
-  width: 100%;
-  display: flex;
-  float: center;
-  flex-direction: row;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-}
-div.list-item-1 {
+div.list-item-1:nth-child(1), div.list-item-1:nth-child(2) {
 /*  width: 395.8px;*/
   height: 203px;
   background: #ffffff;
@@ -443,8 +451,19 @@ div.list-item-1 {
   border-radius: 8px;
   border: 1px solid transparent;
   border-top: 5px solid transparent;
-  margin: 0.75em;
+  margin: 0.75em 1em 0.75em 0em;
   flex: 1 1 auto;
+}
+.list-item-1:nth-child(3) {
+    /*  width: 395.8px;*/
+    height: 203px;
+    background: #ffffff;
+    box-shadow: 0px 0px 2px rgb(0 0 0 / 14%), 0px 2px 2px rgb(0 0 0 / 12%), 0px 1px 3px rgb(0 0 0 / 20%);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    border-top: 5px solid transparent;
+    margin: 0.75em 0 0.75em 0em;
+    flex: 1 1 auto;
 }
 div.item-name {
   margin-bottom: 1em;
@@ -468,7 +487,7 @@ div.item-name p:nth-child(1) {
 div.item-name p:nth-child(2) {
   width: 289px;
   height: 84px;
-/* font-family: 'Arial';*/
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -516,12 +535,13 @@ div.bottom-anchor-link a {
   font-size: 24px;
   line-height: 36px;
   color: rgba(0, 0, 0, 0.87);
-  margin-left: 15px;
+  /*margin-left: 15px;*/
 }
 /* Style the tab */
 .tab {
   float: left;
   width: 20%;
+  margin-left: -15px;
 }
 /* Style the buttons inside the tab */
 .tab a {
@@ -614,7 +634,7 @@ div.bottom-anchor-link a {
   margin-top: 18px;
 }
 .text-container {
-  margin-left: 20em;
+  margin-left: 19.35em;
   margin-top: -18.3em;
 }
 .text-container p:nth-child(1) {
@@ -630,7 +650,7 @@ div.bottom-anchor-link a {
   height: 60px;
   left: 585px;
   top: 138px;
-/*  font-family: 'Arial';*/
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -640,7 +660,7 @@ div.bottom-anchor-link a {
   margin-top: -10px;
 }
 .getting-started-button {
-  margin-left: 20em;
+  margin-left: 19.35em;
 }
 .getting-started-button button {
   display: flex;
@@ -705,7 +725,7 @@ body {
 .quickstart-textcontainer p:nth-child(2) {
   width: 1236px;
   height: 40px;
-/*  font-family: 'Arial';*/
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -764,7 +784,7 @@ div.items-list-1 {
   margin-bottom: 0;
   margin-left: auto;
 }
-div.list-item-top-picks {
+div.list-item-top-picks:nth-child(1), div.list-item-top-picks:nth-child(2) {
   width: 395.8px;
   height: 188px;
   background: #ffffff;
@@ -772,13 +792,24 @@ div.list-item-top-picks {
   border-radius: 8px;
   border: 1px solid transparent;
   border-top: 5px solid transparent;
-  margin: 0.75em;
+  margin: 0.75em 1em 0.75em 0em;
+  flex: 1 1 auto;
+}
+div.list-item-top-picks:nth-child(3) {
+  width: 395.8px;
+  height: 188px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  border-top: 5px solid transparent;
+  margin: 0.75em 0em 0.75em 0em;
   flex: 1 1 auto;
 }
 .top-picks {
   margin-left: 16px;
   margin-top: 22px;
-/*  font-family: 'Arial';*/
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -788,7 +819,7 @@ div.list-item-top-picks {
 .top-picks-3 {
   margin-left: 16px;
   margin-top: 22px;
-/*  font-family: 'Arial';*/
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -800,7 +831,7 @@ div.list-item-top-picks {
   width: 302px;
   height: 55px;
   margin-left: 16px;
-/*  font-family: 'Arial';*/
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -828,7 +859,7 @@ div.list-item-top-picks {
   border-radius: 16px;
   width: auto;
   padding: 6px 12px;
-/*  font-family: 'Arial';*/
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1117,7 +1148,7 @@ a {
     position: relative;
     height: 20px;
     width: 20px;
-    margin-left: 340px;
+   /* margin-left: 340px;*/
     margin-top: 43px;
     border-radius: 0px;
   }
@@ -1137,7 +1168,7 @@ a {
     position: relative;
     height: 20px;
     width: 20px;
-    margin-left: 35px;
+    /*margin-left: 35px;*/
     margin-top: 43px;
     border-radius: 0px;
   }
@@ -1183,24 +1214,4 @@ form.example button {
 
 .move-left{
   margin-left: -20px;
-}
-.top-picks-from-teradata{
-  max-width: 1236px;
-  width: 100%;
-  height: 36px;
-  margin-top: 20px;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-top: 80px;
-}
-.stay-connected-section{
-  max-width: 1236px;
-  width: 100%;
-  height: 36px;
-  margin-top: 20px;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-top: 80px;
 }
