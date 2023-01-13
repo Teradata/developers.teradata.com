@@ -535,12 +535,13 @@ div.bottom-anchor-link a {
   font-size: 24px;
   line-height: 36px;
   color: rgba(0, 0, 0, 0.87);
-  margin-left: 15px;
+  /*margin-left: 15px;*/
 }
 /* Style the tab */
 .tab {
   float: left;
   width: 20%;
+  margin-left: -15px;
 }
 /* Style the buttons inside the tab */
 .tab a {
@@ -633,7 +634,7 @@ div.bottom-anchor-link a {
   margin-top: 18px;
 }
 .text-container {
-  margin-left: 20em;
+  margin-left: 19.35em;
   margin-top: -18.3em;
 }
 .text-container p:nth-child(1) {
@@ -659,7 +660,7 @@ div.bottom-anchor-link a {
   margin-top: -10px;
 }
 .getting-started-button {
-  margin-left: 20em;
+  margin-left: 19.35em;
 }
 .getting-started-button button {
   display: flex;
