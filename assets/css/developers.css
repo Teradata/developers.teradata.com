@@ -366,6 +366,15 @@ div.list-item:nth-child(4) {
   margin-top: 30px;
 }
 
+/*To hold the lake banner at one place for different screen size*/
+.inside-lake-documentation {
+    max-width: 1236px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
  
 .text1 {
   position: relative;
@@ -1116,7 +1125,7 @@ a {
     position: relative;
     height: 20px;
     width: 20px;
-    margin-left: 340px;
+   /* margin-left: 340px;*/
     margin-top: 43px;
     border-radius: 0px;
   }
@@ -1136,7 +1145,7 @@ a {
     position: relative;
     height: 20px;
     width: 20px;
-    margin-left: 35px;
+    /*margin-left: 35px;*/
     margin-top: 43px;
     border-radius: 0px;
   }
