@@ -132,7 +132,7 @@
         body += `${data[0]}=${data[1]}\n`;
       });
 
-      window.open(`mailto:test@test.com?subject=Regulus developers preview waitlist request&body=${encodeURIComponent(body)}`)
+      window.open(`mailto:regulus.support@teradata.com?subject=Regulus developers preview waitlist request&body=${encodeURIComponent(body)}`)
 
       location.href = 'tech-preview-confirmation.html';
     })
