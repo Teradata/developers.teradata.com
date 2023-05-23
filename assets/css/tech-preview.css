@@ -10,8 +10,8 @@
   line-height: 1.25;
 }
 
-.tech-preview h1, 
-.tech-preview h2, 
+.tech-preview h1,
+.tech-preview h2,
 .tech-preview h3 {
   color: rgba(0, 0, 0);
   font-family: 'Poppins-SemiBold', Arial, sans-serif;
@@ -24,7 +24,7 @@
   font-size: 2.25rem;
 }
 
-.tech-preview h2, 
+.tech-preview h2,
 .tech-preview h3 {
   font-size: 1.25rem;
 }
@@ -33,15 +33,15 @@ h2.muted-grey {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.tech-preview p, 
-.tech-preview ul, 
+.tech-preview p,
+.tech-preview ul,
 .tech-preview ol {
   margin-bottom: 1rem;
   margin-top: 0;
 }
 
 .tech-preview ul li {
-    list-style-type: disc !important;
+  list-style-type: disc !important;
 }
 
 .tech-preview strong {
@@ -56,6 +56,7 @@ a {
 a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
+
 /* End Base Styles */
 
 /* Layout Styles */
@@ -96,7 +97,7 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  color:rgb(255, 255, 255, 60%);
+  color: rgb(255, 255, 255, 60%);
   position: relative;
 }
 
@@ -104,7 +105,7 @@ a:hover {
   color: rgba(255, 255, 255, 0.87);
 }
 
-.split-layout .cover h2, 
+.split-layout .cover h2,
 .split-layout .cover h3 {
   color: rgb(255, 255, 255, 60%);
 }
@@ -139,14 +140,14 @@ a:hover {
 
   }
 
-  .split-layout .order-1 > .container-sm {
+  .split-layout .order-1>.container-sm {
     margin-right: 0;
 
   }
 
-  .split-layout .order-2 > .container-sm {
+  .split-layout .order-2>.container-sm {
     margin-left: 0;
-  }  
+  }
 }
 
 @media (min-width: 1200px) {
@@ -156,7 +157,7 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-   .split-layout .order-1 > .container-sm {
+  .split-layout .order-1>.container-sm {
     display: none;
 
   }
@@ -299,7 +300,7 @@ textarea {
   position: relative;
 }
 
-.input-field > label {
+.input-field>label {
   background-color: #f5f5f5;
   border-radius: 16px;
   color: rgba(0, 0, 0, 0.6);
@@ -581,7 +582,7 @@ button:disabled,
   line-height: 1rem;
   padding: 10px 12px;
   text-transform: uppercase;
-  text-decoration: none;  
+  text-decoration: none;
   text-align: center;
   text-transform: uppercase;
 }
@@ -633,18 +634,24 @@ button:disabled,
 }
 
 /* End Button Styles */
+.request-access.hidden {
+  display: none;
+}
 
 .form-confirmation {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.form-confirmation.visible {
+  display: block;
+}
+
 .confirm-message {
-  max-width: 364px;
   margin-top: 10px;
-  padding: 112px 0 10px;
+  padding: 0 0 10px;
   position: relative;
   text-align: center;
 }
@@ -662,7 +669,6 @@ button:disabled,
 }
 
 .confirm-message::after {
-  background-image: url('../images/icons/check.svg');
   background-size: 100% 100%;
   content: '';
   position: absolute;
@@ -687,4 +693,98 @@ button:disabled,
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.circle-loader {
+  margin-bottom: 3.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left-color: rgba(0, 0, 0, 0.6);
+  animation: loader-spin 1.2s infinite linear;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+}
+
+.load-complete {
+  -webkit-animation: none;
+  animation: none;
+  border-color: #ebebeb;
+  transition: border 250ms ease-out;
+}
+
+.load-complete .checkmark {
+  display: block;
+}
+
+.checkmark {
+  display: none;
+}
+
+.checkmark.draw:after {
+  animation-duration: 500ms;
+  animation-timing-function: ease;
+  animation-name: checkmark;
+  transform: scaleX(-1) rotate(135deg);
+}
+
+.checkmark:after {
+  opacity: 1;
+  height: 36px;
+  width: 18px;
+  transform-origin: left top;
+  border-right: 3px solid rgba(0, 0, 0, 0.6);
+  border-top: 3px solid rgba(0, 0, 0, 0.6);
+  content: '';
+  left: 30px;
+  top: 48px;
+  position: absolute;
+}
+
+.hidden-text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden-text.visible {
+  opacity: 1;
+}
+
+
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+
+  20% {
+    height: 0;
+    width: 18px;
+    opacity: 1;
+  }
+
+  40% {
+    height: 18px;
+    width: 18px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 36px;
+    width: 18px;
+    opacity: 1;
+  }
 }
