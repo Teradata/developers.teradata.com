@@ -48,6 +48,10 @@
 <link rel="stylesheet" href="assets/css/tech-preview.css">
 <!--END CSS FOR REGULUS -->
 
+<!--BEGIN SCRIPTS FOR REGULUS -->
+<script src="assets/scripts/behavior.js" defer></script>
+<!--END SCRIPTS FOR REGULUS -->
+
 <script src="https://www.teradata.com/js/Celebrus/bsci.js" defer></script>
 <script>
   function myFunction() {
@@ -190,33 +194,118 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
 <main class="main-content tech-preview" role="main">
   <section class="page-content">
 
-    <!-- Screen 1 -->
     <article class="split-layout">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 order-1 cover">
             <div class="container-sm">
 
-              <div class="video-container">
-                <!-- TODO: Replace video -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KxhQtbaCEJY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
+              <h1>Regulus</h1>
+              <h2>Technical Preview</h2>
+              <p>Made for explorers and built for the cloud. Regulus is an on-demand self-service analytical engine that rapidly deploys using workspaces enabling you to explore and analyze large-scale external datasets in minutes. Regulus leverages Teradata in database mathematics to enable machine learning and mathematical simulation.</p>
+              <ul>
+                <li>Quick self-setup - start using in minutes!</li>
+                <li>Seamless integration with Jupyter and GitHub</li>
+                <li>Easily move data insights and analytics models you create with Regulus into production with Teradata Vantage.</li>
+              </ul>
+              <p>Throughout the preview, you will be invited to share feedback directly with the team and ask questions via the
+                community forum.</p>
+              <p>The Technical Preview will end on July 31, 2023.</p>
+            
+              <!-- TODO: Add link -->
+              <a class="cta-btn-secondary" href="">Documentation</a>
 
             </div>
           </div>
           <div class="col-md-6 order-2">
             <div class="container-sm">
-              
-              <h1>Regulus</h1>
-              <h2 class="muted-grey">Technical Preview</h2>
-              <p>Made for explorers and built for the cloud. Regulus is an on-demand self-service analytical engine that rapidly deploys using workspaces enabling you to explore and analyze large-scale external datasets in minutes. Regulus leverages Teradata in database mathematics to enable machine learning and mathematical simulation.</p>
-              <p><strong>Join the technical preview, available until July 31, 2023.</strong></p>
+            
+            
+              	<!--BEGIN FORM-->
+				<form class="request-access">
+					<h2 class="form-title">Request access to Regulus</h2>
+						<div class="input-field">
+							<label for="email" class="required">Email</label>
+							<input id="email" type="email" class="validate">
+						</div>
 
-              <div class="button-container">
-                <!-- TODO: Add links -->
-                <a class="cta-btn" href="tech-preview-request-form.html">Join the Technical Preview Waitlist</a>
-                <a class="cta-btn-secondary" href="">Documentation</a>
-              </div>
+  						<div class="input-field">
+    						<label for="first_name" class="required">First name</label>
+    						<input id="first_name" type="text" class="validate">
+  						</div>
+
+						<div class="input-field">
+    						<label for="last_name" class="required">Last name</label>
+    						<input id="last_name" type="text" class="validate">
+  						</div>
+
+  						<div class="input-field">
+    						<label for="company" class="required">Company</label>
+    						<input id="company" type="text" class="validate">
+  						</div>
+
+  						<div class="input-field">
+    						<label for="job_title">Job title</label>
+    						<input id="job_title" type="text" class="validate">
+  						</div>
+
+  						<div class="input-field form-type-select">
+    						<label class="required">Country</label>
+    						
+    						<!-- TODO: Add Countries -->
+    						<select>
+      							<option value="" disabled selected>Select</option>
+      							<option value="1">Option 1</option>
+      							<option value="2">Option 2</option>
+      							<option value="3">Option 3</option>
+      						</select>
+  						</div>
+
+						<div class="input-checkbox">
+    						<input type="checkbox" id="updates-checkbox" class="filled-in" checked="checked" />
+    						<label for="updates-checkbox">I would like to receive updates on Teradata products, services, and events.</label>
+						</div>
+
+						<div class="input-checkbox">
+    						<input type="checkbox" id="terms-checkbox" class="filled-in" />
+    						<label for="terms-checkbox">I agree to the <a class="terms" id="open-terms" href="">terms and conditions</a></label>
+						</div>
+
+  						<div class="btn-container">
+    						<button id="cancel" class="cancel-btn">Cancel</button>
+    						<a href="tech-preview-confirmation.html"><input type="submit" id="submit" name="submit" value="Send Request" disabled class="cta-btn"></a> 
+  						</div>
+				</form>
+				<!--END FORM-->
+				
+				<!--BEGIN TERMS MODAL-->
+								
+					<div id="terms-modal" class="terms-modal">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h2>Terms of Use</h2>
+								<button id="modal-close" class="close-btn">Close</button>
+    						</div>
+    					<div class="modal-body">
+     						 <div class="terms-container">
+     						 
+        						<!-- Insert terms of use text here -->
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim sit amet orci faucibus aliquam. Integer dictum pulvinar orci, in gravida quam bibendum vel. Sed sed consectetur eros, sit amet bibendum massa. Vivamus faucibus elementum bibendum. Donec dignissim tincidunt ipsum, ac auctor orci euismod ut. Nunc ut dolor quis quam vestibulum accumsan at eu magna.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim sit amet orci faucibus aliquam. Integer dictum pulvinar orci, in gravida quam bibendum vel. Sed sed consectetur eros, sit amet bibendum massa. Vivamus faucibus elementum bibendum. Donec dignissim tincidunt ipsum, ac auctor orci euismod ut. Nunc ut dolor quis quam vestibulum accumsan at eu magna.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim sit amet orci faucibus aliquam. Integer dictum pulvinar orci, in gravida quam bibendum vel. Sed sed consectetur eros, sit amet bibendum massa. Vivamus faucibus elementum bibendum. Donec dignissim tincidunt ipsum, ac auctor orci euismod ut. Nunc ut dolor quis quam vestibulum accumsan at eu magna.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim sit amet orci faucibus aliquam. Integer dictum pulvinar orci, in gravida quam bibendum vel. Sed sed consectetur eros, sit amet bibendum massa. Vivamus faucibus elementum bibendum. Donec dignissim tincidunt ipsum, ac auctor orci euismod ut. Nunc ut dolor quis quam vestibulum accumsan at eu magna.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim sit amet orci faucibus aliquam. Integer dictum pulvinar orci, in gravida quam bibendum vel. Sed sed consectetur eros, sit amet bibendum massa. Vivamus faucibus elementum bibendum. Donec dignissim tincidunt ipsum, ac auctor orci euismod ut. Nunc ut dolor quis quam vestibulum accumsan at eu magna.</p>
+      						</div>
+    					</div>
+   						<div class="modal-footer">
+      						<button id="modal-cancel" class="cancel-btn">Cancel</button>
+      						<button id="modal-confirm" disabled class="cta-btn">Agree</button>
+    					</div>
+  					</div>
+				</div>
+				
+				<!--END TERMS MODAL-->
+
 
             </div>
           </div>
