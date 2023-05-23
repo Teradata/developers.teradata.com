@@ -212,74 +212,316 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
                 community forum.</p>
               <p>The Technical Preview will end on July 31, 2023.</p>
             
-              <!-- TODO: Add link -->
-              <a class="cta-btn-secondary" href="">Documentation</a>
+              <a class="cta-btn-secondary" href="https://quickstarts.teradata.com/regulus/install-regulus-docker-image.html">Documentation</a>
 
             </div>
           </div>
           <div class="col-md-6 order-2">
             <div class="container-sm">
             
-            
               	<!--BEGIN FORM-->
-				<form class="request-access">
+				<form class="request-access" >
+
 					<h2 class="form-title">Request access to Regulus</h2>
 						<div class="input-field">
 							<label for="email" class="required">Email</label>
-							<input id="email" type="email" class="validate">
+							<input id="email" type="email" class="validate" name="email" required="true">
 						</div>
 
   						<div class="input-field">
     						<label for="first_name" class="required">First name</label>
-    						<input id="first_name" type="text" class="validate">
+    						<input id="first_name" type="text" class="validate" name="firstName" required>
   						</div>
 
 						<div class="input-field">
     						<label for="last_name" class="required">Last name</label>
-    						<input id="last_name" type="text" class="validate">
+    						<input id="last_name" type="text" class="validate" name="lastName" required>
   						</div>
 
   						<div class="input-field">
     						<label for="company" class="required">Company</label>
-    						<input id="company" type="text" class="validate">
+    						<input id="company" type="text" class="validate" name="company" required>
   						</div>
 
   						<div class="input-field">
     						<label for="job_title">Job title</label>
-    						<input id="job_title" type="text" class="validate">
+    						<input id="job_title" type="text" class="validate" name="job">
   						</div>
 
   						<div class="input-field form-type-select">
     						<label class="required">Country</label>
     						
-    						<!-- TODO: Add Countries -->
-    						<select>
-      							<option value="" disabled selected>Select</option>
-      							<option value="1">Option 1</option>
-      							<option value="2">Option 2</option>
-      							<option value="3">Option 3</option>
-      						</select>
+                <select name="country" required>
+                  <option value="">-- Please Select --</option>
+                  <option value="US">USA</option>
+                  <option value="CA">Canada</option>
+                  <option value="GB">United Kingdom</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                  <option value="CN">China</option>
+                  <option value="JP">Japan</option>
+                  <option value="AU">Australia</option>
+                  <option value="AF">Afghanistan</option>
+                  <option value="AX">Aland Islands</option>
+                  <option value="AL">Albania</option>
+                  <option value="DZ">Algeria</option>
+                  <option value="AS">American Samoa</option>
+                  <option value="AD">Andorra</option>
+                  <option value="AO">Angola</option>
+                  <option value="AI">Anguilla</option>
+                  <option value="AQ">Antarctica</option>
+                  <option value="AG">Antigua/Barbuda</option>
+                  <option value="AR">Argentina</option>
+                  <option value="AM">Armenia</option>
+                  <option value="AW">Aruba</option>
+                  <option value="AT">Austria</option>
+                  <option value="AZ">Azerbaijan</option>
+                  <option value="BS">Bahamas</option>
+                  <option value="BH">Bahrain</option>
+                  <option value="BD">Bangladesh</option>
+                  <option value="BB">Barbados</option>
+                  <option value="BY">Belarus</option>
+                  <option value="BE">Belgium</option>
+                  <option value="BZ">Belize</option>
+                  <option value="BJ">Benin</option>
+                  <option value="BM">Bermuda</option>
+                  <option value="BT">Bhutan</option>
+                  <option value="BO">Bolivia</option>
+                  <option value="BA">Bosnia/Herzegovina</option>
+                  <option value="BW">Botswana</option>
+                  <option value="BV">Bouvet Islands</option>
+                  <option value="BR">Brazil</option>
+                  <option value="IO">Brit Ind Ocean Terr</option>
+                  <option value="BN">Brunei Darussal</option>
+                  <option value="BG">Bulgaria</option>
+                  <option value="BF">Burkina Faso</option>
+                  <option value="BI">Burundi</option>
+                  <option value="KH">Cambodia</option>
+                  <option value="CM">Cameroon</option>
+                  <option value="CV">Cape Verde</option>
+                  <option value="KY">Cayman Islands</option>
+                  <option value="CF">Cent African Rep</option>
+                  <option value="TD">Chad</option>
+                  <option value="CL">Chile</option>
+                  <option value="CX">Christmas Islands</option>
+                  <option value="CC">Cocos (Keeling)</option>
+                  <option value="CO">Colombia</option>
+                  <option value="KM">Comoros</option>
+                  <option value="CG">Congo</option>
+                  <option value="CD">Congo, Dem Rep</option>
+                  <option value="CK">Cook Islands</option>
+                  <option value="CR">Costa Rica</option>
+                  <option value="HR">Croatia</option>
+                  <option value="CU">Cuba</option>
+                  <option value="CW">Curacao</option>
+                  <option value="CY">Cyprus</option>
+                  <option value="CZ">Czech Republic</option>
+                  <option value="DK">Denmark</option>
+                  <option value="DJ">Djibouti</option>
+                  <option value="DO">Dom Rep</option>
+                  <option value="DM">Dominica</option>
+                  <option value="EC">Ecuador</option>
+                  <option value="EG">Egypt</option>
+                  <option value="SV">El Salvador</option>
+                  <option value="GQ">Equat Guinea</option>
+                  <option value="ER">Eritrea</option>
+                  <option value="EE">Estonia</option>
+                  <option value="ET">Ethiopia</option>
+                  <option value="FK">Falkland Islands</option>
+                  <option value="FO">Faroe Islands</option>
+                  <option value="FJ">Fiji</option>
+                  <option value="FI">Finland</option>
+                  <option value="PF">Fr Polynesia</option>
+                  <option value="TF">Fr Southern Terr</option>
+                  <option value="GF">French Guiana</option>
+                  <option value="GA">Gabon</option>
+                  <option value="GM">Gambia</option>
+                  <option value="GE">Georgia</option>
+                  <option value="GH">Ghana</option>
+                  <option value="GI">Gibraltar</option>
+                  <option value="GR">Greece</option>
+                  <option value="GL">Greenland</option>
+                  <option value="GD">Grenada</option>
+                  <option value="GP">Guadeloupe</option>
+                  <option value="GU">Guam</option>
+                  <option value="GT">Guatemala</option>
+                  <option value="GG">Guernsey</option>
+                  <option value="GN">Guinea</option>
+                  <option value="GW">Guinea-Bissau</option>
+                  <option value="GY">Guyana</option>
+                  <option value="HT">Haiti</option>
+                  <option value="HM">Heard/McDonald Isl</option>
+                  <option value="HN">Honduras</option>
+                  <option value="HK">Hong Kong</option>
+                  <option value="HU">Hungary</option>
+                  <option value="IS">Iceland</option>
+                  <option value="IN">India</option>
+                  <option value="ID">Indonesia</option>
+                  <option value="IR">Iran</option>
+                  <option value="IQ">Iraq</option>
+                  <option value="IE">Ireland</option>
+                  <option value="IM">Isle of Man</option>
+                  <option value="IL">Israel</option>
+                  <option value="IT">Italy</option>
+                  <option value="CI">Ivory Coast</option>
+                  <option value="JM">Jamaica, W.I.</option>
+                  <option value="JE">Jersey</option>
+                  <option value="JO">Jordan</option>
+                  <option value="KZ">Kazakhstan</option>
+                  <option value="KE">Kenya</option>
+                  <option value="KI">Kiribati</option>
+                  <option value="KW">Kuwait</option>
+                  <option value="KG">Kyrgyzstan</option>
+                  <option value="LA">Laos</option>
+                  <option value="LV">Latvia</option>
+                  <option value="LB">Lebanon</option>
+                  <option value="LS">Lesotho</option>
+                  <option value="LR">Liberia</option>
+                  <option value="LY">Libya</option>
+                  <option value="LI">Liechtenstein</option>
+                  <option value="LT">Lithuania</option>
+                  <option value="LU">Luxembourg</option>
+                  <option value="MO">Macau</option>
+                  <option value="MK">Macedonia</option>
+                  <option value="MG">Madagascar</option>
+                  <option value="MW">Malawi</option>
+                  <option value="MY">Malaysia</option>
+                  <option value="MV">Maldives</option>
+                  <option value="ML">Mali</option>
+                  <option value="MT">Malta</option>
+                  <option value="MH">Marshall Islands</option>
+                  <option value="MQ">Martinique</option>
+                  <option value="MR">Mauritania</option>
+                  <option value="MU">Mauritius</option>
+                  <option value="YT">Mayotte</option>
+                  <option value="MX">Mexico</option>
+                  <option value="FM">Micronesia</option>
+                  <option value="MD">Moldova</option>
+                  <option value="MC">Monaco</option>
+                  <option value="MN">Mongolia</option>
+                  <option value="ME">Montenegro</option>
+                  <option value="MS">Montserrat</option>
+                  <option value="MA">Morocco</option>
+                  <option value="MZ">Mozambique</option>
+                  <option value="MM">Myanmar</option>
+                  <option value="NA">Namibia</option>
+                  <option value="NR">Nauru</option>
+                  <option value="NP">Nepal</option>
+                  <option value="AN">Neth Antilles</option>
+                  <option value="NL">Netherlands</option>
+                  <option value="NC">New Caledonia</option>
+                  <option value="NZ">New Zealand</option>
+                  <option value="NI">Nicaragua</option>
+                  <option value="NE">Niger</option>
+                  <option value="NG">Nigeria</option>
+                  <option value="NU">Niue</option>
+                  <option value="MP">No Marianas</option>
+                  <option value="NF">Norfolk Island</option>
+                  <option value="KP">North Korea</option>
+                  <option value="NO">Norway</option>
+                  <option value="OM">Oman</option>
+                  <option value="PK">Pakistan</option>
+                  <option value="PW">Palau</option>
+                  <option value="PS">Palestinian Terr</option>
+                  <option value="PA">Panama</option>
+                  <option value="PG">Papua New Guinea</option>
+                  <option value="PY">Paraguay</option>
+                  <option value="PE">Peru</option>
+                  <option value="PH">Philippines</option>
+                  <option value="PN">Pitcairn</option>
+                  <option value="PL">Poland</option>
+                  <option value="PT">Portugal</option>
+                  <option value="PR">Puerto Rico</option>
+                  <option value="QA">Qatar</option>
+                  <option value="KR">Rep of Korea</option>
+                  <option value="RE">Reunion</option>
+                  <option value="RO">Romania</option>
+                  <option value="RU">Russia</option>
+                  <option value="RW">Rwanda</option>
+                  <option value="BL">Saint Barthelemy</option>
+                  <option value="SH">Saint Helena</option>
+                  <option value="LC">Saint Lucia</option>
+                  <option value="MF">Saint Martin</option>
+                  <option value="SM">San Marino</option>
+                  <option value="ST">Sao Tome/Principe</option>
+                  <option value="SA">Saudi Arabia</option>
+                  <option value="SN">Senegal</option>
+                  <option value="RS">Serbia</option>
+                  <option value="SC">Seychelles</option>
+                  <option value="SL">Sierra Leone</option>
+                  <option value="SG">Singapore</option>
+                  <option value="SK">Slovakia</option>
+                  <option value="SI">Slovenia</option>
+                  <option value="GS">So. Georgia/Sandwich</option>
+                  <option value="SB">Solomon Islands</option>
+                  <option value="SO">Somalia</option>
+                  <option value="ZA">South Africa</option>
+                  <option value="ES">Spain</option>
+                  <option value="LK">Sri Lanka</option>
+                  <option value="KN">St Kitts &amp; Nevis</option>
+                  <option value="PM">St Pierre &amp; Miquelon</option>
+                  <option value="VC">St Vincent/Gren</option>
+                  <option value="SD">Sudan</option>
+                  <option value="SR">Suriname</option>
+                  <option value="SJ">Svalbard/Jan</option>
+                  <option value="SZ">Swaziland</option>
+                  <option value="SE">Sweden</option>
+                  <option value="CH">Switzerland</option>
+                  <option value="SY">Syria</option>
+                  <option value="TW">Taiwan</option>
+                  <option value="TJ">Tajikistan</option>
+                  <option value="TZ">Tanzania</option>
+                  <option value="TH">Thailand</option>
+                  <option value="TL">Timor-Leste</option>
+                  <option value="TG">Togo</option>
+                  <option value="TK">Tokelau</option>
+                  <option value="TO">Tonga</option>
+                  <option value="TT">Trinidad &amp; Tobago</option>
+                  <option value="TN">Tunisia</option>
+                  <option value="TR">Turkey</option>
+                  <option value="TM">Turkmenistan</option>
+                  <option value="TC">Turks and Caicos</option>
+                  <option value="TV">Tuvalu</option>
+                  <option value="AE">UAE</option>
+                  <option value="UG">Uganda</option>
+                  <option value="UA">Ukraine</option>
+                  <option value="UY">Uruguay</option>
+                  <option value="UM">US Minor Out Isls</option>
+                  <option value="UZ">Uzbekistan</option>
+                  <option value="VU">Vanuatu</option>
+                  <option value="VA">Vatican</option>
+                  <option value="VE">Venezuela</option>
+                  <option value="VN">Vietnam</option>
+                  <option value="VG">Virgin Isl (Brit)</option>
+                  <option value="VI">Virgin Isl (US)</option>
+                  <option value="WF">Wallis/Futuna</option>
+                  <option value="EH">Western Sahara</option>
+                  <option value="WS">Western Samoa</option>
+                  <option value="YE">Yemen</option>
+                  <option value="ZM">Zambia</option>
+                  <option value="ZW">Zimbabwe</option>
+                </select>
   						</div>
 
 						<div class="input-checkbox">
-    						<input type="checkbox" id="updates-checkbox" class="filled-in" checked="checked" />
+    						<input type="checkbox" id="updates-checkbox" class="filled-in" checked="checked" name="updates" />
     						<label for="updates-checkbox">I would like to receive updates on Teradata products, services, and events.</label>
 						</div>
 
 						<div class="input-checkbox">
-    						<input type="checkbox" id="terms-checkbox" class="filled-in" />
+    						<input type="checkbox" id="terms-checkbox" class="filled-in" name="terms" required />
     						<label for="terms-checkbox">I agree to the <a class="terms" id="open-terms" href="">terms and conditions</a></label>
 						</div>
 
   						<div class="btn-container">
-    						<button id="cancel" class="cancel-btn">Cancel</button>
-    						<a href="tech-preview-confirmation.html"><input type="submit" id="submit" name="submit" value="Send Request" disabled class="cta-btn"></a> 
+    						<a href="index.html" class="cancel-btn">Cancel</a>
+    						<input type="submit" id="submit" name="submit" value="Send Request"  class="cta-btn"> 
   						</div>
 				</form>
 				<!--END FORM-->
 				
 				<!--BEGIN TERMS MODAL-->
-								
+      		
 					<div id="terms-modal" class="terms-modal">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -287,15 +529,35 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
 								<button id="modal-close" class="close-btn">Close</button>
     						</div>
     					<div class="modal-body">
-     						 <div class="terms-container">
-     						 
-        						<!-- Insert terms of use text here -->
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim sit amet orci faucibus aliquam. Integer dictum pulvinar orci, in gravida quam bibendum vel. Sed sed consectetur eros, sit amet bibendum massa. Vivamus faucibus elementum bibendum. Donec dignissim tincidunt ipsum, ac auctor orci euismod ut. Nunc ut dolor quis quam vestibulum accumsan at eu magna.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim sit amet orci faucibus aliquam. Integer dictum pulvinar orci, in gravida quam bibendum vel. Sed sed consectetur eros, sit amet bibendum massa. Vivamus faucibus elementum bibendum. Donec dignissim tincidunt ipsum, ac auctor orci euismod ut. Nunc ut dolor quis quam vestibulum accumsan at eu magna.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim sit amet orci faucibus aliquam. Integer dictum pulvinar orci, in gravida quam bibendum vel. Sed sed consectetur eros, sit amet bibendum massa. Vivamus faucibus elementum bibendum. Donec dignissim tincidunt ipsum, ac auctor orci euismod ut. Nunc ut dolor quis quam vestibulum accumsan at eu magna.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim sit amet orci faucibus aliquam. Integer dictum pulvinar orci, in gravida quam bibendum vel. Sed sed consectetur eros, sit amet bibendum massa. Vivamus faucibus elementum bibendum. Donec dignissim tincidunt ipsum, ac auctor orci euismod ut. Nunc ut dolor quis quam vestibulum accumsan at eu magna.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim sit amet orci faucibus aliquam. Integer dictum pulvinar orci, in gravida quam bibendum vel. Sed sed consectetur eros, sit amet bibendum massa. Vivamus faucibus elementum bibendum. Donec dignissim tincidunt ipsum, ac auctor orci euismod ut. Nunc ut dolor quis quam vestibulum accumsan at eu magna.</p>
-      						</div>
+                <div class="terms-container">   						 
+                  <p><strong>SOFTWARE: Regulus Workspaces</strong></p>
+                      <p>IMPORTANT – THIS SOFTWARE IS A TECHNICAL PREVIEW, AND NOT A GENERALLY RELEASED PRODUCT. IN ADDITION, THIS LICENSE WILL ONLY BE IN EFFECT UNTIL JULY 31, 2023.</p>			
+                      <p><strong>IMPORTANT - READ THIS AGREEMENT CAREFULLY BEFORE INSTALLING, DOWNLOADING, OR USING THE SOFTWARE. TERADATA WILL LICENSE THE APPLICABLE SOFTWARE TO YOU ONLY IF YOU ACCEPT THE TERMS AND CONDITIONS OF THIS AGREEMENT AND MEET THE CONDITIONS OF THIS AGREEMENT. BY INSTALLING, DOWNLOADING, OR USING THE SOFTWARE (AS APPLICABLE), YOU (1) AGREE TO THE TERMS AND CONDITIONS OF THIS AGREEMENT, AND (2) REPRESENT AND WARRANT THAT YOU POSSESS THE AUTHORITY TO ENTER INTO THIS AGREEMENT ON BEHALF OF YOU, YOUR EMPLOYER (WHEN ACTING ON BEHALF OF YOUR EMPLOYER), AND/OR A TERADATA-AUTHORIZED LICENSEE (WHEN YOU AND YOUR EMPLOYER ARE ACTING ON BEHALF OF A TERADATA-AUTHORIZED LICENSEE). IF YOU DO NOT AGREE TO THE TERMS AND CONDITIONS OF THIS AGREEMENT, DO NOT INSTALL, DOWNLOAD, OR USE THE SOFTWARE.</strong></p>
+                      <p>This License Agreement (“Agreement”) is a legal contract between you (both as an individual and on behalf of your employer and any Teradata-authorized licensee for whom you and/or your employer is acting on their behalf) and Teradata Operations, Inc. ("Teradata") for the applicable Teradata software product, which consists of computer software code in object code form only, as well as associated media, printed materials, and online or electronic documentation (collectively, the “Software”). The term “Software” also includes any and all error corrections, bug fixes, updates, upgrades, or new versions or releases of the Software (collectively and individually, “Enhancements”) that Teradata may elect in its sole discretion to provide you. Teradata is under no obligation to provide you with Enhancements under this Agreement. By accepting this Agreement, you represent and warrant that you possess the authority to enter into this Agreement on behalf of yourself, and/or on behalf of your employer and any Teradata-authorized licensee for whom you and/or your employer are acting on their behalf. As used in this Agreement, the terms "you", "your" and "yours" collectively and individually refer to you as an individual and to your employer, as well as such Teradata-authorized licensee.</p>
+                      <p>1. <strong>Term.</strong> This Agreement commences on the earliest date of the first download, first copying, first installation, or first use of the Software. This Agreement, including your license to the Software, will expire or terminate on the earlier of (i) the expiration or termination of any applicable underlying agreement between you and Teradata (such as a partnership or customer agreement) or (ii) termination in accordance with the terms of this Agreement.</p>
+                      <p>2. <strong>License.</strong> Subject to your compliance with all of the terms and conditions of this Agreement and only during the term of this Agreement, Teradata grants you a nonexclusive, nontransferable, term license to access, install and use the Software.</p>
+                      <p>The term "Third Party Software" means computer programs or modules (including their documentation) that bear the logo, copyright and/or trademark of a third party (including open source software that are contained in files marked as “open source” or the like) or are otherwise subject to written license terms of a third party. Third Party Software does not constitute Software. Third Party Software is licensed to you subject to the applicable license terms accompanying it, included in/with it, referenced in it, or otherwise entered into by you with respect to it.</p>
+                      <p>You will not sell, copy, rent, loan, modify, transfer, disclose, embed, sublicense, create derivative works of or distribute the Software, in whole or in part, without Teradata’s prior written consent. You are granted no rights to obtain or use the Software’s source code. You will not reverse-assemble, reverse compile or reverse-engineer the Software, except as expressly permitted by applicable law without the possibility of contractual waiver. Notwithstanding anything to the contrary, you do not have any license, right, or authority to subject the Software, in whole or in part or as part of a larger work, to any terms of any other agreement, including GNU Public Licenses.</p>
+                      <p>No license rights to the Software will be implied. The Software, which includes all copies thereof (whether in whole or in part), is and remains the exclusive property of Teradata and its licensors. You will ensure that all copies of the Software contain Teradata's and its licensors' copyright notices, as well as all other proprietary legends. Teradata reserves the right to inspect your use of the Software for purposes of verifying your compliance with the terms and conditions of this Agreement. If applicable, such right will be conducted according to any audit provisions that might exist in an underlying agreement between you and Teradata.</p>
+                      <p>The Software may contain a disabling device that will prevent the Software from being used on data sets larger than a certain size. You agree not to: (i) use the Software on data sets larger than such or (ii) disable or circumvent any disabling device contained in the Software.</p>
+                      <p>3. <strong>Responsibilities and Support.</strong> You are responsible for the installation of the Software, as well as for providing data security and backup operations. This Agreement does not require Teradata to provide you with any Enhancements, consulting services, technical assistance, installation, training, support, or maintenance of any kind (collectively and individually, “Services”). To the extent that Teradata elects to provide you with any Services, such Services are provided to you at Teradata’s sole discretion and may be modified or discontinued at any time for any reason. In particular, Teradata may, at its sole discretion, provide an email address or other forum where you can submit questions or issues related to the Software.</p>
+                      <p>4. <strong>DISCLAIMER OF WARRANTY.</strong> TERADATA: (A) PROVIDES SERVICES (IF ANY), (B) LICENSES THE SOFTWARE, AND (C) PROVIDES THIRD PARTY SOFTWARE TO YOU HEREUNDER ON AN “AS-IS” BASIS WITHOUT WARRANTIES OF ANY KIND (ORAL OR WRITTEN, EXPRESS OR IMPLIED, OR STATUTORY). WITHOUT LIMITATION TO THE FOREGOING, THERE ARE NO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. TERADATA DOES NOT WARRANT THAT THE SOFTWARE, THIRD PARTY SOFTWARE, OR SERVICES WILL MEET YOUR REQUIREMENTS OR CONFORM TO ANY SPECIFICATIONS, OR THAT THE OPERATION OF THE SOFTWARE OR THIRD PARTY SOFTWARE WILL BE UNINTERRUPTED OR ERROR FREE. YOU BEAR THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY, AND RESULTS OBTAINED FROM THE SOFTWARE, THIRD PARTY SOFTWARE, AND SERVICES.</p>        						
+                      <p>SOME JURISDICTIONS RESTRICT DISCLAIMERS OF WARRANTY, SO THE ABOVE DISCLAIMERS MAY NOT FULLY APPLY TO YOU.</p>
+                      <p>5. <strong>LIMITATIONS ON LIABILITY:</strong> UNDER NO CIRCUMSTANCES WILL TERADATA’S AND ITS LICENSORS’ TOTAL CUMULATIVE LIABILITY FOR CLAIMS RELATING TO THIS AGREEMENT, THE SERVICES, THE SOFTWARE, AND/OR THIRD PARTY SOFTWARE (WHETHER BASED IN CONTRACT, STATUTE, OR TORT (INCLUDING NEGLIGENCE) OR OTHERWISE) EXCEED US$10,000; PROVIDED, HOWEVER, THAT THE FOREGOING WILL NOT APPLY TO CLAIMS FOR (I) PERSONAL INJURY, INCLUDING DEATH, TO THE EXTENT CAUSED BY TERADATA'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT; OR (II) PHYSICAL DAMAGE TO TANGIBLE REAL OR PERSONAL PROPERTY TO THE EXTENT CAUSED BY TERADATA'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT EQUAL TO THE AMOUNT OF DIRECT DAMAGES UP TO ONE MILLION DOLLARS PER OCCURRENCE. IN NO EVENT WILL TERADATA OR ITS LICENSORS BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL DAMAGES, OR FOR LOSS OF PROFITS, REVENUE, TIME, OPPORTUNITY, OR DATA, EVEN IF INFORMED OF THE POSSIBILITY OF SUCH DAMAGES.</p>            						
+                      <p>SOME JURISDICTIONS RESTRICT LIMITATIONS OF LIABILITY, SO THE ABOVE LIMITATIONS MAY NOT FULLY APPLY TO YOU.</p>
+                      <p>6. <strong>Government Restrictions.</strong> You agree that you will not, directly or indirectly, export or transmit any Software without obtaining Teradata’s prior written authorization, as well as appropriate governmental approvals, including those required by the U.S. Government. Use and or distribution of this software is subject to export laws and regulations of the United States and other jurisdictions. The links below connect you to applicable U.S. government agencies, and their regulations, that have jurisdiction over this transaction.</p>            						
+                      <p>
+                        <a href="http://www.bis.doc.gov/">http://www.bis.doc.gov/</a></br>
+                        <a href="http://www.treas.gov/offices/enforcement/ofac/">http://www.treas.gov/offices/enforcement/ofac/</a> 
+                      </p>          						
+                      <p>By installing, downloading, or using this product, you acknowledge that this transaction is subject to applicable export control laws and you certify that your installation, download, use and/or subsequent distribution of this product is not prohibited under applicable laws and regulations.</p>            						
+                      <p>The Government’s use, duplication, or disclosure of Teradata’s commercial computer software and commercial computer software documentation is subject to: (a) the Restricted Rights Notice set forth in 48 C.F.R. ¶ 52.227-14 (Rights In Data - General); (b) Teradata’s standard commercial license rights supplemented by 48 C.F.R. ¶ 52.227-19 (Commercial Computer Software - Restricted Rights); and/or (c) the limited rights and license set forth 48 CFR ¶ 252.227-7015 (Technical Data–Commercial Items), as applicable.</p>
+                      <p>7. <strong>Termination and Expiration.</strong> A party may terminate this Agreement with or without cause, upon providing written notice to the other parties. When this Agreement terminates or expires, you will immediately cease all use of the Software, permanently remove the Software from all computers, destroy all copies of the Software, and (upon receipt of Teradata’s request) provide a signed written certification that the foregoing has occurred. Sections 4-11 will survive expiration or termination of this Agreement.</p>     
+                      <p>8. <strong>Choice of Law and Dispute Resolution.</strong> The parties will attempt in good faith to resolve any controversy or claim by negotiation or mediation. If they are unable to do so, and regardless of the causes of action alleged and whether they arise under this Agreement or otherwise, the claim will be resolved by arbitration before a sole arbitrator in San Diego, California pursuant to the then-current Commercial Rules of the American Arbitration Association and the federal substantive and procedural law of arbitration. The arbitrator’s award will be final and binding, and may be entered in any court having jurisdiction thereof, but may include only damages consistent with the limitations in this Agreement. Each party will bear its own attorney's fees and costs related to the arbitration. The obligations to negotiate, mediate and arbitrate shall not apply to claims for misuse or infringement of a party’s intellectual property rights. Any claim or action must be brought within two years after the claimant knows or should have known of the claim. New York law will govern the interpretation and enforcement of this Agreement, except that the Federal Arbitration Act will govern the interpretation and enforcement of the arbitrability of claims under this Section.</p>            						
+                      <p>9. <strong>Feedback.</strong> Notwithstanding anything to the contrary: (a) Teradata will have no obligation of any kind with respect to any Software-related comments, suggestions, design changes or improvements that you elect to provide to Teradata in either verbal or written form (collectively, “Software Feedback”), and (b) Teradata and its affiliates are hereby free to use any ideas, concepts, know-how or techniques, in whole or in part, contained in Software Feedback: (i) for any purpose whatsoever, including developing, manufacturing, and/or marketing products and/or services incorporating Software Feedback in whole or in part, and (ii) without any restrictions or limitations, including requiring the payment of any license fees, royalties, or other consideration.</p>
+                      <p>10. <strong>Confidentiality.</strong> You will not disclose the results of any testing or evaluations, including any benchmarks, insofar as it relates to the Software without Teradata’s prior written consent.</p>     
+                      <p>11. <strong>Entire Agreement.</strong> This Agreement and the terms of use for the site from which you downloaded the Software (“General Terms of Use”) constitute the entire understanding of the parties with respect to the Software and Services (if any), and supersede all other prior agreements and understandings whether oral or written. In the event of a conflict between this Agreement and the General Terms of Use, this Agreement will prevail with respect to the subject matter hereof. No oral representation or change to this Agreement will be binding upon either party unless agreed to in writing and signed by authorized representatives of all parties. You will not assign this Agreement or your rights, nor will you delegate your obligations under this Agreement. Failure by either party to enforce any term or condition of this Agreement will not be deemed a waiver of future enforcement of that or any other term or condition. The provisions of this Agreement are severable. "Include", "includes", and "including" shall be interpreted as introducing a list of examples which do not limit the generality of any preceding words or any words in the list of examples.</p>             						         						        						        						        						
+                    </div>
     					</div>
    						<div class="modal-footer">
       						<button id="modal-cancel" class="cancel-btn">Cancel</button>
@@ -303,7 +565,7 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
     					</div>
   					</div>
 				</div>
-				
+    
 				<!--END TERMS MODAL-->
 
 
@@ -609,8 +871,6 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
     </div>
   </div>
 </section>
-<script type="text/javascript" src="https://developers.teradata.com/assets/js/behavior.js"></script>  
-<script type="text/javascript" src="https://developers.teradata.com/assets/js/show-slides.js"></script>  
-<script type="text/javascript" src="https://developers.teradata.com/assets/js/open-link.js"></script>
+<script type="text/javascript" src="../assets/scripts/behavior.js"></script>  
 </body>
 </html>

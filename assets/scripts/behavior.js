@@ -68,6 +68,7 @@
   pageReady(function() {
     enableMobileMenu();
     enableTermsModal();
+    enableFormSubmission();
   });
 
   function enableMobileMenu() {
@@ -116,6 +117,25 @@
       }
     }
     window.addEventListener('resize', checkWidth);
+  }
+
+  function enableFormSubmission () {
+    var form = document.querySelector('.request-access');
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var formData = new FormData(e.target);
+      var data = [...formData.entries()];
+      var body = '';
+
+      data.forEach((data)=>{
+        body += `${data[0]}=${data[1]}\n`;
+      });
+
+      window.open(`mailto:regulus.support@teradata.com?subject=Regulus developers preview waitlist request&body=${encodeURIComponent(body)}`)
+
+      location.href = 'tech-preview-confirmation.html';
+    })
   }
 
   function enableTermsModal() {
