@@ -132,9 +132,25 @@
         body += `${data[0]}=${data[1]}\n`;
       });
 
-      window.open(`mailto:regulus.support@teradata.com?subject=Regulus developers preview waitlist request&body=${encodeURIComponent(body)}`)
+      fetch('https://spm5xk5jx8.execute-api.us-east-1.amazonaws.com/prod/sendemail' ,{
+        method: 'POST',
+        body
+      }).then(function(){
+        var form = document.querySelector('form.request-access');
+        var formConfirmation = document.querySelector('.form-confirmation');
 
-      location.href = 'tech-preview-confirmation.html';
+        form.classList.add('hidden')
+        formConfirmation.classList.add('visible');
+
+        setTimeout(function(){
+          var checkmark = document.querySelector('.circle-loader');
+          var hiddenText = document.querySelector('.hidden-text');
+          checkmark.classList.add("load-complete");
+          hiddenText.classList.add("visible");
+        }, 1500);
+
+      });
+
     })
   }
 
