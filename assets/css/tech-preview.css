@@ -101,6 +101,14 @@ a:hover {
   position: relative;
 }
 
+.split-layout .cover a {
+  color: rgb(255, 255, 255, 60%);
+  text-decoration: underline;
+}
+.split-layout .cover a:hover {
+  color: #007373;
+}
+
 .split-layout .cover h1 {
   color: rgba(255, 255, 255, 0.87);
 }
@@ -585,6 +593,10 @@ button:disabled,
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+}
+
+.split-layout .cover a.cta-btn-secondary {
+  text-decoration: none;
 }
 
 .cta-btn-secondary:hover {
