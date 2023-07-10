@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MH978LC');</script>
+  <!-- End Google Tag Manager -->  
+<meta charset="utf-8">
+<link href="https://www.teradata.com/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Primary Meta Tags -->
+<title>Teradata Developer Portal | Teradata for Developers</title>
+
+
+<meta name="title" content="Teradata Developer Portal | Teradata for Developers">
+<meta name="description" content="Build innovative solutions with the most powerful analytical platform on the planet. Get Started with Vantage, Browse technical Docs and Download useful assets.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.developers.teradata.com">
+<meta property="og:title" content="Teradata Developer Portal | Teradata for Developers">
+<meta property="og:description" content="Build innovative solutions with the most powerful analytical platform on the planet. Get Started with Vantage, Browse technical Docs and Download useful assets.">
+<meta property="og:image" content="https://developers.teradata.com/assets/images/developer-portal-preview.png" />
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="336" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.developers.teradata.com">
+<meta property="twitter:title" content="Teradata Developer Portal | Teradata for Developers">
+<meta property="twitter:description" content="Build innovative solutions with the most powerful analytical platform on the planet. Get Started with Vantage, Browse technical Docs and Download useful assets.">
+<meta property="twitter:image" content="https://developers.teradata.com/assets/images/developer-portal-preview.png" />
+
+<meta name="twitter:site" content="@teradata" />
+<meta name="keywords" content="Teradata developer, developer community, developer documentation, developer forum, vantage drivers, apis, application platform, analytical functions">
+<link rel="alternate" type="application/rss+xml" title="RSS feed for Teradata Press Releases" href="https://www.teradata.com/rss/News" />
+<link rel="alternate" type="application/rss+xml" title="RSS feed for Teradata Blogs" href="https://www.teradata.com/rss/Blogs" />
+
+<link rel="stylesheet" href="https://developers.teradata.com/assets/css/site.css">
+<link rel="stylesheet" href="https://developers.teradata.com/assets/css/navbar.css">
+<link rel="stylesheet" href="https://developers.teradata.com/assets/css/developers.css">
+<link rel="stylesheet" href="https://www.teradata.com/Content/Styles/Webfonts/load.css?token=1.2030.0.2029">
+
+<!--BEGIN CSS FOR REGULUS -->
+<link rel="stylesheet" href="../assets/css/tech-preview.css">
+<!--END CSS FOR REGULUS -->
+
+<!--BEGIN SCRIPTS FOR REGULUS -->
+<script src="assets/scripts/behavior.js" defer></script>
+<!--END SCRIPTS FOR REGULUS -->
+
+<script src="https://www.teradata.com/js/Celebrus/bsci.js" defer></script>
+
+<!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+<script type="text/javascript">
+(function(){var g=function(e,h,f,g){
+this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
+this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
+this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)}};
+this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
+try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradata.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_8octL9QmYH5wQ9o")).start()}catch(i){}})();
+</script>
+<div id="ZN_8octL9QmYH5wQ9o"><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+<!--END WEBSITE FEEDBACK SNIPPET-->  
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MH978LC" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+ 
+<!--navbar-->
+<header class="header" role="banner">
+  <nav class="navbar">
+    <section class="navbar-top">
+      <div class="navbar-logo">
+        <a href="https://www.teradata.com/">
+          <svg width="103" height="20" viewBox="0 0 696 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fit="" preserveAspectRatio="xMidYMid meet" focusable="false">
+            <title>Teradata</title>
+            <desc>Copyright Teradata</desc>
+            <defs></defs>
+            <g id="teradata" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="text" fill="#394951">
+                <path d="M78.882,72.796 L123.941,72.796 C120.763,60.83 111.788,55.595 101.878,55.595 C92.53,55.595 81.873,61.204 78.882,72.796 Z M149.182,90.184 L78.134,90.184 C80.564,103.646 90.099,111.873 101.504,111.873 C108.796,111.873 117.957,110.937 124.689,99.533 L146.751,104.206 C138.524,123.652 121.884,133 101.504,133 C75.142,133 53.64,112.994 53.64,83.64 C53.64,54.286 75.142,34.093 101.878,34.093 C126.745,34.093 148.246,53.351 149.182,81.771 L149.182,90.184 Z" id="Fill-1"></path>
+                <path d="M387.843,83.64 C387.843,66.439 374.568,55.595 361.294,55.595 C346.336,55.595 335.118,66.439 335.118,83.64 C335.118,100.841 346.336,111.498 361.294,111.498 C374.568,111.498 387.843,100.841 387.843,83.64 Z M412.523,130.195 L387.843,130.195 L387.843,122.156 C380.364,129.074 370.081,133 356.993,133 C333.248,133 311.186,112.994 311.186,83.64 C311.186,54.286 333.248,34.093 356.993,34.093 C370.081,34.093 380.364,38.019 387.843,44.937 L387.843,0.937 L412.523,0.937 L412.523,130.195 Z" id="Fill-3"></path>
+                <path d="M630.3,92.427 C630.3,104.393 618.894,113.368 605.807,113.368 C596.271,113.368 589.915,108.88 589.915,101.962 C589.915,95.606 595.149,91.306 603.003,91.306 L630.3,91.306 L630.3,92.427 Z M614.407,37.117 L614.407,37.093 L580.299,37.093 L580.299,57.658 L614.407,57.658 C623.943,57.658 630.3,61.765 630.3,71.113 L630.3,72.61 L603.377,72.61 C579.818,72.61 566.356,84.576 566.356,102.524 C566.356,120.846 580.566,133 601.881,133 C614.595,133 623.943,128.7 630.3,122.53 L630.3,130.195 L653.858,130.195 L653.858,69.244 C653.858,47.082 638.243,37.617 614.407,37.117 Z" id="Fill-4"></path>
+                <path d="M484.378,92.427 C484.378,104.393 472.973,113.368 459.885,113.368 C450.349,113.368 443.992,108.88 443.992,101.962 C443.992,95.606 449.227,91.306 457.08,91.306 L484.378,91.306 L484.378,92.427 Z M468.485,37.117 L468.485,37.093 L434.377,37.093 L434.377,57.658 L468.485,57.658 C478.02,57.658 484.378,61.765 484.378,71.113 L484.378,72.61 L457.454,72.61 C433.895,72.61 420.434,84.576 420.434,102.524 C420.434,120.846 434.644,133 455.958,133 C468.672,133 478.02,128.7 484.378,122.53 L484.378,130.195 L507.935,130.195 L507.935,69.244 C507.935,47.082 492.321,37.617 468.485,37.117 Z" id="Fill-5"></path>
+                <path d="M279.3,92.427 C279.3,104.393 267.894,113.368 254.807,113.368 C245.271,113.368 238.914,108.88 238.914,101.962 C238.914,95.606 244.15,91.306 252.003,91.306 L279.3,91.306 L279.3,92.427 Z M263.408,37.117 L263.408,37.093 L229.299,37.093 L229.299,57.658 L263.408,57.658 C272.943,57.658 279.3,61.765 279.3,71.113 L279.3,72.61 L252.376,72.61 C228.818,72.61 215.356,84.576 215.356,102.524 C215.356,120.846 229.566,133 250.881,133 C263.595,133 272.943,128.7 279.3,122.53 L279.3,130.195 L302.858,130.195 L302.858,69.244 C302.858,47.082 287.244,37.617 263.408,37.117 Z" id="Fill-6"></path>
+                <path d="M216.11,37.026 C200.966,37.026 190.121,43.069 182.643,53.913 L182.643,36.899 L157.963,36.899 L157.963,130.197 L182.643,130.197 L182.643,100.095 C182.643,74.106 193.113,57.776 215.923,57.776 L217.044,57.776 L217.044,37.029 C216.741,37.027 216.431,37.026 216.11,37.026" id="Fill-7"></path>
+                <path d="M48.982,107.707 C45.229,109.115 41.291,110.002 38.328,110.002 C30.102,110.002 24.68,105.142 24.68,93.923 L24.68,57.09 L49.982,57.09 L49.982,36.898 L24.68,36.898 L24.68,14.007 L0,14.007 L0,95.793 C0,121.408 14.584,133 36.646,133 C44.438,133 51.879,131.338 61.481,126.199 C56.364,121.123 51.667,114.8 48.982,107.707" id="Fill-8"></path>
+                <path d="M558.509,109.788 C557.521,109.926 556.586,110.002 555.733,110.002 C547.507,110.002 542.085,105.142 542.085,93.923 L542.085,57.09 L568.068,57.09 L568.068,36.898 L542.085,36.898 L542.085,14.007 L517.404,14.007 L517.404,95.793 C517.404,121.408 531.988,133 554.051,133 C559.44,133 564.302,132.206 569.964,130.017 C562.645,124.774 559.799,116.281 558.509,109.788" id="Fill-9"></path>
+              </g>
+              <path d="M695.029,116.028 C695.029,124.853 688.257,131.624 678.817,131.624 C669.377,131.624 662.605,124.853 662.605,116.028 C662.605,107.615 669.377,100.227 678.817,100.227 C688.257,100.227 695.029,107.615 695.029,116.028" id="Fill-11" fill="#E46C42"></path>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class="navbar-brand">
+        <a class="navbar-item dev-link font" href="https://developers.teradata.com/">Developers</a>
+      </div>
+      <button class="header-nav-mobile__menu-icon" role="button" aria-label="Click or Press enter to open menu" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </section>
+    <section class="navbar-menu">
+      <div class="header-nav-mobile__menu">
+        <ul>
+          <li class="header-nav-mobile__menu-item">
+            <header class="header-nav-mobile__menu-item__header">
+              <a href="https://quickstarts.teradata.com/" class="font nav-link">Getting Started</a>
+            </header>
+          </li>
+          <li class="header-nav-mobile__menu-item has-sub-items">
+            <header class="header-nav-mobile__menu-item__header i-alignment">
+              <a href="https://docs.teradata.com/">Docs</a>
+              <img class="navbar-arrow" src="https://developers.teradata.com/assets/images/icons/arrow_drop_down.svg" alt="down arrow" title="Docs">
+            </header>
+            <div>
+              <div class="header-nav-mobile__menu-item__links">
+                <ul class="ul-color">
+                  <li><a href="https://docs.teradata.com/p/VantageCloud/Lake" class="dropdown-item">VantageCloud Lake Documentation</a></li>
+                  <li><a href="https://docs.teradata.com/" class="dropdown-item">All Documentation</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header-nav-mobile__menu-item">
+            <header class="header-nav-mobile__menu-item__header">
+              <a href="https://downloads.teradata.com/" class="nav-link">Downloads</a>
+            </header>
+          </li>
+          <li class="header-nav-mobile__menu-item has-sub-items">
+            <header class="header-nav-mobile__menu-item__header i-alignment">
+              <a href="https://support.teradata.com/community ">Community</a>
+              <img class="navbar-arrow" src="https://developers.teradata.com/assets/images/icons/arrow_drop_down.svg" alt="down arrow" title="Community">
+            </header>
+            <div>
+              <div class="header-nav-mobile__menu-item__links">
+                <ul class="ul-color">
+                  <li>
+                    <a href="https://support.teradata.com/community?_gl=1*1uhhzsp*_ga*MTU2NjYwMTU5OC4xNjYxNDc0NDcz*_ga_7PE2TMW3FE*MTY3NDI0NDY1Mi4zNS4wLjE2NzQyNDQ2NTUuMC4wLjA." class="dropdown-item">Teradata Community</a>
+                  </li>
+                  <li>
+                    <a href="https://medium.com/teradata" title="Technical Medium Blogs" target="_blank" class="dropdown-item">Technical Medium Blogs
+                      <img src="https://developers.teradata.com/assets/images/icons/external-symbol.svg" class="ext-symbol">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Teradata" title="Teradata on GitHub" target="_blank" class="dropdown-item">GitHub
+                      <img src="https://developers.teradata.com/assets/images/icons/external-symbol.svg" class="ext-symbol">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://stackoverflow.com/questions/tagged/teradata" title="Stack Overflow Teradata questions" target="_blank" class="dropdown-item">Stack Overflow
+                      <img src="https://developers.teradata.com/assets/images/icons/external-symbol.svg" class="ext-symbol">
+                    </a>
+                  </li>               
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </nav>
+  <div class="page-blackout" tabindex="-1" aria-hidden="true"></div>
+</header>
+<!--navbar-->
+
+
+
+
+
+
+<!--BEGIN CONTENT-->
+
+<main class="main-content tech-preview" role="main">
+  <section class="page-content">
+
+    <article class="split-layout">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 order-1 cover">
+            <div class="container-sm">
+
+              <h1>Regulus</h1>
+              <h2>Technical Preview</h2>
+              <p>Made for explorers and built for the cloud. Regulus is an on-demand self-service analytical engine that rapidly deploys using workspaces enabling you to explore and analyze large-scale external datasets in minutes. Regulus leverages Teradata <span style="text-wrap:nowrap;">in-database</span> analytic functions to enable machine learning and mathematical simulation.</p>
+              <ul>
+                <li>Quick self-setup - start using in minutes!</li>
+                <li>Seamless integration with Jupyter and GitHub</li>
+                <li>Easily move data insights and analytics models you create with Regulus into production with Teradata Vantage.</li>
+              </ul>
+              <p>Throughout the preview, you will be invited to share feedback directly with the team and ask questions <a href="https://support.teradata.com/community?id=community_forum&sys_id=b0aba91597c329d0e6d2bd8c1253affa">via the community forum.</a></p>
+              <p>The Technical Preview will end on August 31, 2023.</p>
+            
+              <a class="cta-btn-secondary" href="https://quickstarts.teradata.com/regulus/install-regulus-docker-image.html">Documentation</a>
+
+            </div>
+          </div>
+          <div class="col-md-6 order-2">
+            <div class="container-sm">
+            
+                <!--BEGIN FORM-->
+                <form class="request-access">
+                
+                  <h2 class="form-title">Request access to Regulus</h2>
+                  <div class="input-field">
+                    <label for="email" class="required">Email</label>
+                    <input id="email" type="email" class="validate" name="email" required="true">
+                  </div>
+                
+                  <div class="input-field">
+                    <label for="first_name" class="required">First name</label>
+                    <input id="first_name" type="text" class="validate" name="firstName" required>
+                  </div>
+                
+                  <div class="input-field">
+                    <label for="last_name" class="required">Last name</label>
+                    <input id="last_name" type="text" class="validate" name="lastName" required>
+                  </div>
+                
+                  <div class="input-field">
+                    <label for="company" class="required">Company</label>
+                    <input id="company" type="text" class="validate" name="company" required>
+                  </div>
+                
+                  <div class="input-field">
+                    <label for="job_title">Job title</label>
+                    <input id="job_title" type="text" class="validate" name="job">
+                  </div>
+                
+                  <div class="input-field form-type-select">
+                    <label class="required">Country</label>
+                
+                    <select name="country" required>
+                      <option value="">-- Please Select --</option>
+                      <option value="US">USA</option>
+                      <option value="CA">Canada</option>
+                      <option value="GB">United Kingdom</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                      <option value="CN">China</option>
+                      <option value="JP">Japan</option>
+                      <option value="AU">Australia</option>
+                      <option value="AF">Afghanistan</option>
+                      <option value="AX">Aland Islands</option>
+                      <option value="AL">Albania</option>
+                      <option value="DZ">Algeria</option>
+                      <option value="AS">American Samoa</option>
+                      <option value="AD">Andorra</option>
+                      <option value="AO">Angola</option>
+                      <option value="AI">Anguilla</option>
+                      <option value="AQ">Antarctica</option>
+                      <option value="AG">Antigua/Barbuda</option>
+                      <option value="AR">Argentina</option>
+                      <option value="AM">Armenia</option>
+                      <option value="AW">Aruba</option>
+                      <option value="AT">Austria</option>
+                      <option value="AZ">Azerbaijan</option>
+                      <option value="BS">Bahamas</option>
+                      <option value="BH">Bahrain</option>
+                      <option value="BD">Bangladesh</option>
+                      <option value="BB">Barbados</option>
+                      <option value="BY">Belarus</option>
+                      <option value="BE">Belgium</option>
+                      <option value="BZ">Belize</option>
+                      <option value="BJ">Benin</option>
+                      <option value="BM">Bermuda</option>
+                      <option value="BT">Bhutan</option>
+                      <option value="BO">Bolivia</option>
+                      <option value="BA">Bosnia/Herzegovina</option>
+                      <option value="BW">Botswana</option>
+                      <option value="BV">Bouvet Islands</option>
+                      <option value="BR">Brazil</option>
+                      <option value="IO">Brit Ind Ocean Terr</option>
+                      <option value="BN">Brunei Darussal</option>
+                      <option value="BG">Bulgaria</option>
+                      <option value="BF">Burkina Faso</option>
+                      <option value="BI">Burundi</option>
+                      <option value="KH">Cambodia</option>
+                      <option value="CM">Cameroon</option>
+                      <option value="CV">Cape Verde</option>
+                      <option value="KY">Cayman Islands</option>
+                      <option value="CF">Cent African Rep</option>
+                      <option value="TD">Chad</option>
+                      <option value="CL">Chile</option>
+                      <option value="CX">Christmas Islands</option>
+                      <option value="CC">Cocos (Keeling)</option>
+                      <option value="CO">Colombia</option>
+                      <option value="KM">Comoros</option>
+                      <option value="CG">Congo</option>
+                      <option value="CD">Congo, Dem Rep</option>
+                      <option value="CK">Cook Islands</option>
+                      <option value="CR">Costa Rica</option>
+                      <option value="HR">Croatia</option>
+                      <option value="CU">Cuba</option>
+                      <option value="CW">Curacao</option>
+                      <option value="CY">Cyprus</option>
+                      <option value="CZ">Czech Republic</option>
+                      <option value="DK">Denmark</option>
+                      <option value="DJ">Djibouti</option>
+                      <option value="DO">Dom Rep</option>
+                      <option value="DM">Dominica</option>
+                      <option value="EC">Ecuador</option>
+                      <option value="EG">Egypt</option>
+                      <option value="SV">El Salvador</option>
+                      <option value="GQ">Equat Guinea</option>
+                      <option value="ER">Eritrea</option>
+                      <option value="EE">Estonia</option>
+                      <option value="ET">Ethiopia</option>
+                      <option value="FK">Falkland Islands</option>
+                      <option value="FO">Faroe Islands</option>
+                      <option value="FJ">Fiji</option>
+                      <option value="FI">Finland</option>
+                      <option value="PF">Fr Polynesia</option>
+                      <option value="TF">Fr Southern Terr</option>
+                      <option value="GF">French Guiana</option>
+                      <option value="GA">Gabon</option>
+                      <option value="GM">Gambia</option>
+                      <option value="GE">Georgia</option>
+                      <option value="GH">Ghana</option>
+                      <option value="GI">Gibraltar</option>
+                      <option value="GR">Greece</option>
+                      <option value="GL">Greenland</option>
+                      <option value="GD">Grenada</option>
+                      <option value="GP">Guadeloupe</option>
+                      <option value="GU">Guam</option>
+                      <option value="GT">Guatemala</option>
+                      <option value="GG">Guernsey</option>
+                      <option value="GN">Guinea</option>
+                      <option value="GW">Guinea-Bissau</option>
+                      <option value="GY">Guyana</option>
+                      <option value="HT">Haiti</option>
+                      <option value="HM">Heard/McDonald Isl</option>
+                      <option value="HN">Honduras</option>
+                      <option value="HK">Hong Kong</option>
+                      <option value="HU">Hungary</option>
+                      <option value="IS">Iceland</option>
+                      <option value="IN">India</option>
+                      <option value="ID">Indonesia</option>
+                      <option value="IR">Iran</option>
+                      <option value="IQ">Iraq</option>
+                      <option value="IE">Ireland</option>
+                      <option value="IM">Isle of Man</option>
+                      <option value="IL">Israel</option>
+                      <option value="IT">Italy</option>
+                      <option value="CI">Ivory Coast</option>
+                      <option value="JM">Jamaica, W.I.</option>
+                      <option value="JE">Jersey</option>
+                      <option value="JO">Jordan</option>
+                      <option value="KZ">Kazakhstan</option>
+                      <option value="KE">Kenya</option>
+                      <option value="KI">Kiribati</option>
+                      <option value="KW">Kuwait</option>
+                      <option value="KG">Kyrgyzstan</option>
+                      <option value="LA">Laos</option>
+                      <option value="LV">Latvia</option>
+                      <option value="LB">Lebanon</option>
+                      <option value="LS">Lesotho</option>
+                      <option value="LR">Liberia</option>
+                      <option value="LY">Libya</option>
+                      <option value="LI">Liechtenstein</option>
+                      <option value="LT">Lithuania</option>
+                      <option value="LU">Luxembourg</option>
+                      <option value="MO">Macau</option>
+                      <option value="MK">Macedonia</option>
+                      <option value="MG">Madagascar</option>
+                      <option value="MW">Malawi</option>
+                      <option value="MY">Malaysia</option>
+                      <option value="MV">Maldives</option>
+                      <option value="ML">Mali</option>
+                      <option value="MT">Malta</option>
+                      <option value="MH">Marshall Islands</option>
+                      <option value="MQ">Martinique</option>
+                      <option value="MR">Mauritania</option>
+                      <option value="MU">Mauritius</option>
+                      <option value="YT">Mayotte</option>
+                      <option value="MX">Mexico</option>
+                      <option value="FM">Micronesia</option>
+                      <option value="MD">Moldova</option>
+                      <option value="MC">Monaco</option>
+                      <option value="MN">Mongolia</option>
+                      <option value="ME">Montenegro</option>
+                      <option value="MS">Montserrat</option>
+                      <option value="MA">Morocco</option>
+                      <option value="MZ">Mozambique</option>
+                      <option value="MM">Myanmar</option>
+                      <option value="NA">Namibia</option>
+                      <option value="NR">Nauru</option>
+                      <option value="NP">Nepal</option>
+                      <option value="AN">Neth Antilles</option>
+                      <option value="NL">Netherlands</option>
+                      <option value="NC">New Caledonia</option>
+                      <option value="NZ">New Zealand</option>
+                      <option value="NI">Nicaragua</option>
+                      <option value="NE">Niger</option>
+                      <option value="NG">Nigeria</option>
+                      <option value="NU">Niue</option>
+                      <option value="MP">No Marianas</option>
+                      <option value="NF">Norfolk Island</option>
+                      <option value="KP">North Korea</option>
+                      <option value="NO">Norway</option>
+                      <option value="OM">Oman</option>
+                      <option value="PK">Pakistan</option>
+                      <option value="PW">Palau</option>
+                      <option value="PS">Palestinian Terr</option>
+                      <option value="PA">Panama</option>
+                      <option value="PG">Papua New Guinea</option>
+                      <option value="PY">Paraguay</option>
+                      <option value="PE">Peru</option>
+                      <option value="PH">Philippines</option>
+                      <option value="PN">Pitcairn</option>
+                      <option value="PL">Poland</option>
+                      <option value="PT">Portugal</option>
+                      <option value="PR">Puerto Rico</option>
+                      <option value="QA">Qatar</option>
+                      <option value="KR">Rep of Korea</option>
+                      <option value="RE">Reunion</option>
+                      <option value="RO">Romania</option>
+                      <option value="RU">Russia</option>
+                      <option value="RW">Rwanda</option>
+                      <option value="BL">Saint Barthelemy</option>
+                      <option value="SH">Saint Helena</option>
+                      <option value="LC">Saint Lucia</option>
+                      <option value="MF">Saint Martin</option>
+                      <option value="SM">San Marino</option>
+                      <option value="ST">Sao Tome/Principe</option>
+                      <option value="SA">Saudi Arabia</option>
+                      <option value="SN">Senegal</option>
+                      <option value="RS">Serbia</option>
+                      <option value="SC">Seychelles</option>
+                      <option value="SL">Sierra Leone</option>
+                      <option value="SG">Singapore</option>
+                      <option value="SK">Slovakia</option>
+                      <option value="SI">Slovenia</option>
+                      <option value="GS">So. Georgia/Sandwich</option>
+                      <option value="SB">Solomon Islands</option>
+                      <option value="SO">Somalia</option>
+                      <option value="ZA">South Africa</option>
+                      <option value="ES">Spain</option>
+                      <option value="LK">Sri Lanka</option>
+                      <option value="KN">St Kitts &amp; Nevis</option>
+                      <option value="PM">St Pierre &amp; Miquelon</option>
+                      <option value="VC">St Vincent/Gren</option>
+                      <option value="SD">Sudan</option>
+                      <option value="SR">Suriname</option>
+                      <option value="SJ">Svalbard/Jan</option>
+                      <option value="SZ">Swaziland</option>
+                      <option value="SE">Sweden</option>
+                      <option value="CH">Switzerland</option>
+                      <option value="SY">Syria</option>
+                      <option value="TW">Taiwan</option>
+                      <option value="TJ">Tajikistan</option>
+                      <option value="TZ">Tanzania</option>
+                      <option value="TH">Thailand</option>
+                      <option value="TL">Timor-Leste</option>
+                      <option value="TG">Togo</option>
+                      <option value="TK">Tokelau</option>
+                      <option value="TO">Tonga</option>
+                      <option value="TT">Trinidad &amp; Tobago</option>
+                      <option value="TN">Tunisia</option>
+                      <option value="TR">Turkey</option>
+                      <option value="TM">Turkmenistan</option>
+                      <option value="TC">Turks and Caicos</option>
+                      <option value="TV">Tuvalu</option>
+                      <option value="AE">UAE</option>
+                      <option value="UG">Uganda</option>
+                      <option value="UA">Ukraine</option>
+                      <option value="UY">Uruguay</option>
+                      <option value="UM">US Minor Out Isls</option>
+                      <option value="UZ">Uzbekistan</option>
+                      <option value="VU">Vanuatu</option>
+                      <option value="VA">Vatican</option>
+                      <option value="VE">Venezuela</option>
+                      <option value="VN">Vietnam</option>
+                      <option value="VG">Virgin Isl (Brit)</option>
+                      <option value="VI">Virgin Isl (US)</option>
+                      <option value="WF">Wallis/Futuna</option>
+                      <option value="EH">Western Sahara</option>
+                      <option value="WS">Western Samoa</option>
+                      <option value="YE">Yemen</option>
+                      <option value="ZM">Zambia</option>
+                      <option value="ZW">Zimbabwe</option>
+                    </select>
+                  </div>
+                
+                  <div class="input-checkbox">
+                    <input type="checkbox" id="updates-checkbox" class="filled-in" checked="checked" name="updates" />
+                    <label for="updates-checkbox">I would like to receive updates on Teradata products, services, and events.</label>
+                  </div>
+                
+                  <div class="input-checkbox">
+                    <input type="checkbox" id="terms-checkbox" class="filled-in" name="terms" required />
+                    <label for="terms-checkbox">I agree to the <a class="terms" id="open-terms" href="">terms and conditions</a></label>
+                  </div>
+                
+                  <div class="btn-container">
+                    <a href="index.html" class="cancel-btn">Cancel</a>
+                    <input type="submit" id="submit" name="submit" value="Send Request" class="cta-btn">
+                  </div>
+                </form>
+                <!--END FORM-->
+                <!--BEGIN FORM CONFIRMATION-->
+                <div class="form-confirmation">
+                  <div class="confirm-message">
+                    <div class="circle-loader">
+                      <div class="checkmark draw"></div>
+                    </div>
+                    <span class="hidden-text">
+                      <h2 class="muted-grey">Request sent</h2>
+                      <p>Thank you! Our team will reach out to you shortly.</p>
+                    </span>
+                  </div>
+                </div>
+                <!--END FORM CONFIRMATION-->
+				<!--BEGIN TERMS MODAL-->
+      		
+					<div id="terms-modal" class="terms-modal">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h2>Terms of Use</h2>
+								<button id="modal-close" class="close-btn">Close</button>
+    						</div>
+    					<div class="modal-body">
+                <div class="terms-container">   						 
+                  <p><strong>SOFTWARE: Regulus Workspaces</strong></p>
+                      <p>IMPORTANT – THIS SOFTWARE IS A TECHNICAL PREVIEW, AND NOT A GENERALLY RELEASED PRODUCT. IN ADDITION, THIS LICENSE WILL ONLY BE IN EFFECT UNTIL AUGUST 31, 2023.</p>			
+                      <p><strong>IMPORTANT - READ THIS AGREEMENT CAREFULLY BEFORE INSTALLING, DOWNLOADING, OR USING THE SOFTWARE. TERADATA WILL LICENSE THE APPLICABLE SOFTWARE TO YOU ONLY IF YOU ACCEPT THE TERMS AND CONDITIONS OF THIS AGREEMENT AND MEET THE CONDITIONS OF THIS AGREEMENT. BY INSTALLING, DOWNLOADING, OR USING THE SOFTWARE (AS APPLICABLE), YOU (1) AGREE TO THE TERMS AND CONDITIONS OF THIS AGREEMENT, AND (2) REPRESENT AND WARRANT THAT YOU POSSESS THE AUTHORITY TO ENTER INTO THIS AGREEMENT ON BEHALF OF YOU, YOUR EMPLOYER (WHEN ACTING ON BEHALF OF YOUR EMPLOYER), AND/OR A TERADATA-AUTHORIZED LICENSEE (WHEN YOU AND YOUR EMPLOYER ARE ACTING ON BEHALF OF A TERADATA-AUTHORIZED LICENSEE). IF YOU DO NOT AGREE TO THE TERMS AND CONDITIONS OF THIS AGREEMENT, DO NOT INSTALL, DOWNLOAD, OR USE THE SOFTWARE.</strong></p>
+                      <p>This License Agreement (“Agreement”) is a legal contract between you (both as an individual and on behalf of your employer and any Teradata-authorized licensee for whom you and/or your employer is acting on their behalf) and Teradata Operations, Inc. ("Teradata") for the applicable Teradata software product, which consists of computer software code in object code form only, as well as associated media, printed materials, and online or electronic documentation (collectively, the “Software”). The term “Software” also includes any and all error corrections, bug fixes, updates, upgrades, or new versions or releases of the Software (collectively and individually, “Enhancements”) that Teradata may elect in its sole discretion to provide you. Teradata is under no obligation to provide you with Enhancements under this Agreement. By accepting this Agreement, you represent and warrant that you possess the authority to enter into this Agreement on behalf of yourself, and/or on behalf of your employer and any Teradata-authorized licensee for whom you and/or your employer are acting on their behalf. As used in this Agreement, the terms "you", "your" and "yours" collectively and individually refer to you as an individual and to your employer, as well as such Teradata-authorized licensee.</p>
+                      <p>1. <strong>Term.</strong> This Agreement commences on the earliest date of the first download, first copying, first installation, or first use of the Software. This Agreement, including your license to the Software, will expire or terminate on the earlier of (i) the expiration or termination of any applicable underlying agreement between you and Teradata (such as a partnership or customer agreement) or (ii) termination in accordance with the terms of this Agreement.</p>
+                      <p>2. <strong>License.</strong> Subject to your compliance with all of the terms and conditions of this Agreement and only during the term of this Agreement, Teradata grants you a nonexclusive, nontransferable, term license to access, install and use the Software.</p>
+                      <p>The term "Third Party Software" means computer programs or modules (including their documentation) that bear the logo, copyright and/or trademark of a third party (including open source software that are contained in files marked as “open source” or the like) or are otherwise subject to written license terms of a third party. Third Party Software does not constitute Software. Third Party Software is licensed to you subject to the applicable license terms accompanying it, included in/with it, referenced in it, or otherwise entered into by you with respect to it.</p>
+                      <p>You will not sell, copy, rent, loan, modify, transfer, disclose, embed, sublicense, create derivative works of or distribute the Software, in whole or in part, without Teradata’s prior written consent. You are granted no rights to obtain or use the Software’s source code. You will not reverse-assemble, reverse compile or reverse-engineer the Software, except as expressly permitted by applicable law without the possibility of contractual waiver. Notwithstanding anything to the contrary, you do not have any license, right, or authority to subject the Software, in whole or in part or as part of a larger work, to any terms of any other agreement, including GNU Public Licenses.</p>
+                      <p>No license rights to the Software will be implied. The Software, which includes all copies thereof (whether in whole or in part), is and remains the exclusive property of Teradata and its licensors. You will ensure that all copies of the Software contain Teradata's and its licensors' copyright notices, as well as all other proprietary legends. Teradata reserves the right to inspect your use of the Software for purposes of verifying your compliance with the terms and conditions of this Agreement. If applicable, such right will be conducted according to any audit provisions that might exist in an underlying agreement between you and Teradata.</p>
+                      <p>The Software may contain a disabling device that will prevent the Software from being used on data sets larger than a certain size. You agree not to: (i) use the Software on data sets larger than such or (ii) disable or circumvent any disabling device contained in the Software.</p>
+                      <p>3. <strong>Responsibilities and Support.</strong> You are responsible for the installation of the Software, as well as for providing data security and backup operations. This Agreement does not require Teradata to provide you with any Enhancements, consulting services, technical assistance, installation, training, support, or maintenance of any kind (collectively and individually, “Services”). To the extent that Teradata elects to provide you with any Services, such Services are provided to you at Teradata’s sole discretion and may be modified or discontinued at any time for any reason. In particular, Teradata may, at its sole discretion, provide an email address or other forum where you can submit questions or issues related to the Software.</p>
+                      <p>4. <strong>DISCLAIMER OF WARRANTY.</strong> TERADATA: (A) PROVIDES SERVICES (IF ANY), (B) LICENSES THE SOFTWARE, AND (C) PROVIDES THIRD PARTY SOFTWARE TO YOU HEREUNDER ON AN “AS-IS” BASIS WITHOUT WARRANTIES OF ANY KIND (ORAL OR WRITTEN, EXPRESS OR IMPLIED, OR STATUTORY). WITHOUT LIMITATION TO THE FOREGOING, THERE ARE NO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. TERADATA DOES NOT WARRANT THAT THE SOFTWARE, THIRD PARTY SOFTWARE, OR SERVICES WILL MEET YOUR REQUIREMENTS OR CONFORM TO ANY SPECIFICATIONS, OR THAT THE OPERATION OF THE SOFTWARE OR THIRD PARTY SOFTWARE WILL BE UNINTERRUPTED OR ERROR FREE. YOU BEAR THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY, AND RESULTS OBTAINED FROM THE SOFTWARE, THIRD PARTY SOFTWARE, AND SERVICES.</p>        						
+                      <p>SOME JURISDICTIONS RESTRICT DISCLAIMERS OF WARRANTY, SO THE ABOVE DISCLAIMERS MAY NOT FULLY APPLY TO YOU.</p>
+                      <p>5. <strong>LIMITATIONS ON LIABILITY:</strong> UNDER NO CIRCUMSTANCES WILL TERADATA’S AND ITS LICENSORS’ TOTAL CUMULATIVE LIABILITY FOR CLAIMS RELATING TO THIS AGREEMENT, THE SERVICES, THE SOFTWARE, AND/OR THIRD PARTY SOFTWARE (WHETHER BASED IN CONTRACT, STATUTE, OR TORT (INCLUDING NEGLIGENCE) OR OTHERWISE) EXCEED US$10,000; PROVIDED, HOWEVER, THAT THE FOREGOING WILL NOT APPLY TO CLAIMS FOR (I) PERSONAL INJURY, INCLUDING DEATH, TO THE EXTENT CAUSED BY TERADATA'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT; OR (II) PHYSICAL DAMAGE TO TANGIBLE REAL OR PERSONAL PROPERTY TO THE EXTENT CAUSED BY TERADATA'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT EQUAL TO THE AMOUNT OF DIRECT DAMAGES UP TO ONE MILLION DOLLARS PER OCCURRENCE. IN NO EVENT WILL TERADATA OR ITS LICENSORS BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL DAMAGES, OR FOR LOSS OF PROFITS, REVENUE, TIME, OPPORTUNITY, OR DATA, EVEN IF INFORMED OF THE POSSIBILITY OF SUCH DAMAGES.</p>            						
+                      <p>SOME JURISDICTIONS RESTRICT LIMITATIONS OF LIABILITY, SO THE ABOVE LIMITATIONS MAY NOT FULLY APPLY TO YOU.</p>
+                      <p>6. <strong>Government Restrictions.</strong> You agree that you will not, directly or indirectly, export or transmit any Software without obtaining Teradata’s prior written authorization, as well as appropriate governmental approvals, including those required by the U.S. Government. Use and or distribution of this software is subject to export laws and regulations of the United States and other jurisdictions. The links below connect you to applicable U.S. government agencies, and their regulations, that have jurisdiction over this transaction.</p>            						
+                      <p>
+                        <a href="http://www.bis.doc.gov/">http://www.bis.doc.gov/</a></br>
+                        <a href="http://www.treas.gov/offices/enforcement/ofac/">http://www.treas.gov/offices/enforcement/ofac/</a> 
+                      </p>          						
+                      <p>By installing, downloading, or using this product, you acknowledge that this transaction is subject to applicable export control laws and you certify that your installation, download, use and/or subsequent distribution of this product is not prohibited under applicable laws and regulations.</p>            						
+                      <p>The Government’s use, duplication, or disclosure of Teradata’s commercial computer software and commercial computer software documentation is subject to: (a) the Restricted Rights Notice set forth in 48 C.F.R. ¶ 52.227-14 (Rights In Data - General); (b) Teradata’s standard commercial license rights supplemented by 48 C.F.R. ¶ 52.227-19 (Commercial Computer Software - Restricted Rights); and/or (c) the limited rights and license set forth 48 CFR ¶ 252.227-7015 (Technical Data–Commercial Items), as applicable.</p>
+                      <p>7. <strong>Termination and Expiration.</strong> A party may terminate this Agreement with or without cause, upon providing written notice to the other parties. When this Agreement terminates or expires, you will immediately cease all use of the Software, permanently remove the Software from all computers, destroy all copies of the Software, and (upon receipt of Teradata’s request) provide a signed written certification that the foregoing has occurred. Sections 4-11 will survive expiration or termination of this Agreement.</p>     
+                      <p>8. <strong>Choice of Law and Dispute Resolution.</strong> The parties will attempt in good faith to resolve any controversy or claim by negotiation or mediation. If they are unable to do so, and regardless of the causes of action alleged and whether they arise under this Agreement or otherwise, the claim will be resolved by arbitration before a sole arbitrator in San Diego, California pursuant to the then-current Commercial Rules of the American Arbitration Association and the federal substantive and procedural law of arbitration. The arbitrator’s award will be final and binding, and may be entered in any court having jurisdiction thereof, but may include only damages consistent with the limitations in this Agreement. Each party will bear its own attorney's fees and costs related to the arbitration. The obligations to negotiate, mediate and arbitrate shall not apply to claims for misuse or infringement of a party’s intellectual property rights. Any claim or action must be brought within two years after the claimant knows or should have known of the claim. New York law will govern the interpretation and enforcement of this Agreement, except that the Federal Arbitration Act will govern the interpretation and enforcement of the arbitrability of claims under this Section.</p>            						
+                      <p>9. <strong>Feedback.</strong> Notwithstanding anything to the contrary: (a) Teradata will have no obligation of any kind with respect to any Software-related comments, suggestions, design changes or improvements that you elect to provide to Teradata in either verbal or written form (collectively, “Software Feedback”), and (b) Teradata and its affiliates are hereby free to use any ideas, concepts, know-how or techniques, in whole or in part, contained in Software Feedback: (i) for any purpose whatsoever, including developing, manufacturing, and/or marketing products and/or services incorporating Software Feedback in whole or in part, and (ii) without any restrictions or limitations, including requiring the payment of any license fees, royalties, or other consideration.</p>
+                      <p>10. <strong>Confidentiality.</strong> You will not disclose the results of any testing or evaluations, including any benchmarks, insofar as it relates to the Software without Teradata’s prior written consent.</p>     
+                      <p>11. <strong>Entire Agreement.</strong> This Agreement and the terms of use for the site from which you downloaded the Software (“General Terms of Use”) constitute the entire understanding of the parties with respect to the Software and Services (if any), and supersede all other prior agreements and understandings whether oral or written. In the event of a conflict between this Agreement and the General Terms of Use, this Agreement will prevail with respect to the subject matter hereof. No oral representation or change to this Agreement will be binding upon either party unless agreed to in writing and signed by authorized representatives of all parties. You will not assign this Agreement or your rights, nor will you delegate your obligations under this Agreement. Failure by either party to enforce any term or condition of this Agreement will not be deemed a waiver of future enforcement of that or any other term or condition. The provisions of this Agreement are severable. "Include", "includes", and "including" shall be interpreted as introducing a list of examples which do not limit the generality of any preceding words or any words in the list of examples.</p>             						         						        						        						        						
+                    </div>
+    					</div>
+   						<div class="modal-footer">
+      						<button id="modal-cancel" class="cancel-btn">Cancel</button>
+      						<button id="modal-confirm" disabled class="cta-btn">Agree</button>
+    					</div>
+  					</div>
+				</div>
+    
+				<!--END TERMS MODAL-->
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+<!--END CONTENT-->
+
+
+
+
+
+
+      <!--footer-->
+      <section class="footer-section">
+  <div class="footer-logo">
+    <i class="logo"></i>
+  </div>
+  <div class="footer-content">
+      
+  <div class="block block--products">
+            <h2>Products</h2>
+              <ul class="menu">
+                          <li class="menu-item">
+                    <a href="https://www.teradata.com/Vantage">Vantage Overview	</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Vantage/Console">Vantage Console</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/VantageCloud">Teradata VantageCloud</a>
+                          </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Cloud">Cloud Analytics</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Cloud/Pricing">Cloud Pricing</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Consulting">Consulting</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Cloud/Deployment-Options">Deployment Options</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Products/All-Products">View All Products</a>
+                      </li>
+        </ul>
+  </div>
+
+  <div class="block block--solutions">
+            <h2>Industries</h2>
+              <ul class="menu">
+                          <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Automotive">Automotive</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Industries/Consumer-Packaged-Goods">Consumer Packaged Goods</a>
+                          </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Energy-and-Natural-Resources">Energy &amp; Natural Resources</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Financial-Services">Financial Services</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Government">Government</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Healthcare">Healthcare</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Industries/Life-Sciences">Life Sciences</a>
+                      </li>     
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Manufacturing">Manufacturing</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Industries/Media-and-Entertainment">Media & Entertainment</a>
+                          </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Retail">Retail</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Telco">Telco</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Travel-and-Transportation">Travel &amp; Transportation</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Industries/Utilities">Utilities</a>
+                          </li>
+                      
+        </ul>
+  </div>
+  <div class="block block--partners">
+
+  
+            <h2>Solutions</h2>
+              <ul class="menu">
+                          <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Asset-Optimization">Asset Optimization</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Vantage/Customer-Experience">Customer Experience</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Solutions/Digital-Identity-Management">Digital Identity Management</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="https://www.teradata.com/Solutions/Dynamic-Supply-Chain">Dynamic Supply Chain</a>
+                              </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Finance-Transformation">Finance Transformation</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Solutions/Financial-Transformation-and-Visibility">Financial Visibility</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="https://www.teradata.com/Solutions/Fraud-Prevention">Fraud Prevention</a>
+                              </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Operational-Excellence">Operational Excellence</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Solutions/Operational-Resilience-Financial-Services">Operational Resilience</a>
+                          </li>
+                      
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Product-Innovation">Product Innovation</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Risk-Mitigation">Risk Mitigation</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Solutions">See All Solutions</a>
+                          </li>
+                      
+        </ul>
+  </div>
+
+  <div class="block block--trends">
+            <h2>Trends</h2>
+              <ul class="menu">
+                          <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Artificial-Intelligence">Artificial Intelligence</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Big-Data">Big Data</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Trends/Cloud">Cloud</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Trends/Data-Analytics">Data Analytics</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Cloud/Data-Lake">Data Lake</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Trends/Data-Management">Data Management</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Trends/Data-Science">Data Science</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Trends/Data-Warehouse">Data Warehouse</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/IoT">IoT</a>
+                      </li>
+        </ul>
+  </div>
+
+  <div class="block block--resources">
+            <h2>RESOURCES</h2>
+              <ul class="menu">
+                          <li class="menu-item">
+                    <a href="https://www.teradata.com/Trendshttps://www.teradata.com/Resources/Analyst-Reports">Analyst Content</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Blogs">Blog</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Resources/Case-Studies">Case Studies</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/University/Certification">Certification</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Trends">Data Trends and Insights</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Glossary">Glossary of Terms</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Resources">Library</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Resources/Webinars">Webinars</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Resources/White-Papers">White Papers</a>
+                      </li>
+        </ul>
+  </div>
+
+  <div class="block block--about">
+            <h2>ABOUT</h2>
+              <ul class="menu">
+                          <li class="menu-item">
+                    <a href="https://www.teradata.com/About-Us">About Teradata</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Careers">Careers</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/About-Us/Contact">Contact Us</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/About-Us/Teradata-Response-Covid-19">COVID-19 Response</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Customers">Customers</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/About-Us/Environmental-Social-Governance">Environmental Social Governance</a>
+                          </li> 
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Events">Events</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/About-Us/Executive-Briefing-Center">Executive Briefing Center</a>
+                          </li>
+                      
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Newsroom">Newsroom</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Partners">Partners</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/University/Academics">Teradata Academics</a>
+                      </li>
+        </ul>
+  </div>
+
+
+  </div> 
+  <hr/>
+  <div class="copyright"> 
+    <div class="block block--socialmedia">
+      <ul class="menu">
+        <li class="menu-item linkedin-media">
+          <a href="https://www.linkedin.com/company/teradata">LinkedIn</a>
+        </li>
+        <li class="menu-item twitter-media">
+          <a href="https://twitter.com/teradata">Twitter</a>
+        </li>
+        <li class="menu-item facebook-media">
+          <a href="https://www.facebook.com/Teradata">Facebook</a>
+        </li>
+        <li class="menu-item instagram-media">
+          <a href="https://www.instagram.com/teradata/">Instagram</a>
+        </li>
+        <li class="menu-item youtube-media">
+          <a href="https://www.youtube.com/user/teradata">Youtube</a>
+        </li>
+        <li class="menu-item rss-media">
+          <a href="https://www.teradata.com/rss">RSS</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="block--type-basic block block--basic block--copyrighttext">
+      <div><p>&copy; 2023 Teradata. All Rights Reserved.</p></div>
+    </div>
+
+    <div class="block block--copyright">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="https://www.teradata.com/Privacy">Privacy</a>
+        </li>
+        <li class="menu-item">
+          <a href="https://www.teradata.com/Legal/Terms-of-Use">Terms of Use</a>
+        </li>
+        <li class="menu-item">
+          <a href="https://www.teradata.com/Legal/Legal-Notice">Legal</a>
+        </li>
+        <li class="menu-item">
+          <a href="https://www.teradata.com/Product-Support-Policy">Support Policies</a>
+        </li>
+        <li class="menu-item">
+          <a href="#tracking-consent">Tracking Consent</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<script type="text/javascript" src="../assets/scripts/behavior.js"></script>  
+</body>
+</html>

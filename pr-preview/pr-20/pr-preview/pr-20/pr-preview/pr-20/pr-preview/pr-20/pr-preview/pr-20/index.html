@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MH978LC');</script>
+  <!-- End Google Tag Manager -->  
+<meta charset="utf-8">
+<link href="https://www.teradata.com/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Primary Meta Tags -->
+<title>Teradata Developer Portal | Teradata for Developers</title>
+<meta name="title" content="Teradata Developer Portal | Teradata for Developers">
+<meta name="description" content="Build innovative solutions with the most powerful analytical platform on the planet. Get Started with Vantage, Browse technical Docs and Download useful assets.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.developers.teradata.com">
+<meta property="og:title" content="Teradata Developer Portal | Teradata for Developers">
+<meta property="og:description" content="Build innovative solutions with the most powerful analytical platform on the planet. Get Started with Vantage, Browse technical Docs and Download useful assets.">
+<meta property="og:image" content="https://developers.teradata.com/assets/images/developer-portal-preview.png" />
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="336" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.developers.teradata.com">
+<meta property="twitter:title" content="Teradata Developer Portal | Teradata for Developers">
+<meta property="twitter:description" content="Build innovative solutions with the most powerful analytical platform on the planet. Get Started with Vantage, Browse technical Docs and Download useful assets.">
+<meta property="twitter:image" content="https://developers.teradata.com/assets/images/developer-portal-preview.png" />
+
+<meta name="twitter:site" content="@teradata" />
+<meta name="keywords" content="Teradata developer, developer community, developer documentation, developer forum, vantage drivers, apis, application platform, analytical functions">
+<link rel="alternate" type="application/rss+xml" title="RSS feed for Teradata Press Releases" href="https://www.teradata.com/rss/News" />
+<link rel="alternate" type="application/rss+xml" title="RSS feed for Teradata Blogs" href="https://www.teradata.com/rss/Blogs" />
+
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/navbar.css">
+<link rel="stylesheet" href="assets/css/developers.css">
+<link rel="stylesheet" href="https://www.teradata.com/Content/Styles/Webfonts/load.css?token=1.2030.0.2029">
+<script src="https://www.teradata.com/js/Celebrus/bsci.js" defer></script>
+<script>
+  function myFunction() {
+    var x = document.getElementById("mySearch").value;
+    if(x!==''){
+      var url ="https://search.teradata.com/csm?id=search#q="+x;
+      searchTextBox.setAttribute("action", url);
+      searchTextBox.submit()
+    }
+  }
+  </script>
+<!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+<script type="text/javascript">
+(function(){var g=function(e,h,f,g){
+this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
+this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
+this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)}};
+this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
+try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradata.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_8octL9QmYH5wQ9o")).start()}catch(i){}})();
+</script>
+<div id="ZN_8octL9QmYH5wQ9o"><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+<!--END WEBSITE FEEDBACK SNIPPET-->  
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MH978LC" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+ 
+<!--navbar-->
+<header class="header" role="banner">
+  <nav class="navbar">
+    <section class="navbar-top">
+      <div class="navbar-logo">
+        <a href="https://www.teradata.com/">
+          <svg width="103" height="20" viewBox="0 0 696 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fit="" preserveAspectRatio="xMidYMid meet" focusable="false">
+            <title>Teradata</title>
+            <desc>Copyright Teradata</desc>
+            <defs></defs>
+            <g id="teradata" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="text" fill="#394951">
+                <path d="M78.882,72.796 L123.941,72.796 C120.763,60.83 111.788,55.595 101.878,55.595 C92.53,55.595 81.873,61.204 78.882,72.796 Z M149.182,90.184 L78.134,90.184 C80.564,103.646 90.099,111.873 101.504,111.873 C108.796,111.873 117.957,110.937 124.689,99.533 L146.751,104.206 C138.524,123.652 121.884,133 101.504,133 C75.142,133 53.64,112.994 53.64,83.64 C53.64,54.286 75.142,34.093 101.878,34.093 C126.745,34.093 148.246,53.351 149.182,81.771 L149.182,90.184 Z" id="Fill-1"></path>
+                <path d="M387.843,83.64 C387.843,66.439 374.568,55.595 361.294,55.595 C346.336,55.595 335.118,66.439 335.118,83.64 C335.118,100.841 346.336,111.498 361.294,111.498 C374.568,111.498 387.843,100.841 387.843,83.64 Z M412.523,130.195 L387.843,130.195 L387.843,122.156 C380.364,129.074 370.081,133 356.993,133 C333.248,133 311.186,112.994 311.186,83.64 C311.186,54.286 333.248,34.093 356.993,34.093 C370.081,34.093 380.364,38.019 387.843,44.937 L387.843,0.937 L412.523,0.937 L412.523,130.195 Z" id="Fill-3"></path>
+                <path d="M630.3,92.427 C630.3,104.393 618.894,113.368 605.807,113.368 C596.271,113.368 589.915,108.88 589.915,101.962 C589.915,95.606 595.149,91.306 603.003,91.306 L630.3,91.306 L630.3,92.427 Z M614.407,37.117 L614.407,37.093 L580.299,37.093 L580.299,57.658 L614.407,57.658 C623.943,57.658 630.3,61.765 630.3,71.113 L630.3,72.61 L603.377,72.61 C579.818,72.61 566.356,84.576 566.356,102.524 C566.356,120.846 580.566,133 601.881,133 C614.595,133 623.943,128.7 630.3,122.53 L630.3,130.195 L653.858,130.195 L653.858,69.244 C653.858,47.082 638.243,37.617 614.407,37.117 Z" id="Fill-4"></path>
+                <path d="M484.378,92.427 C484.378,104.393 472.973,113.368 459.885,113.368 C450.349,113.368 443.992,108.88 443.992,101.962 C443.992,95.606 449.227,91.306 457.08,91.306 L484.378,91.306 L484.378,92.427 Z M468.485,37.117 L468.485,37.093 L434.377,37.093 L434.377,57.658 L468.485,57.658 C478.02,57.658 484.378,61.765 484.378,71.113 L484.378,72.61 L457.454,72.61 C433.895,72.61 420.434,84.576 420.434,102.524 C420.434,120.846 434.644,133 455.958,133 C468.672,133 478.02,128.7 484.378,122.53 L484.378,130.195 L507.935,130.195 L507.935,69.244 C507.935,47.082 492.321,37.617 468.485,37.117 Z" id="Fill-5"></path>
+                <path d="M279.3,92.427 C279.3,104.393 267.894,113.368 254.807,113.368 C245.271,113.368 238.914,108.88 238.914,101.962 C238.914,95.606 244.15,91.306 252.003,91.306 L279.3,91.306 L279.3,92.427 Z M263.408,37.117 L263.408,37.093 L229.299,37.093 L229.299,57.658 L263.408,57.658 C272.943,57.658 279.3,61.765 279.3,71.113 L279.3,72.61 L252.376,72.61 C228.818,72.61 215.356,84.576 215.356,102.524 C215.356,120.846 229.566,133 250.881,133 C263.595,133 272.943,128.7 279.3,122.53 L279.3,130.195 L302.858,130.195 L302.858,69.244 C302.858,47.082 287.244,37.617 263.408,37.117 Z" id="Fill-6"></path>
+                <path d="M216.11,37.026 C200.966,37.026 190.121,43.069 182.643,53.913 L182.643,36.899 L157.963,36.899 L157.963,130.197 L182.643,130.197 L182.643,100.095 C182.643,74.106 193.113,57.776 215.923,57.776 L217.044,57.776 L217.044,37.029 C216.741,37.027 216.431,37.026 216.11,37.026" id="Fill-7"></path>
+                <path d="M48.982,107.707 C45.229,109.115 41.291,110.002 38.328,110.002 C30.102,110.002 24.68,105.142 24.68,93.923 L24.68,57.09 L49.982,57.09 L49.982,36.898 L24.68,36.898 L24.68,14.007 L0,14.007 L0,95.793 C0,121.408 14.584,133 36.646,133 C44.438,133 51.879,131.338 61.481,126.199 C56.364,121.123 51.667,114.8 48.982,107.707" id="Fill-8"></path>
+                <path d="M558.509,109.788 C557.521,109.926 556.586,110.002 555.733,110.002 C547.507,110.002 542.085,105.142 542.085,93.923 L542.085,57.09 L568.068,57.09 L568.068,36.898 L542.085,36.898 L542.085,14.007 L517.404,14.007 L517.404,95.793 C517.404,121.408 531.988,133 554.051,133 C559.44,133 564.302,132.206 569.964,130.017 C562.645,124.774 559.799,116.281 558.509,109.788" id="Fill-9"></path>
+              </g>
+              <path d="M695.029,116.028 C695.029,124.853 688.257,131.624 678.817,131.624 C669.377,131.624 662.605,124.853 662.605,116.028 C662.605,107.615 669.377,100.227 678.817,100.227 C688.257,100.227 695.029,107.615 695.029,116.028" id="Fill-11" fill="#E46C42"></path>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class="navbar-brand">
+        <a class="navbar-item dev-link font" href="https://developers.teradata.com/">Developers</a>
+      </div>
+      <button class="header-nav-mobile__menu-icon" role="button" aria-label="Click or Press enter to open menu" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </section>
+    <section class="navbar-menu">
+      <div class="header-nav-mobile__menu">
+        <ul>
+          <li class="header-nav-mobile__menu-item">
+            <header class="header-nav-mobile__menu-item__header">
+              <a href="https://quickstarts.teradata.com/" class="font nav-link">Getting Started</a>
+            </header>
+          </li>
+          <li class="header-nav-mobile__menu-item has-sub-items">
+            <header class="header-nav-mobile__menu-item__header i-alignment">
+              <a href="https://docs.teradata.com/">Docs</a>
+              <img class="navbar-arrow" src="assets/images/icons/arrow_drop_down.svg" alt="down arrow" title="Docs">
+            </header>
+            <div>
+              <div class="header-nav-mobile__menu-item__links">
+                <ul class="ul-color">
+                  <li><a href="https://docs.teradata.com/p/VantageCloud/Lake" class="dropdown-item">VantageCloud Lake Documentation</a></li>
+                  <li><a href="https://docs.teradata.com/" class="dropdown-item">All Documentation</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header-nav-mobile__menu-item">
+            <header class="header-nav-mobile__menu-item__header">
+              <a href="https://downloads.teradata.com/" class="nav-link">Downloads</a>
+            </header>
+          </li>
+          <li class="header-nav-mobile__menu-item has-sub-items">
+            <header class="header-nav-mobile__menu-item__header i-alignment">
+              <a href="https://support.teradata.com/community ">Community</a>
+              <img class="navbar-arrow" src="assets/images/icons/arrow_drop_down.svg" alt="down arrow" title="Community">
+            </header>
+            <div>
+              <div class="header-nav-mobile__menu-item__links">
+                <ul class="ul-color">
+                  <li>
+                    <a href="https://support.teradata.com/community?_gl=1*1uhhzsp*_ga*MTU2NjYwMTU5OC4xNjYxNDc0NDcz*_ga_7PE2TMW3FE*MTY3NDI0NDY1Mi4zNS4wLjE2NzQyNDQ2NTUuMC4wLjA." class="dropdown-item">Teradata Community</a>
+                  </li>
+                  <li>
+                    <a href="https://medium.com/teradata" title="Technical Medium Blogs" target="_blank" class="dropdown-item">Technical Medium Blogs
+                      <img src="assets/images/icons/external-symbol.svg" class="ext-symbol">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Teradata" title="Teradata on GitHub" target="_blank" class="dropdown-item">GitHub
+                      <img src="assets/images/icons/external-symbol.svg" class="ext-symbol">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://stackoverflow.com/questions/tagged/teradata" title="Stack Overflow Teradata questions" target="_blank" class="dropdown-item">Stack Overflow
+                      <img src="assets/images/icons/external-symbol.svg" class="ext-symbol">
+                    </a>
+                  </li>               
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!--
+          <li class="header-nav-mobile__menu-item has-sub-items">
+            <header class="header-nav-mobile__menu-item__header i-alignment">
+              <a href="https://support.teradata.com/community ">Trials</a>
+              <img class="navbar-arrow" src="https://developers.teradata.com/assets/images/icons/arrow_drop_down.svg" alt="down arrow" title="Community">
+            </header>
+            <div>
+              <div class="header-nav-mobile__menu-item__links">
+                <ul class="ul-color">
+                  <li>
+                    <a href="https://developers.teradata.com/regulus" class="dropdown-item">Teradata Regulus</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          -->
+        </ul>
+      </div>
+    </section>
+  </nav>
+  <div class="page-blackout" tabindex="-1" aria-hidden="true"></div>
+</header>
+<!--navbar-->
+
+
+
+
+<!--Open Banner-->
+<section class="td-slide-banner">
+  <div class="slideshow-container">  
+    <div class="mySlides fade" style="display: none;">
+      <div class="slideimage1">
+        <img src="assets/images/icons/vantage.svg" class="img-w" alt="Vantage image" title="Vantage">
+      </div>
+      <div class="slidetext1">
+        <p>Unlock Data. Activate Analytics. Accelerate Value.</p>
+        <p class="p-slidetext1">Unlock Data.</p>
+        <p class="p-slidetext1">Activate Analytics.</p>
+        <p class="p-slidetext1">Accelerate Value.</p>
+        <p class="p2-slidetext1">The complete cloud analytics and data platform, now with next-generation, cloud-native deployment and expanded analytics capabilities.</p>
+        <a href="https://www.teradata.com/Vantage" class="NoDec" target="_blank">
+          <button class="slide-button" >learn more</button>
+        </a>         
+      </div>
+    </div>
+    <!--
+    <div class="mySlides fade" style="display: block;">
+      <div class="slideimage2">
+        <img src="assets/images/icons/play.svg">
+      </div>
+      <div class="slidetext2">
+        <p>Vantage Trials</p>
+        <p>The complete cloud analytics and data platform, now with next-generation, cloud-native deployment and expanded analytics capabilities.</p>
+        <button class="slide-button">learn more</button>  
+      </div>
+    </div>        
+    <div class="mySlides fade" style="display: none;">
+      <div class="slideimage3">
+        <img src="assets/images/icons/laptop.svg">
+      </div>
+      <div class="slidetext3">
+        <p>Getting Started</p>
+        <p>The complete cloud analytics and data platform, now with next-generation, cloud-native deployment and expanded analytics capabilities.</p>
+        <button class="slide-button">learn more</button>  
+      </div>
+    </div>  
+    -->  
+    <!--
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot active" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    -->  
+  </div>
+  <!--
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  -->
+</section>
+<!--Close Banner-->
+
+<!--Open Search Bar-->
+<!--
+<section>
+  <div class="search">
+    <form id="searchTextBox" class="example">
+      <input type="text" placeholder="Search Teradata Developer Portal" name="search" class="search-bar" id="mySearch" required>
+      <button type="submit" onclick="myFunction()" class="search-icon"></button>
+    </form>
+  </div>
+-->
+<!--
+<div>
+  <div class="search">
+    <input type="search" class="search-bar search-icon" value="Search Teradata Developer Portal">
+  </div>
+</div>
+-->
+</section>
+<!--Close Search Bar-->
+<div class="content landing">
+  <div class="landing-container"></div>
+</div>
+<div class="container">
+<!--Open Jumpin-->
+<section>
+  
+    <div class="jumpin">
+      <p class="jumpin-text">Jump in</p>
+    </div>
+    <div class="row-cards tile-section-container ">
+      <div class="list-item bcolor-getting-started">
+        <div class="card-header">
+          <p class="card-header-text">Getting Started</p>
+        </div>
+        <div class="card-header-icon">
+          <img src="assets/images/icons/play_circle.svg" alt="Play circle" title="Getting Started">
+        </div>
+        <div class="card-body">
+          <p class="card-font">Get quickly up to speed with Teradata Vantage. Learn about features. Find how-tos for common tasks. Explore sample source code.</p>
+          <div class="card-foot">
+          <a href="https://quickstarts.teradata.com/" target="_blank" class="link">
+            <div class="card-foot-1">view getting started</div>
+            <div class="card-foot-2">
+              <img src="assets/images/icons/arrow.svg" alt="arrow" title="view getting started">
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+
+
+
+    
+    
+        <div class="list-item bcolor-documentation">
+          <div class="card-header">
+            <p class="card-header-text">Documentation</p>
+          </div>
+          <div class="card-header-icon">
+            <img src="assets/images/icons/file_search.svg" alt="Search icon" title="Documentation">
+          </div>
+          <div class="card-body">
+            <p class="card-font">Access Vantage Documentation for VantageCloud Enterprise, VantageCore VMware and VantageCore IntelliFlex.</p>
+            <div class="card-foot-0">
+              <a href="https://docs.teradata.com/p/VantageCloud/Lake" target="_blank" class="link">
+               <div class="card-foot-1">view lake docs</div>
+               <div class="card-foot-2">
+                <img src="assets/images/icons/arrow.svg" alt="arrow" title="view lake docs">
+              </div>
+              </a>
+            </div>
+            <div class="card-foot-3">
+            <a href="https://docs.teradata.com/" target="_blank" class="link">
+              <div class="card-foot-1">view all teradata docs</div>
+              <div class="card-foot-2">
+                <img src="assets/images/icons/arrow.svg" alt="arrow" title="view all teradata docs">
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="list-item bcolor-downloads">
+          <div class="card-header">
+            <p class="card-header-text">Downloads</p>
+          </div>
+          <div class="card-header-icon">
+            <img src="assets/images/icons/download.svg" alt="Downloads" title="downloads">
+          </div>
+          <div class="card-body">
+            <p class="card-font">Find publicly available downloads from Teradata. Browse by category or select one of the popular downloads below.</p>
+            <div class="card-foot-4">
+             <a href="https://downloads.teradata.com" target="_blank" class="link">
+              <div class="card-foot-1">view downloads</div>
+              <div class="card-foot-2">
+                <img src="assets/images/icons/arrow.svg" alt="arrow" title="view downloads">
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="list-item bcolor-community">
+          <div class="card-header">
+            <p class="card-header-text">Community</p>
+          </div>
+          <div class="card-header-icon">
+            <img src="assets/images/icons/people.svg" alt="Community" title="Community">
+          </div>
+          <div class="card-body">
+            <p class="card-font">Recent Community Blogs. The best minds from Teradata, our partners, and customers blog about relevant topics and features.</p>
+            <div class="card-foot-4">
+            <a href="https://support.teradata.com/community" target="_blank" class="link">
+              <div class="card-foot-1">view community</div>
+              <div class="card-foot-2">
+                <img src="assets/images/icons/arrow.svg" alt="arrow" title="view community">
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<!--Close Jumpin-->
+</div>
+<br>
+
+    <!--VantageCloud Lake Documentation Banner-->
+    <section class="lake-documentation">
+      <div class="inside-lake-documentation">
+      <div class="cloud-icon">
+        <img src="assets/images/icons/cloud.svg" alt="Cloud" title="Vantage Cloud">
+      </div>
+      <div class="lake-documentation-text">
+        <p class="text1">VantageCloud Lake Documentation</p>
+        <p class="text2">The complete cloud analytics and data platform, now with next-generation, cloud-native deployment and expanded analytics capabilities.</p>
+      </div>
+      <div class="lake-doc-button">
+        <a href="https://docs.teradata.com/p/VantageCloud/Lake" target="_blank" class="">
+          <img src="assets/images/icons/lake-doc.svg" alt="documentation" title="Vantage Cloud">
+        </a>
+      </div>
+      </div>
+    </section>
+    <!--VantageCloud Lake Documentation Banner-->
+
+    <section class="td-right-tools-sect">
+    <div class="td-right-tools-text">
+        <p class="td-right-tools-desc">The right tools for the job</p>
+    </div>
+    <div class="items-list">
+        <div class="list-item-1">
+        <div class="tools-icon tools">
+            <img src="assets/images/icons/tools.svg" alt="wrench" title="Tools">
+        </div>
+            <div class="item-name desc">
+                <p>Tools</p>
+                <p>An extensive set Developers Tools for managing your development and integration with Vantage, such as IDEs, utilities and much more.</p>
+            </div>
+            <div class="bottom-anchor-link">
+                <a href="https://downloads.teradata.com/download/tools" title="view" rel="nofollow" target="_blank">view</a>                
+            </div>            
+        </div>
+        <div class="list-item-1">
+            <div class="tools-icon drivers">
+                <img src="assets/images/icons/drivers.svg" alt="drivers" title="Drivers & Connectors">
+            </div>
+                <div class="item-name desc">
+                    <p>Drivers &amp; Connectors</p>
+                    <p>Connect your application to Vantage using any of the many popular programming development technologies such as Java, .Net, Python, Go.</p>
+                </div>
+                <div class="bottom-anchor-link">
+                    <a href="https://downloads.teradata.com/download/connectivity" title="view" rel="nofollow" target="_blank">view</a>                
+                </div>            
+        </div>
+        <div class="list-item-1">
+            <div class="tools-icon libraries">
+                <img src="assets/images/icons/libraries.svg" alt="libraries-icon" title="Libraries">
+            </div>
+                <div class="item-name desc">
+                    <p>Libraries</p>
+                    <p>Libraries and packages for your favorite opensource technologies such as Python and R, that take advantage of the Big Data and Machine Learning analytics capabilities of Teradata Vantage.</p>
+                </div>
+                <div class="bottom-anchor-link">
+                    <a href="https://downloads.teradata.com/search/content?keys=libraries" title="view" rel="nofollow" target="_blank">view</a>                
+                </div>            
+        </div>
+    </div>
+  </section>
+
+<!--New section-->
+
+  <section class="getting-started-with-td">
+    <p class="getting-started-text">Get started with Teradata</p>
+    <div class="tab">
+        <a class="tablinks" onclick="openLink(event, 'data-scientist')" id="defaultOpen"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="tablinks" fill-rule="evenodd" clip-rule="evenodd" d="M17 9V11H16L16.0001 12.6382L20.7681 18.3602C21.0171 18.6582 21.0701 19.0732 20.9061 19.4242C20.7595 19.7362 20.4642 19.9486 20.128 19.992L20.0001 20.0002H10.0001C9.61212 20.0002 9.25912 19.7752 9.09412 19.4242C8.94835 19.1122 8.97403 18.7496 9.15641 18.4636L9.23212 18.3602L14.0001 12.6382L14 11H13V9H17ZM16 0C17.1 0 18 0.9 18 2V6.999H16V4H10V8H11V10H10V14H10.259L8.594 16H2C0.9 16 0 15.1 0 14V2C0 0.9 0.9 0 2 0H16ZM8 10H2V14H8V10ZM8 4H2V8H8V4Z" fill="black" fill-opacity="0.6"/>
+          </svg>Data Scientist
+        </a>      
+        <a class="tablinks" onclick="openLink(event, 'data-engineer')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="tablinks" fill-rule="evenodd" clip-rule="evenodd" d="M7 17V20H5V17H7ZM11 17V20H9V17H11ZM15 17V20H13V17H15ZM14 4C15.104 4 16 4.896 16 6V14C16 15.104 15.104 16 14 16H6C4.896 16 4 15.104 4 14V6C4 4.896 4.896 4 6 4H14ZM20 13V15H17V13H20ZM3 13V15H0V13H3ZM13 11H9V13H13V11ZM20 9V11H17V9H20ZM3 9V11H0V9H3ZM20 5V7H17V5H20ZM3 5V7H0V5H3ZM7 0V3H5V0H7ZM11 0V3H9V0H11ZM15 0V3H13V0H15Z" fill="black" fill-opacity="0.6"/>
+            </svg>Data Engineer
+        </a>
+        <a class="tablinks" onclick="openLink(event, 'developer')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="tablinks" fill-rule="evenodd" clip-rule="evenodd" d="M20 4V6H18V8H20V10H18V12H20V14H18V16C18 17.1 17.1 18 16 18H2C0.900024 18 0 17.1 0 16V2C0 0.900024 0.900024 0 2 0H16C17.1 0 18 0.900024 18 2V4H20ZM2 16H16V2H2V16ZM4 10H9V14H4V10ZM14 4H10V7H14V4ZM4 4H9V9H4V4ZM14 8H10V14H14V8Z" fill="black" fill-opacity="0.6"/>
+            </svg>Developer
+        </a>
+        <a class="tablinks" onclick="openLink(event, 'database-administrator')"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="tablinks" fill-rule="evenodd" clip-rule="evenodd" d="M16.07 12.88L18.12 14.93L12.06 21H10V18.94L16.07 12.88ZM0 12.2227C0 14.6777 4.027 16.6667 9 16.6667C9.11295 16.6667 9.22542 16.6657 9.33736 16.6636L6.21719 19.7834C2.70776 19.221 0.145634 17.6233 0.00600147 15.7196L0 15.5557V12.2227ZM0 6.6667C0 9.1217 4.027 11.1117 9 11.1117C12.4853 11.1117 15.5059 10.1343 17.0013 8.70434L17 8.9987L11.7708 14.2302C10.9897 14.3549 10.1617 14.4282 9.30326 14.4422L9 14.4447C4.12849 14.4447 0.164761 12.5351 0.00500536 10.1494L0 9.9997V6.6667ZM18.42 11.3L19.7 12.58C19.92 12.79 19.92 13.14 19.7 13.35L18.7 14.35L16.65 12.3L17.65 11.3C17.86 11.08 18.21 11.08 18.42 11.3ZM9 -0.000301361C13.973 -0.000301361 18 1.9887 18 4.4447C18 6.8997 13.973 8.8887 9 8.8887C4.027 8.8887 0 6.8997 0 4.4447C0 1.9887 4.027 -0.000301361 9 -0.000301361Z" fill="black" fill-opacity="0.6"/>
+          </svg>Database Administrator
+      </a>          
+        <a class="tablinks" onclick="openLink(event, 'it-operations')"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="tablinks" fill-rule="evenodd" clip-rule="evenodd" d="M10 4H20V18H0V0H10V4ZM2 16H4V14H2V16ZM4 12H2V10H4V12ZM2 8H4V6H2V8ZM4 4H2V2H4V4ZM6 16H8V14H6V16ZM8 12H6V10H8V12ZM6 8H8V6H6V8ZM8 4H6V2H8V4ZM18 16V6H10V8H12V10H10V12H12V14H10V16H18ZM16 8H14V10H16V8ZM14 12H16V14H14V12Z" fill="black" fill-opacity="0.6"/>
+            </svg>IT Operations</a>        
+    </div>
+
+    <div id="it-operations" class="tabcontent">
+        <div class="it-operations-background">
+            <img src="assets/images/icons/it_right.svg" alt="Teradata" title="It Operations">
+        </div>
+        <div class="it-operations-text text-container">
+            <p>Query data stored in object storage</p>
+            <p>Native Object Storage (NOS) is a Vantage feature that allows you to query data stored in files in object storage such as AWS S3, Google GCS, Azure Blob or on-prem implementations. It’s useful in scenarios where you want to explore data without building a data pipeline to bring it into Vantage.</p>
+        </div>
+        <div class="getting-started-button">
+          <a href="https://quickstarts.teradata.com/nos.html" class="NoDec" target="_blank">
+            <button class="it-button">Get started</button>
+          </a>  
+        </div>
+    </div>
+
+    <div id="database-administrator" class="tabcontent">
+        <div class="database-admin-background">
+            <img src="assets/images/icons/database_right.svg" alt="Database" title="Database Administrator">
+        </div>
+        <div class="database-admin-text text-container">
+            <p>Run large bulkloads efficiently with Teradata Parallel Transporter (TPT)</p>
+            <p>We often have a need to move large volumes of data into Vantage. Teradata offers Teradata Parallel Transporter (TPT) utility that can efficiently load large amounts of data into Teradata Vantage. This how-to demonstrates how to use TPT. In this scenario, we will load over 300k records, over 40MB of data, in a couple of seconds.</p>
+        </div>
+        <div class="getting-started-button">
+          <a href="https://quickstarts.teradata.com/tools-and-utilities/run-bulkloads-efficiently-with-teradata-parallel-transporter.html" class="NoDec" target="_blank">
+            <button class="database-admin-button">Get started</button>
+          </a>
+        </div>
+    </div>
+
+    <div id="data-engineer" class="tabcontent">
+        <div class="data-engineer-background">
+            <img src="assets/images/icons/data_eng_right.svg" alt="data engineer" title="Data Engineer">
+        </div>
+        <div class="data-engineer-text text-container">
+            <p>dbt with Teradata Vantage</p>
+            <p>This tutorial demonstrates how to use dbt (Data Build Tool) with Teradata Vantage. It’s based on the original dbt Jaffle Shop tutorial. A couple of models have been adjusted to the SQL dialect supported by Vantage.</p>
+        </div>
+        <div class="getting-started-button">
+        <a href="https://quickstarts.teradata.com/dbt.html" target="_blank" class="NoDec">
+            <button class="data-engineer-button">Get started</button>
+        </a>
+        </div>
+    </div>
+    <div id="developer" class="tabcontent">
+        <div class="developer-background">
+            <img src="assets/images/icons/developer_right.svg" alt="developer" title="Developer">
+        </div>
+        <div class="developer-text text-container">
+            <p>Connect to Vantage using JDBC</p>
+            <p>This how-to demonstrates how to connect to Teradata Vantage using JDBC using a sample Java application: https://github.com/Teradata/jdbc-sample-app.</p>
+        </div>
+        <div class="getting-started-button">
+          <a href="https://quickstarts.teradata.com/jdbc.html" class="NoDec" target="_blank">
+            <button class="developer-button">Get started</button>
+          </a>
+        </div>
+    </div>
+
+    <div id="data-scientist" class="tabcontent">
+        <div class="data-scientist-background">
+            <img src="assets/images/icons/scientist_right.svg" alt="data scientist" title="Data Scientist">
+        </div>
+        <div class="data-scientist-text text-container">
+            <p>Train ML models in Vantage</p>
+            <p>There are situations when you want to quickly validate a machine learning model idea. You have a model type in mind. You don’t want to operationalize with an ML pipeline just yet. You just want to test out if the relationship you had in mind exists. Also, sometimes even your production deployment doesn’t require constant relearning with MLops. In such cases, you can use Vantage Analytics Library (VAL) and multiple ML model types it supports.</p>
+        </div>
+        <div class="getting-started-button">
+        <a href="https://quickstarts.teradata.com/ml.html" class="NoDec" target="_blank">
+            <button class="data-scientist-button">Get started</button>
+          </a>  
+        </div>
+    </div> 
+   
+    
+  </section>
+  
+  <!--New section-->
+<!-- 
+ <section class="getting-started-quickstart">
+      <div class="quickstart-textcontainer">
+         <p>Get started with Quick Start guides and ClearScape Demos</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="quickstart-started-button">
+        <button class="Qucikstart-guides-button">Qucik start guides</button>
+        <button class="clearscape-demos-button">clearscape demos</button>
+    </div>
+ </section>
+-->
+ <section>
+      <div class="top-picks-teradata">
+        <pc class="jumpin-text">Top picks from Teradata</p>
+      </div>
+      <div class="items-list">
+        <div class="list-item-top-picks">
+          <div class="top-picks">
+            <div>Send queries using REST API</div> 
+            <div class="circle">
+              <img class="icon-1"  src="assets/images/icons/tools-icon.svg" alt="tools" title="Tools">
+            </div>
+          </div>
+          <div class="top-picks-body">
+                <p>Teradata Query Service is a REST API for Vantage that you can use to run standard SQL statements without managing client-side drivers.</p>
+          </div>
+          <div class="content-buttons">
+            <a href="https://quickstarts.teradata.com/query-service/send-queries-using-rest-api.html" title="Send queries using REST API" rel="nofollow" target="_blank" class="top-button decoration">How-tos</a> 
+            <a href="https://downloads.teradata.com/api/teradata_query_service" target="_blank" title="Tools" rel="nofollow" class="top-button decoration">Tools</a>                
+          </div>            
+        </div>
+        <div class="list-item-top-picks">
+          <div class="top-picks">
+            Teradata Vantage connection in DBeaver
+            <div class="circle">
+              <img class="icon-2" src="assets/images/icons/chevron.svg" alt="arrow" title="Tools">
+            </div>
+          </div>
+          <div class="top-picks-body">
+              <p>This how-to demonstrates how to create a connection to Teradata Vantage with DBeaver.</p>
+          </div>
+          <div class="content-buttons">
+            <a href="https://quickstarts.teradata.com/other-integrations/configure-a-teradata-vantage-connection-in-dbeaver.html" target="_blank" title="Teradata Vantage with DBeaver" rel="nofollow" class="top-button decoration">How-tos</a>                 
+          </div>            
+        </div>
+   
+        <div class="list-item-top-picks">
+          <div class="top-picks-3">
+            Vantage from a Jupyter notebook
+            <div class="circle-3">
+              <img class="icon-2" src="assets/images/icons/tool-icon.svg" alt="tools" title="Tools">
+            </div>
+          </div>
+          <div class="top-picks-body w-card-3">
+                <p>Go through connecting to Teradata Vantage from a Jupyter notebook.</p>
+          </div>
+          <div class="content-buttons">
+            <a href="https://quickstarts.teradata.com/jupyter.html" title="Vantage from a Jupyter notebook" rel="nofollow" class="top-button decoration" target="_blank">How-tos</a> 
+            <a href="https://teradata.github.io/jupyterextensions/#/" target="_blank" title="Jupyter Extensions" rel="nofollow" class="top-button decoration">Tools</a>                 
+          </div>               
+        </div>
+    </section>
+    <section>
+      <div class="items-list-1">
+        <div class="list-item-top-picks">
+          <div class="top-picks">
+            Getting Started with Python 
+            <div class="circle">
+              <img class="icon-3"  src="assets/images/icons/chevron.svg" alt="arrow" title="Arrow">
+            </div>
+          </div>
+          <div class="top-picks-body w-card-4">
+                <p>New Guide - A Walk through on the Teradata Python Connector to get going, and explore the basic operations you can do, and other tools available. </p>
+          </div>
+          <div class="content-buttons">
+            <a href="https://downloads.teradata.com/download/connectivity/teradata-sql-driver-for-python" target="_blank" title="view" rel="nofollow" class="top-button decoration">Libraries</a> 
+            <a href="https://github.com/Teradata/python-driver" title="view" rel="nofollow" class="top-button decoration" target="_blank">APIs</a> 
+            <a href="https://docs.teradata.com/r/Teradata-Tools-and-Utilities-Release-Definition/June-2021/Product-Information/Teradata-SQL-Driver-for-Python" target="_blank" title="view" rel="nofollow" class="top-button decoration">Guides</a>                
+          </div>            
+        </div>
+        <div class="list-item-top-picks">
+          <div class="top-picks">
+            ModelOps
+            <div class="circle">
+              <img class="icon-2"  src="assets/images/icons/book.svg" alt="Library" title="Library">
+            </div>
+          </div>
+          <div class="top-picks-body w-card-5">
+                <p>Create a new project in ModelOps, upload the required data to Vantage, and track the full lifecycle of an imported Diabetes demo model using BYOM mechanisms.</p>
+          </div>
+          <div class="content-buttons">
+            <a href="https://quickstarts.teradata.com/modelops/deploy-and-monitor-machine-learning-models-with-teradata-modelops-and-byom.html" title="view" rel="nofollow" class="top-button decoration" target="_blank">Tutorial</a> 
+         </div>            
+        </div>
+   
+        <div class="list-item-top-picks">
+          <div class="top-picks">
+            JDBC Driver - Release 17.20
+            <div class="circle">
+              <img class="icon-3" src="assets/images/icons/tool-icon.svg" alt="tools" title="tools">
+            </div>
+          </div>
+          <div class="top-picks-body">
+                <p>The JDBC Driver allows you to connect to the Teradata database from external applications.</p>
+          </div>
+          <div class="content-buttons">
+            <a href="https://downloads.teradata.com/download/connectivity/jdbc-driver" title="view" rel="nofollow" class="top-button decoration" target="_blank">Driver</a> 
+            <a href="https://docs.teradata.com/r/Teradata-Tools-and-Utilities-Release-Definition/June-2021/Product-Information/Teradata-JDBC-Driver" title="view" rel="nofollow" class="top-button decoration" target="_blank">Product Release</a>                 
+          </div>               
+        </div>
+    </section>
+    <section>
+      <div class="stay-connected-section">
+        <pc class="jumpin-text">Stay connected</p>
+      </div>
+      <div class="row-cards">
+        <div class="stay-connected">
+          <a href="https://support.teradata.com/community" class="NoDec" target="_blank">
+            <img src="assets/images/icons/people-1.svg" alt="Teradata Community" title="Teradata Community" class="stay-connected-icon">
+            <p class="stay-connected-font">Teradata Community</p>
+          </a>
+        </div>
+        <div class="stay-connected">
+          <a href="https://github.com/Teradata" class="NoDec" target="_blank">
+            <img src="assets/images/icons/github.svg" alt="Github" title="Github" class="stay-connected-icon">
+            <p class="stay-connected-font">Github</p>
+          </a>
+        </div>
+        <div class="stay-connected">
+          <a href="https://stackoverflow.com/questions/tagged/teradata" class="NoDec" target="_blank">
+            <img src="assets/images/icons/stackoverflow.svg" alt="Stack Overflow" title="Stack Overflow" class="stay-connected-icon">
+            <p class="stay-connected-font">Stack Overflow </p>
+          </a>
+        </div>
+        <div class="stay-connected">
+          <a href="https://medium.com/teradata" class="NoDec" target="_blank">
+            <img src="assets/images/icons/medium.png" alt="Medium" title="Medium" class="stay-connected-icon-medium">
+            <p class="stay-connected-font">Teradata Technical Blogs</p>
+          </a>
+        </div>
+      </div>
+      </section>
+      <!--footer-->
+      <section class="footer-section">
+  <div class="footer-logo">
+    <i class="logo"></i>
+  </div>
+  <div class="footer-content">
+      
+  <div class="block block--products">
+            <h2>Products</h2>
+              <ul class="menu">
+                          <li class="menu-item">
+                    <a href="https://www.teradata.com/Vantage">Vantage Overview	</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Vantage/Console">Vantage Console</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/VantageCloud">Teradata VantageCloud</a>
+                          </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Cloud">Cloud Analytics</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Cloud/Pricing">Cloud Pricing</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Consulting">Consulting</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Cloud/Deployment-Options">Deployment Options</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Products/All-Products">View All Products</a>
+                      </li>
+        </ul>
+  </div>
+
+  <div class="block block--solutions">
+            <h2>Industries</h2>
+              <ul class="menu">
+                          <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Automotive">Automotive</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Industries/Consumer-Packaged-Goods">Consumer Packaged Goods</a>
+                          </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Energy-and-Natural-Resources">Energy &amp; Natural Resources</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Financial-Services">Financial Services</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Government">Government</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Healthcare">Healthcare</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Industries/Life-Sciences">Life Sciences</a>
+                      </li>     
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Manufacturing">Manufacturing</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Industries/Media-and-Entertainment">Media & Entertainment</a>
+                          </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Retail">Retail</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Telco">Telco</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Industries/Travel-and-Transportation">Travel &amp; Transportation</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Industries/Utilities">Utilities</a>
+                          </li>
+                      
+        </ul>
+  </div>
+  <div class="block block--partners">
+
+  
+            <h2>Solutions</h2>
+              <ul class="menu">
+                          <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Asset-Optimization">Asset Optimization</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Vantage/Customer-Experience">Customer Experience</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Solutions/Digital-Identity-Management">Digital Identity Management</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="https://www.teradata.com/Solutions/Dynamic-Supply-Chain">Dynamic Supply Chain</a>
+                              </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Finance-Transformation">Finance Transformation</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Solutions/Financial-Transformation-and-Visibility">Financial Visibility</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="https://www.teradata.com/Solutions/Fraud-Prevention">Fraud Prevention</a>
+                              </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Operational-Excellence">Operational Excellence</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Solutions/Operational-Resilience-Financial-Services">Operational Resilience</a>
+                          </li>
+                      
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Product-Innovation">Product Innovation</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Risk-Mitigation">Risk Mitigation</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/Solutions">See All Solutions</a>
+                          </li>
+                      
+        </ul>
+  </div>
+
+  <div class="block block--trends">
+            <h2>Trends</h2>
+              <ul class="menu">
+                          <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Artificial-Intelligence">Artificial Intelligence</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/Big-Data">Big Data</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Trends/Cloud">Cloud</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Trends/Data-Analytics">Data Analytics</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Cloud/Data-Lake">Data Lake</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Trends/Data-Management">Data Management</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Trends/Data-Science">Data Science</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Trends/Data-Warehouse">Data Warehouse</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Solutions/IoT">IoT</a>
+                      </li>
+        </ul>
+  </div>
+
+  <div class="block block--resources">
+            <h2>RESOURCES</h2>
+              <ul class="menu">
+                          <li class="menu-item">
+                    <a href="https://www.teradata.com/Trendshttps://www.teradata.com/Resources/Analyst-Reports">Analyst Content</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Blogs">Blog</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Resources/Case-Studies">Case Studies</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/University/Certification">Certification</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Trends">Data Trends and Insights</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Glossary">Glossary of Terms</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Resources">Library</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Resources/Webinars">Webinars</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Resources/White-Papers">White Papers</a>
+                      </li>
+        </ul>
+  </div>
+
+  <div class="block block--about">
+            <h2>ABOUT</h2>
+              <ul class="menu">
+                          <li class="menu-item">
+                    <a href="https://www.teradata.com/About-Us">About Teradata</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Careers">Careers</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/About-Us/Contact">Contact Us</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/About-Us/Teradata-Response-Covid-19">COVID-19 Response</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Customers">Customers</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/About-Us/Environmental-Social-Governance">Environmental Social Governance</a>
+                          </li> 
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Events">Events</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.teradata.com/About-Us/Executive-Briefing-Center">Executive Briefing Center</a>
+                          </li>
+                      
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Newsroom">Newsroom</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/Partners">Partners</a>
+                      </li>
+                      <li class="menu-item">
+                    <a href="https://www.teradata.com/University/Academics">Teradata Academics</a>
+                      </li>
+        </ul>
+  </div>
+
+
+  </div> 
+  <hr/>
+  <div class="copyright"> 
+    <div class="block block--socialmedia">
+      <ul class="menu">
+        <li class="menu-item linkedin-media">
+          <a href="https://www.linkedin.com/company/teradata">LinkedIn</a>
+        </li>
+        <li class="menu-item twitter-media">
+          <a href="https://twitter.com/teradata">Twitter</a>
+        </li>
+        <li class="menu-item facebook-media">
+          <a href="https://www.facebook.com/Teradata">Facebook</a>
+        </li>
+        <li class="menu-item instagram-media">
+          <a href="https://www.instagram.com/teradata/">Instagram</a>
+        </li>
+        <li class="menu-item youtube-media">
+          <a href="https://www.youtube.com/user/teradata">Youtube</a>
+        </li>
+        <li class="menu-item rss-media">
+          <a href="https://www.teradata.com/rss">RSS</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="block--type-basic block block--basic block--copyrighttext">
+      <div><p>&copy; 2023 Teradata. All Rights Reserved.</p></div>
+    </div>
+
+    <div class="block block--copyright">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="https://www.teradata.com/Privacy">Privacy</a>
+        </li>
+        <li class="menu-item">
+          <a href="https://www.teradata.com/Legal/Terms-of-Use">Terms of Use</a>
+        </li>
+        <li class="menu-item">
+          <a href="https://www.teradata.com/Legal/Legal-Notice">Legal</a>
+        </li>
+        <li class="menu-item">
+          <a href="https://www.teradata.com/Product-Support-Policy">Support Policies</a>
+        </li>
+        <li class="menu-item">
+          <a href="#tracking-consent">Tracking Consent</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<script type="text/javascript" src="assets/js/behavior.js"></script>  
+<script type="text/javascript" src="assets/js/show-slides.js"></script>  
+<script type="text/javascript" src="assets/js/open-link.js"></script>
+</body>
+</html>
