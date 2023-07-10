@@ -13,14 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Get PR branch
-        id: pr_branch
-        run: echo "::set-output name=branch::$(echo $GITHUB_REF | awk 'BEGIN {FS="/"} {print $3}')"
       - name: Deploy PR Preview
         uses: rossjrw/pr-preview-action@v1.4.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          preview-branch: ${{ steps.pr_branch.outputs.branch }}
+          preview-branch: ${{ github.head_ref }}
           source-dir: .
           umbrella-dir: pr-preview
           action: auto
