@@ -18,6 +18,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           preview-branch: gh-pages
-          source-dir: ./
+          source-dir: .
           umbrella-dir: pr-preview
           action: auto
