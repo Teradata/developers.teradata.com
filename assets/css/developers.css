@@ -776,7 +776,7 @@ div.items-list-1 {
   padding-left: 15px;
 }
 .footer-section .footer-logo i.logo {
-  height: 21px;
+  height: 28px;
   width: 107px;
   background-image: url(../images/TD-Logo.svg);
   background-repeat: no-repeat;
@@ -1055,7 +1055,7 @@ form.example button {
     margin: 0 auto;
     margin-bottom: 25px;
     object-fit: cover;
-    margin-top: 7px;
+    margin-top: 25px;
   }
   /*Open Jumpin Section*/
   .jumpin {
