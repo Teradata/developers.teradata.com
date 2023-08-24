@@ -14,12 +14,15 @@
   .display-menu{
     display: none;
   }
+  .me-4 {
+    margin-top: 5px;
+    }
   .dev {
     font-size: 22px;
   /*  margin-top: 36px;*/
     color: #00233c;
     letter-spacing: 0.15px;
-    margin-right: 113px;
+    margin-right: 110px;
     font-style: normal;
     font-weight: 400;
   }
