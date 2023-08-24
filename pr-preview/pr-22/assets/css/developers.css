@@ -69,7 +69,7 @@ body {
   opacity: 0.9;
   border-radius: 0px 0px 8px 8px;
   box-shadow: 0px 0px 2px rgb(0 0 0 / 14%), 0px 2px 2px rgb(0 0 0 / 12%), 0px 1px 3px rgb(0 0 0 / 20%);
-  margin-top: -14px;
+  margin-top: 2px;
 }
 .link {
   display: inline-flex;
@@ -198,6 +198,7 @@ body {
   letter-spacing: 0.15000000596046448px;
   text-align: left;
   color: rgba(255, 255, 255, 0.87);
+  margin-top: 25px;
 }
 .text2 {
   position: relative;
@@ -209,6 +210,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 15px;
 }
 
 .lake-documentation-button {
@@ -748,9 +750,9 @@ div.items-list-1 {
   margin-top: 7px;
 }
 .icon-2 {
-  width: 20px;
-  height: 20px;
-  margin-top: 5px;
+  width: 17px;
+  height: 17px;
+  margin-top: 7px;
 }
 .icon-3 {
   width: 17px;
@@ -938,7 +940,7 @@ a {
   .cloud-icon {
     position: relative;
     height: 20px;
-    width: 20px;
+  /*  width: 20px;*/
    /* margin-left: 340px;*/
     margin-top: 43px;
     border-radius: 0px;
@@ -949,7 +951,7 @@ a {
     margin-left: 50px;
   }
   .lake-doc-button {
-    margin-left: 165px;
+  /*  margin-left: 165px; */
     margin-top: 39px;
   }
 }
@@ -1055,7 +1057,7 @@ form.example button {
     margin: 0 auto;
     margin-bottom: 25px;
     object-fit: cover;
-    margin-top: 25px;
+    margin-top: 117px;
   }
   /*Open Jumpin Section*/
   .jumpin {
@@ -1142,6 +1144,7 @@ form.example button {
     color: rgba(0, 0, 0, 0.87);
     width: 641px;
     height: 96px;
+    margin-top: 20px;
   }
   /* Slideshow container */
 .slideshow-container {
@@ -1203,7 +1206,7 @@ form.example button {
   color: rgba(0, 0, 0, 0.87);
   width: 601px;
   height: 40px;
-  margin-top: -20px;
+  margin-top: 10px;
 }
 .slidetext1 button,
 .slidetext2 button,
@@ -1226,6 +1229,7 @@ form.example button {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.87);
   width: 123px;
+  margin-top: 15px;
 }
 /*Banner*/
 /* Fading animation */
@@ -1431,3 +1435,10 @@ form.example button {
   width: 100%;
   justify-content: center;
 }*/
+
+.circle img {
+  width: 17px;
+  height: 17px; 
+  margin-top: 7px;
+  object-fit: fill;
+}
