@@ -13,9 +13,10 @@
 }
 
 body {
-/*  font-family: 'Poppins-Regular', 'Helvetica Neue', sans-serif, 'Arial';*/
   background-color: #f5f5f5;
+  font-family: Inter,sans-serif;
 }
+
 
 /* The dots/bullets/indicators */
 .dot {
@@ -1059,7 +1060,7 @@ form.example button {
     margin: 0 auto;
     margin-bottom: 25px;
     object-fit: cover;
-    margin-top: 117px;
+    margin-top: 60px;
   }
   /*Open Jumpin Section*/
   .jumpin {
@@ -1084,7 +1085,7 @@ form.example button {
 
   .list-item:nth-child(1), div.list-item:nth-child(2), div.list-item:nth-child(3) {
     width: 280px;
-    height: 280px;
+   /* height: 280px;*/
     /*box-shadow: 0px 0px 2px rgb(0 0 0 / 14%), 0px 2px 2px rgb(0 0 0 / 12%), 0px 1px 3px rgb(0 0 0 / 20%);*/
     border-radius: 8px 8px 8px 8px;
     border-top: 5px solid transparent;
@@ -1093,7 +1094,7 @@ form.example button {
   }
   div.list-item:nth-child(4) {
     width: 280px;
-    height: 280px;
+  /*  height: 280px;*/
     /*box-shadow: 0px 0px 2px rgb(0 0 0 / 14%), 0px 2px 2px rgb(0 0 0 / 12%), 0px 1px 3px rgb(0 0 0 / 20%);*/
     border-radius: 8px 8px 8px 8px;
     border-top: 5px solid transparent;
@@ -1442,5 +1443,5 @@ form.example button {
   width: 17px;
   height: 17px; 
   margin-top: 7px;
-  object-fit: fill;
+/*  object-fit: fill;*/ 
 }

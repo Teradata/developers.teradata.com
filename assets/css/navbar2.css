@@ -14,14 +14,16 @@
   .display-menu{
     display: none;
   }
+  /*
   .me-4 {
     margin-top: 5px;
     }
+    */
   .dev {
     font-size: 22px;
   /*  margin-top: 36px;*/
     color: #00233c;
-    letter-spacing: 0.15px;
+    letter-spacing: 0.15px; 
     margin-right: 110px;
     font-style: normal;
     font-weight: 400;
@@ -90,7 +92,10 @@
     padding: 12px 24px;
     border-radius: 8px;
   }
-  
+  .dropdown-item:hover {
+    text-decoration: none;
+    color: #ff5f02;
+  }
   .test {
     padding-bottom: 30px;
     background-color: white;
@@ -104,11 +109,7 @@
     margin-left: auto;
   }
   
-  .developers {
-    margin-left: 16px;
-    color: #000;
-    font-size: 18px;
-  }
+
   
   .sidenav {
     transition: 0.5s;
