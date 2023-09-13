@@ -35,8 +35,10 @@
   <link rel="alternate" type="application/rss+xml" title="TeradataプレスリリースのRSSフィード" href="https://www.teradata.com/rss/News" /> 
   <link rel="alternate" type="application/rss+xml" title="TeradataブログのRSSフィード" href="https://www.teradata.com/rss/Blogs" /> 
   <link rel="stylesheet" href="../assets/css/site.css"> 
-  <link rel="stylesheet" href="../assets/css/navbar.css"> 
-  <link rel="stylesheet" href="../assets/css/developers.css"> 
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/navbar2.css"> 
+  <link rel="stylesheet" href="../assets/css/developers2.css"> 
+
   <link rel="stylesheet" href="https://www.teradata.com/Content/Styles/Webfonts/load.css?token=1.2030.0.2029"> 
   <script src="https://www.teradata.com/js/Celebrus/bsci.js" defer></script> 
   <script>
@@ -121,67 +123,182 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
   </noscript> 
     <!-- End Google Tag Manager (noscript) --> 
     <!--navbar--> 
-    <header class="header" role="banner">
-  <nav class="navbar">
-    <section class="navbar-top">
-      <div class="navbar-logo">         
-        <a href="https://www.teradata.com/">       
-          <img class="" width="148" height="28" src='../assets/images/TD-Logo.svg' alt="Teradata Logo" title="Teradata Developers">    
-        </a>
-      </div>
-      <div class="navbar-brand">         
-        <a class="navbar-item dev-link font" href="https://developers.teradata.com/">開発者</a>
-      </div>
-      <button class="header-nav-mobile__menu-icon" role="button" aria-label="Click or Press enter to open menu" tabindex="0"> <span></span> <span></span> <span></span> <span></span>
-      </button>
-    </section>
-    <section class="navbar-menu">
-      <div class="header-nav-mobile__menu">
-        <ul>
-          <li class="header-nav-mobile__menu-item">
-            <header class="header-nav-mobile__menu-item__header">
-              <a href="https://quickstarts.teradata.com/" class="font nav-link">スタートガイド</a>
-            </header>
-          </li>
-          <li class="header-nav-mobile__menu-item has-sub-items">
-            <header class="header-nav-mobile__menu-item__header i-alignment">
-              <a href="https://docs.teradata.com/" class="font nav-link">ドキュメント</a> 
-            </header>
-            <div>
-              <div class="header-nav-mobile__menu-item__links">
-                <ul class="ul-color">
-                  <li><a href="https://docs.teradata.com/p/VantageCloud/Lake" class="dropdown-item">VantageCloud Lakeドキュメント</a></li>
-                  <li><a href="https://docs.teradata.com/" class="dropdown-item">すべてのドキュメント</a></li>
+    <div>
+      <nav>
+        <div class="header-nav-wrapper">
+          <section class="header-utility nav-3 background-grayLight color-navy d-none d-xl-flex">
+            <div class="container-wide d-flex align-items-center">
+              <div class="header-utility__right d-flex">
+                <ul class="header-utility__nav me-4">
+                  <li>
+                    <a href="https://teradata.com" target="_blank" class="tcom">Teradata.com</a>
+                  </li>
                 </ul>
               </div>
             </div>
-          </li>
-          <li class="header-nav-mobile__menu-item">
-            <header class="header-nav-mobile__menu-item__header">
-              <a href="https://downloads.teradata.com/" class="nav-link">ダウンロード</a>
-            </header>
-          </li>
-          <li class="header-nav-mobile__menu-item has-sub-items">
-            <header class="header-nav-mobile__menu-item__header i-alignment">
-              <a href="https://support.teradata.com/community ">コミュニティ</a> 
-            </header>
-            <div>
-              <div class="header-nav-mobile__menu-item__links">
-                <ul class="ul-color">
-                  <li><a href="https://support.teradata.com/community?_gl=1*1uhhzsp*_ga*MTU2NjYwMTU5OC4xNjYxNDc0NDcz*_ga_7PE2TMW3FE*MTY3NDI0NDY1Mi4zNS4wLjE2NzQyNDQ2NTUuMC4wLjA." class="dropdown-item">Teradataコミュニティ</a></li>
-                  <li><a href="https://medium.com/teradata" title="Medium技術ブログ" target="_blank" class="dropdown-item">Medium技術ブログ <img src="../assets/images/icons/external-symbol.svg" class="ext-symbol"> </a></li>
-                  <li><a href="https://github.com/Teradata" title="GitHub上のTeradata" target="_blank" class="dropdown-item">Github <img src="../assets/images/icons/external-symbol.svg" class="ext-symbol"> </a></li>
-                  <li><a href="https://stackoverflow.com/questions/tagged/teradata" title="Stack OverflowにおけるTeradataに関する質問" target="_blank" class="dropdown-item">Stack Overflow <img src="../assets/images/icons/external-symbol.svg" class="ext-symbol"> </a></li>               
-                </ul>
+          </section>
+          <section id="site-header">
+            <header class="header-nav">
+              <div class="container-wide">
+                <div class="row">
+                  <nav class="col d-flex justify-content-between align-items-center">
+                    <div class="header-nav__element d-flex">
+                      <a class="header-nav__logo" href="https://www.teradata.com/" target="_blank">     
+                        <div class="logo">
+                          <div>
+                            <img class="teradata-logo" src='../assets/images/TD-Logo.svg' alt="" title="" >
+                          </div>
+                        </div>
+                      </a>
+                      <a href="https://developers.teradata.com" class="dev" >
+                        <div>開発者</div>
+                      </a>
+                    <div>
+                    <ul class="header-nav__main-menu header-nav__element nav-1">
+                      <li>
+                        <a href="https://quickstarts.teradata.com/" class="header-nav__main-menu__link">スタートガイド</a>
+                      </li>
+                      <li>
+                        <button href="" onclick="docs()" class="header-nav__main-menu__link dropbtn">ドキュメント</button>
+                        <div id="myDocsDropdown" class="dropdown-content">
+                          <a href="https://docs.teradata.com/p/VantageCloud/Lake" class="dropdown-item mt">VantageCloud Lake ドキュメント</a>
+                          <a href="https://docs.teradata.com/" class="dropdown-item">すべてのドキュメント/a> 
+                        </div>  
+                      </li>
+                      <li>
+                        <a href="https://downloads.teradata.com/" class="header-nav__main-menu__link">ダウンロード</a>
+                      </li>
+                      <li>
+                        <button href="" onclick="community()" class="header-nav__main-menu__link dropbtn">コミュニティ</button>
+                        <div id="myCommunityDropdown" class="dropdown-content dc2">
+                          <a href="https://support.teradata.com" title="Teradataコミュニティ" class="dropdown-item mt">Teradataコミュニティ</a>
+                          <a href="https://medium.com/teradata" title="Medium技術ブログ" target="_blank" class="dropdown-item mb">Medium技術ブログ&nbsp; &nbsp;
+                            <img src='../assets/images/small-external.svg'>
+                          </a>
+                          <a href="https://github.com/Teradata" title="GitHub上のTeradata" target="_blank" class="dropdown-item mb">GitHub&nbsp; &nbsp;
+                            <img src='../assets/images/small-external.svg'>
+                          </a>
+                          <a href="https://stackoverflow.com/questions/tagged/teradata" title="Stack OverflowにおけるTeradataに関する質問" target="_blank" class="dropdown-item">Stack Overflow&nbsp; &nbsp;
+                            <img src='assets/images/small-external.svg'>
+                          </a>  
+                        </div>
+                      </li>
+                    </ul>  
+                  </nav>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </nav>
-  <div class="page-blackout" tabindex="-1" aria-hidden="true"></div>
-</header>
+            </header>
+            <header class="header-nav-mobile">
+              <nav class="d-flex custom-justify-content-between align-items-center px-6 shadow--s">
+                  <a class="header-nav__logo d-flex align-items-center" href="/">
+                      <div>
+                          <img class="teradata-logo" src='../assets/images/TD-Logo.svg' alt="Teradata Logo" title="Teradata Logo" >
+                      </div>
+                  </a>
+                  <a href="http://developers.teradata.com/" class="developers">Developers</a>
+                  <ul class="header-nav-mobile__top-links">
+                      <li>
+                          <button id="showMenu" role="button" aria-label="Click or Press enter to open menu" tabindex="0" class="header-nav-mobile__menu-icon">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                          </button>
+                      </li>
+                  </ul>
+              </nav>
+              <section id="vue-mobile-slide">
+                <div class="header-nav-mobile__menu-search" style="display: none;">
+                  <div class="header-nav-mobile__menu-search__input">
+                    <input type="text" id="search-mobile-input" placeholder="What can we help you find?" enterkeyhint="search">
+                    <button class="d-flex align-items-center justify-content-center" data-celebrus="Header - Search Mobile (Display Only)" data-gtm-action="search click">
+                      <span class="material-symbols-outlined md-24">search</span>
+                    </button>
+                  </div>
+                </div>
+                <!--Start Responsive NavBar-->
+                <section class="header-nav-mobile__menu-listing display-menu sidenav">
+                  <ul class="container-wide header-nav-mobile__menu-listing-ul">
+                    <li class="header-nav-mobile__menu-listing__item has-sub-items">
+                      <header data-celebrus="Mobile Main Menu - Who we help" data-gtm-category="Header" data-gtm-action="main nav click" data-gtm-label="Who we help" class="d-flex justify-content-between align-items-center border-bottom-light">
+                        <div class="header-nav-mobile__menu-listing__header nav-1">
+                          <a class="nav-1 d-flex justify-content-between align-items-center" href="https://quickstarts.teradata.com/">Getting started</a>
+                        </div>
+                      </header>
+                    </li>
+    
+                    <li class="border-bottom-light">
+                      <div>
+                        <button id="toggleButtonDocs" class="py-4 nav-1 d-flex justify-content-between align-items-center w-100">Docs
+                          <span class="caret caret--slate"></span>
+                        </button>
+                        <div class="slide-up-down__container hidden" style="--content-height: 94; transition: height 500ms ease-in-out 0s;">  
+                          <ul class="ps-3">
+                            <li>
+                              <a class="nav-2 py-4 d-block color-slate" href="/Getting-Started/Pricing">VantageCloud Lake Documentation</a>
+                            </li>
+                            <li>
+                              <a class="nav-2 py-4 d-block color-slate" href="/Getting-Started/Pricing/Calculator">All Documentation</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+    
+                    <li class="header-nav-mobile__menu-listing__item has-sub-items">
+                      <header class="d-flex justify-content-between align-items-center border-bottom-light">
+                        <div class="header-nav-mobile__menu-listing__header nav-1">
+                          <a class="nav-1 d-flex justify-content-between align-items-center" href="https://downloads.teradata.com/">Downloads</a>
+                        </div>
+                      </header>
+                    </li>
+                    <li class="border-bottom-light">
+                      <div>
+                        <button id="toggleButtonComm" class="py-4 nav-1 d-flex justify-content-between align-items-center w-100">Community
+                          <span class="caret caret--slate"></span>
+                        </button>
+                        <div class="slide-up-down__container hidden" aria-hidden="false" style="--content-height: 235; transition: height 500ms ease-in-out 0s;">
+                          <ul class="ps-3">
+                            <li>
+                              <a class="nav-2 py-4 d-block color-slate" href="/University/Overview">Teradata Community</a>
+                            </li>
+                            <li>
+                              <a class="nav-2 py-4 d-flex align-items-center color-slate" href="/University/Certification">
+                                Technical Medium Blogs&nbsp;&nbsp;<img src='assets/images/small-external.svg' class="mtop">
+                              </a>
+                            </li>
+                            <li>
+                              <a class="nav-2 py-4 d-flex color-slate" href="https://docs.teradata.com" target="_blank" rel="noopener">
+                                GitHub&nbsp;&nbsp;<img src='assets/images/small-external.svg' class="e">
+                              </a>
+                            </li>
+                            <li>
+                              <a class="nav-2 py-4 d-flex color-slate" href="https://downloads.teradata.com" target="_blank" rel="noopener">
+                                Stack Overflow&nbsp;&nbsp;<img src='assets/images/external-symbol.svg' class="">
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <footer>
+                    <div class="header-nav-mobile__sub-menu background-grayLight mt-6 py-6 container-wide">
+                      <ul class="row">
+                        <li class="col-6">
+                          <a class="nav-1" href="https://teradata.com" target="_blank" rel="noopener">Teradata.com</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </footer>
+                </section>
+              </section>
+            </header>
+             <div class="page-blackout"></div>
+          </section>
+        </div>
+      </nav>
+    </div>
 <!--navbar-->
 <!--Open Banner-->
 <section class="td-slide-banner">
@@ -822,6 +939,88 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
         </div>
       </div>
   </section> 
+  <script>
+    
+    function community() {
+  
+      var blackoutElement = document.querySelector('.page-blackout');
+  
+      document.getElementById("myCommunityDropdown").classList.toggle("show");
+      document.getElementById("myDocsDropdown").classList.remove("show");
+      if(document.getElementById("myCommunityDropdown").classList.contains("dropdown-content") && 
+          document.getElementById("myCommunityDropdown").classList.contains("show")){
+        blackoutElement.classList.add('active');
+      }else{
+        blackoutElement.classList.remove('active');
+      }
+    }
+  
+    function docs() {
+      var blackoutElement = document.querySelector('.page-blackout');   
+   
+      document.getElementById("myDocsDropdown").classList.toggle("show");
+      document.getElementById("myCommunityDropdown").classList.remove("show"); 
+      if(document.getElementById("myDocsDropdown").classList.contains("dropdown-content") && 
+          document.getElementById("myDocsDropdown").classList.contains("show")){
+        blackoutElement.classList.add('active');
+      }else{
+        blackoutElement.classList.remove('active');
+      }
+    }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var blackoutElement = document.querySelector('.page-blackout');
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+          blackoutElement.classList.remove('active');
+        }
+      }
+      
+    }
+  }
+  
+  /*Mobile NavBar*/
+  document.addEventListener("DOMContentLoaded", function () {
+  const showMenuButton = document.getElementById("showMenu");
+  const menuListing = document.querySelector(".header-nav-mobile__menu-listing");
+  const menu = document.getElementById('vue-mobile-slide');
+  const blackoutElement = document.querySelector('.page-blackout');
+  
+  showMenuButton.addEventListener("click", function () {
+    menuListing.classList.toggle("display-menu"); 
+    showMenuButton.classList.toggle("active"); 
+    blackoutElement.classList.toggle("active");
+  });
+  });
+  
+  
+  document.addEventListener("DOMContentLoaded", function () {
+  const toggleButtonDocs = document.getElementById("toggleButtonDocs");
+  const containerDocs = document.querySelector(".slide-up-down__container");
+  
+  toggleButtonDocs.addEventListener("click", function () {
+    containerDocs.classList.toggle("hidden");
+    toggleButtonDocs.classList.toggle("toggle-active");
+  });
+  });
+  
+  document.addEventListener("DOMContentLoaded", function () {
+  const toggleButtonComm = document.getElementById("toggleButtonComm");
+  const containerComm = document.querySelectorAll(".slide-up-down__container")[1];
+  
+  toggleButtonComm.addEventListener("click", function () {
+    containerComm.classList.toggle("hidden");
+    toggleButtonComm.classList.toggle("toggle-active");
+  });
+  });
+  
+  </script>
     <script type="text/javascript" src="../assets/js/behavior.js"></script>
     <script type="text/javascript" src="../assets/js/show-slides.js"></script> 
     <script type="text/javascript" src="../assets/js/open-link.js"></script> 
