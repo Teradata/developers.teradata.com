@@ -800,12 +800,13 @@ div.items-list-1 {
   flex-direction: column;
   padding-left: 0 !important;
 }
+/*
 ol,
 ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
-}
+}*/
 .footer-section .footer-content .block ul li a {
   font-size: 12px;
   line-height: 24px;
