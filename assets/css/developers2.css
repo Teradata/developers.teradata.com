@@ -672,7 +672,7 @@ div.items-list-1 {
 }
 .stay-connected-icon {
   position: relative;
-  margin-left: 100px;
+  margin-left: 114px;
   width: 70px;
   height: 70px;
 }
@@ -687,7 +687,7 @@ div.items-list-1 {
 }
 .stay-connected-icon-medium {
   position: relative;
-  margin-left: 100px;
+  margin-left: 110px;
   width: 70px;
 }
 .stay-connected-font {
@@ -1097,9 +1097,10 @@ form.example button {
     margin-bottom: 0;
     margin-left: auto;
   }
-  div
+  
   /*Close Jumpin Section*/
-  div.list-item-top-picks:nth-child(1), div.list-item-top-picks:nth-child(2) {
+  
+  /*div.list-item-top-picks:nth-child(1), div.list-item-top-picks:nth-child(2) {
     width: 395.8px;
     height: 188px;
     background: #ffffff;
@@ -1109,7 +1110,8 @@ form.example button {
     border-top: 5px solid transparent;
     margin: 0.75em 1em 0.75em 0em;
     flex: 1 1 auto;
-  }
+  }*/
+  /*
   div.list-item-top-picks:nth-child(3) {
     width: 395.8px;
     height: 188px;
@@ -1120,7 +1122,7 @@ form.example button {
     border-top: 5px solid transparent;
     margin: 0.75em 0em 0.75em 0em;
     flex: 1 1 auto;
-  }
+  }*/
   .slidetext1 p:nth-child(1) {
     font-family: Inter,sans-serif;
     font-style: normal;
@@ -1277,13 +1279,14 @@ form.example button {
     position: relative;
     margin: auto;
   }
-
+/*
   .slideimage1 {
     margin-left: 16px;
     margin-right: 16px;
     padding-top: 22px;
     text-align: center;
   }
+  */
   .img-w{
     width: 85%;
   }
@@ -1364,15 +1367,7 @@ form.example button {
     color: rgba(0, 0, 0, 0.87);
     /*margin-left: 10px;*/
   }
-  .row-cards {
-    width: 100%;
-    display: block;
-    float: center;
-    flex-direction: row;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
-  }
+
   div.list-item:nth-child(1), div.list-item:nth-child(2), div.list-item:nth-child(3) {
     height: 280px;
     border-radius: 8px 8px 8px 8px;
@@ -1421,4 +1416,317 @@ form.example button {
   height: 17px; 
   margin-top: 7px;
 /*  object-fit: fill;*/ 
+}
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px){ 
+  .td-slide-banner {
+    height: 450px;
+  }
+  .img-w {
+    width: 50%; 
+  }
+  .slideimage1 {
+    margin-left: 30px;
+    padding-top: 70px;
+    text-align: left;
+  }
+  .slidetext1 {
+    margin-left: 520px;
+    margin-top: -240px;
+  }
+  .slidetext1 button{
+    padding: 5px 28px;
+    width: 34%;
+  }
+  .list-item {
+    flex: 0 0 calc(50% - 20px); /* 50% del ancho con espacio entre elementos */
+    max-width: calc(50% - 20px);
+  }
+  .card-header-icon {
+    margin-left: 380px;
+    width: 52px;
+    height: 52px;
+    margin-top: -15px;
+  }
+  .card-font {
+    width: 380px;
+  }
+  .card-body {
+    height: 186px;
+  }
+  .card-foot {
+    margin-top: 60px;
+    margin-left: 218px;
+  }
+  .card-foot-0 {
+    margin-top: 60px;
+    margin-left: 16px;
+    width: 40%;
+  }
+  .card-foot-3 {
+    margin-top: 0px;
+    margin-left: 210px;
+    width: 50%;
+  }
+  .card-foot-4 {
+    margin-top: 60px;
+    margin-left: 260px;
+  }
+  .list-item-1{
+    width: 293px;
+    height: 280px !important;
+  }
+  div.item-name p {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .inside-lake-documentation {
+    width: 93%;
+  }
+  .cloud-icon {
+    margin-left: 35px;
+  }
+  .text2 {
+    width: 600px;
+  }
+  .lake-doc-button {
+    margin-left: 0px;
+  }  
+ 
+  .text-container p:nth-child(2){
+    width: auto;
+    height: auto;
+  }
+
+
+  .list-item-top-picks {
+    width: calc(50% - 20px);
+    height: 188px;
+    background: #ffffff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    border-top: 5px solid transparent;
+    margin: 0.75em 1em 0.75em 0em;
+    flex: 1 1 auto;
+  }
+  .circle, .circle-3{
+    margin-left: 390px;
+  }
+  .stay-connected-icon {
+    margin-left: 70px;
+  }
+  .stay-connected-icon-medium {
+    margin-left: 65px;
+  }
+} 
+/*Mobile*/
+@media (max-width: 480px) {
+  .td-slide-banner {
+    height: 545px;
+  }
+  .img-w {
+    width: 70%;
+    margin-left: 12%;
+    margin-top: 10%;
+  }
+  .p2-slidetext1 {
+    width: 73%;
+  }
+  .slidetext1 button{
+    padding: 8px 118px;
+  }
+  div.list-item:nth-child(1), div.list-item:nth-child(2), div.list-item:nth-child(3) {
+    width: 100%;
+    height: 280px;
+    border-radius: 8px 8px 8px 8px;
+    border-top: 5px solid transparent;
+    margin: 0.75em 2px 0.75em 0;
+    flex: 1 1 auto;
+  }
+  .card-header-icon {
+    margin-left: 80%;
+  }
+  .card-font {
+    width: 90%;
+  }
+  .card-body {
+    height: 186px;
+  }
+  .card-foot {
+    margin-top: 15%;
+    margin-left: 40%;
+  }
+  .card-foot-0 {
+    margin-top: 7%;
+    margin-left: 54%;
+  }
+  .card-foot-3 {
+    margin-left: 37%;
+  }
+  .card-foot-4 {
+    margin-top: 13%;
+    margin-left: 52%;
+  }
+  .lake-documentation {
+    height: 277px;
+  }
+  .cloud-icon {
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+  .text1{
+    width: 49%;
+    margin-left: 17%;
+    margin-top: -7%;
+  }
+  .text2 {
+    width: 75%;
+    margin-left: 3%;
+    margin-top: 10%;
+  }
+  .inside-lake-documentation {
+    max-width: 103%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  /*
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+  }
+  .row-cards-stay-connected {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .stay-connected {
+    width: 100%; 
+    text-align: center;
+    margin: 10px;
+  }
+  .stay-connected-section {
+    text-align: center;  
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    min-height: 100px;  
+  }
+  .jumpin-text {
+    font-size: 37px;
+  }
+  .stay-connected-icon{
+    margin-left: 0;
+  }
+  .stay-connected-icon-medium {
+    margin-left: 0;
+  }
+  .items-list {
+    max-width: 100%;
+    width: 100%;
+  }*/
+  .data-scientist-background, .tab, .tabcontent, .data-scientist-text .text-container{
+    display: none;
+  }
+  .text-container p:nth-child(1), .text-container p:nth-child(2), .getting-started-button{
+    display: none;
+  }
+  .getting-started-with-td{
+    display: none;
+  }
+
+  /* Estilos para el botón de dropdown */
+  .dropbtn-1 {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  /* Estilos para el contenido del dropdown (inicialmente oculto) */
+  .dropdown-content-1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Estilos para los enlaces dentro del dropdown */
+  .dropdown-content-1 a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Cambiar el color de fondo de los enlaces al pasar el cursor por encima */
+  .dropdown-content-1 a:hover {
+    background-color: #ddd;
+  }
+  .row-cards-stay-connected{
+    display: list-item !important;
+  }
+  .jumpin-text {
+    font-size: 40px;
+  }
+  .stay-connected {
+    width: 100%;
+    border-top: 10px solid transparent;
+    margin: 0;
+  }
+  .stay-connected-icon {
+    margin-left: 40%;
+  }
+  .stay-connected-icon-medium {
+    margin-left: 40%;
+  }
+}
+.items-list {
+  max-width: 1236px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribuir los elementos en dos columnas */
+}
+/*
+.list-item {
+  flex: 1;  
+  max-width: 48%; 
+  margin-bottom: 20px;  
+}
+*/
+.list-item-top-picks {
+  width: 395.8px;
+  height: 188px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  border-top: 5px solid transparent;
+  margin: 0.75em 1em 0.75em 0em;
+  flex: 1 1 auto;
+}
+.row-cards-stay-connected {
+  max-width: 1236px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0.75em 1em 0.75em 0em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**/
+.dropdown{
+  display: none;
 }

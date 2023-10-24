@@ -10,7 +10,7 @@
   <!-- End Google Tag Manager -->  
 <meta charset="utf-8">
 <link href="https://www.teradata.com/favicon.ico" type="image/x-icon" rel="shortcut icon" />
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1"> 
 <!-- Primary Meta Tags -->
 <title>Teradata Developer Portal | Teradata for Developers</title>
 <meta name="title" content="Teradata Developer Portal | Teradata for Developers">
@@ -268,69 +268,13 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
         </a>         
       </div>
     </div>
-    <!--
-    <div class="mySlides fade" style="display: block;">
-      <div class="slideimage2">
-        <img src="assets/images/icons/play.svg">
-      </div>
-      <div class="slidetext2">
-        <p>Vantage Trials</p>
-        <p>The complete cloud analytics and data platform, now with next-generation, cloud-native deployment and expanded analytics capabilities.</p>
-        <button class="slide-button">learn more</button>  
-      </div>
-    </div>        
-    <div class="mySlides fade" style="display: none;">
-      <div class="slideimage3">
-        <img src="assets/images/icons/laptop.svg">
-      </div>
-      <div class="slidetext3">
-        <p>Getting Started</p>
-        <p>The complete cloud analytics and data platform, now with next-generation, cloud-native deployment and expanded analytics capabilities.</p>
-        <button class="slide-button">learn more</button>  
-      </div>
-    </div>  
-    -->  
-    <!--
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot active" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-    -->  
   </div>
-  <!--
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-  -->
 </section>
 <!--Close Banner-->
 
-<!--Open Search Bar-->
-<!--
-<section>
-  <div class="search">
-    <form id="searchTextBox" class="example">
-      <input type="text" placeholder="Search Teradata Developer Portal" name="search" class="search-bar" id="mySearch" required>
-      <button type="submit" onclick="myFunction()" class="search-icon"></button>
-    </form>
-  </div>
--->
-<!--
-<div>
-  <div class="search">
-    <input type="search" class="search-bar search-icon" value="Search Teradata Developer Portal">
-  </div>
-</div>
--->
-</section>
-<!--Close Search Bar-->
-<div class="content landing">
-  <div class="landing-container"></div>
-</div>
-<div class="container">
+<div class="container-fluid">
 <!--Open Jumpin-->
-<section class="container-wide">
-  
+<section>
     <div class="jumpin">
       <p class="jumpin-text">Jump in</p>
     </div>
@@ -429,7 +373,7 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
 </section>
 <!--Close Jumpin-->
 </div>
-<br>
+
 
     <!--VantageCloud Lake Documentation Banner-->
     <section class="lake-documentation">
@@ -450,7 +394,9 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
     </section>
     <!--VantageCloud Lake Documentation Banner-->
 
-    <section class="container-wide td-right-tools-sect">
+
+<div class="container-fluid">
+  <section class="td-right-tools-sect">
     <div class="td-right-tools-text">
         <p class="td-right-tools-desc">The right tools for the job</p>
     </div>
@@ -469,7 +415,7 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
         </div>
         <div class="list-item-1">
             <div class="tools-icon drivers">
-                <img src="assets/images/icons/drivers.svg" alt="drivers" title="Drivers & Connectors">
+                <img src="assets/images/icons/drivers.svg" alt="drivers" title="Drivers &amp; Connectors">
             </div>
                 <div class="item-name desc">
                     <p>Drivers &amp; Connectors</p>
@@ -493,11 +439,26 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
         </div>
     </div>
   </section>
+</div>
+    
+
+    <!---->
+
 
 <!--New section-->
-
-  <section class="container-wide getting-started-with-td">
+<div class="container-fluid">
+  <section class=" getting-started-with-td">
     <p class="getting-started-text">Get started with Teradata</p>
+    <div class="dropdown">
+      <button onclick="toggleDropdown()" class="dropbtn-1">Select a Role</button>
+      <div id="myDropdown-1" class="dropdown-content-1">
+        <a href="#" onclick="openLink(event, 'data-scientist')">Data Scientist</a>
+        <a href="#" onclick="openLink(event, 'data-engineer')">Data Engineer</a>
+        <a href="#" onclick="openLink(event, 'developer')">Developer</a>
+        <a href="#" onclick="openLink(event, 'database-administrator')">Database Administrator</a>
+        <a href="#" onclick="openLink(event, 'it-operations')">IT Operations</a>
+      </div>
+    </div>
     <div class="tab">
         <a class="tablinks" onclick="openLink(event, 'data-scientist')" id="defaultOpen"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path id="tablinks" fill-rule="evenodd" clip-rule="evenodd" d="M17 9V11H16L16.0001 12.6382L20.7681 18.3602C21.0171 18.6582 21.0701 19.0732 20.9061 19.4242C20.7595 19.7362 20.4642 19.9486 20.128 19.992L20.0001 20.0002H10.0001C9.61212 20.0002 9.25912 19.7752 9.09412 19.4242C8.94835 19.1122 8.97403 18.7496 9.15641 18.4636L9.23212 18.3602L14.0001 12.6382L14 11H13V9H17ZM16 0C17.1 0 18 0.9 18 2V6.999H16V4H10V8H11V10H10V14H10.259L8.594 16H2C0.9 16 0 15.1 0 14V2C0 0.9 0.9 0 2 0H16ZM8 10H2V14H8V10ZM8 4H2V8H8V4Z" fill="black" fill-opacity="0.6"/>
@@ -596,138 +557,142 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
    
     
   </section>
+</div>
 
- <section class="container-wide">
-      <div class="top-picks-teradata">
-        <pc class="jumpin-text">Top picks from Teradata</p>
+<!--Top picks from Teradata-->
+<div class="container-fluid">
+  <div class="top-picks-teradata">
+    <pc class="jumpin-text">Top picks from Teradata</p>
+  </div>
+  <section class="items-list">
+    <div class="list-item-top-picks">
+      <div class="top-picks">
+        <div>Send queries using REST API</div> 
+        <div class="circle">
+          <img class="icon-1"  src="assets/images/icons/tools-icon.svg" alt="tools" title="Tools">
+        </div>
       </div>
-      <div class="items-list">
-        <div class="list-item-top-picks">
-          <div class="top-picks">
-            <div>Send queries using REST API</div> 
-            <div class="circle">
-              <img class="icon-1"  src="assets/images/icons/tools-icon.svg" alt="tools" title="Tools">
-            </div>
-          </div>
-          <div class="top-picks-body">
-                <p>Teradata Query Service is a REST API for Vantage that you can use to run standard SQL statements without managing client-side drivers.</p>
-          </div>
-          <div class="content-buttons">
-            <a href="https://quickstarts.teradata.com/query-service/send-queries-using-rest-api.html" title="Send queries using REST API" rel="nofollow" target="_blank" class="top-button decoration">How-tos</a> 
-            <a href="https://downloads.teradata.com/api/teradata_query_service" target="_blank" title="Tools" rel="nofollow" class="top-button decoration">Tools</a>                
-          </div>            
+      <div class="top-picks-body">
+            <p>Teradata Query Service is a REST API for Vantage that you can use to run standard SQL statements without managing client-side drivers.</p>
+      </div>
+      <div class="content-buttons">
+        <a href="https://quickstarts.teradata.com/query-service/send-queries-using-rest-api.html" title="Send queries using REST API" rel="nofollow" target="_blank" class="top-button decoration">How-tos</a> 
+        <a href="https://downloads.teradata.com/api/teradata_query_service" target="_blank" title="Tools" rel="nofollow" class="top-button decoration">Tools</a>                
+      </div> 
+    </div>
+    <div class="list-item-top-picks">
+      <div class="top-picks">
+        Teradata Vantage connection in DBeaver
+        <div class="circle">
+          <img class="icon-2" src="assets/images/icons/chevron.svg" alt="arrow" title="Tools">
         </div>
-        <div class="list-item-top-picks">
-          <div class="top-picks">
-            Teradata Vantage connection in DBeaver
-            <div class="circle">
-              <img class="icon-2" src="assets/images/icons/chevron.svg" alt="arrow" title="Tools">
-            </div>
-          </div>
-          <div class="top-picks-body">
-              <p>This how-to demonstrates how to create a connection to Teradata Vantage with DBeaver.</p>
-          </div>
-          <div class="content-buttons">
-            <a href="https://quickstarts.teradata.com/other-integrations/configure-a-teradata-vantage-connection-in-dbeaver.html" target="_blank" title="Teradata Vantage with DBeaver" rel="nofollow" class="top-button decoration">How-tos</a>                 
-          </div>            
+      </div>
+      <div class="top-picks-body">
+          <p>This how-to demonstrates how to create a connection to Teradata Vantage with DBeaver.</p>
+      </div>
+      <div class="content-buttons">
+        <a href="https://quickstarts.teradata.com/other-integrations/configure-a-teradata-vantage-connection-in-dbeaver.html" target="_blank" title="Teradata Vantage with DBeaver" rel="nofollow" class="top-button decoration">How-tos</a>                 
+      </div> 
+    </div>
+    <div class="list-item-top-picks">
+      <div class="top-picks-3">
+        Vantage from a Jupyter notebook
+        <div class="circle-3">
+          <img class="icon-2" src="assets/images/icons/tool-icon.svg" alt="tools" title="Tools">
         </div>
+      </div>
+      <div class="top-picks-body w-card-3">
+            <p>Go through connecting to Teradata Vantage from a Jupyter notebook.</p>
+      </div>
+      <div class="content-buttons">
+        <a href="https://quickstarts.teradata.com/jupyter.html" title="Vantage from a Jupyter notebook" rel="nofollow" class="top-button decoration" target="_blank">How-tos</a> 
+        <a href="https://teradata.github.io/jupyterextensions/#/" target="_blank" title="Jupyter Extensions" rel="nofollow" class="top-button decoration">Tools</a>                 
+      </div> 
+    </div>
+    <div class="list-item-top-picks">
+      <div class="top-picks">
+        Getting Started with Python 
+        <div class="circle">
+          <img class="icon-3"  src="assets/images/icons/chevron.svg" alt="arrow" title="Arrow">
+        </div>
+      </div>
+      <div class="top-picks-body w-card-4">
+            <p>New Guide - A Walk through on the Teradata Python Connector to get going, and explore the basic operations you can do, and other tools available. </p>
+      </div>
+      <div class="content-buttons">
+        <a href="https://downloads.teradata.com/download/connectivity/teradata-sql-driver-for-python" target="_blank" title="view" rel="nofollow" class="top-button decoration">Libraries</a> 
+        <a href="https://github.com/Teradata/python-driver" title="view" rel="nofollow" class="top-button decoration" target="_blank">APIs</a> 
+        <a href="https://docs.teradata.com/r/Teradata-Tools-and-Utilities-Release-Definition/June-2021/Product-Information/Teradata-SQL-Driver-for-Python" target="_blank" title="view" rel="nofollow" class="top-button decoration">Guides</a>                
+      </div> 
+    </div>
+    <div class="list-item-top-picks">
+      <div class="top-picks">
+        ModelOps
+        <div class="circle">
+          <img class="icon-2"  src="assets/images/icons/book.svg" alt="Library" title="Library">
+        </div>
+      </div>
+      <div class="top-picks-body w-card-5">
+            <p>Create a new project in ModelOps, upload the required data to Vantage, and track the full lifecycle of an imported Diabetes demo model using BYOM mechanisms.</p>
+      </div>
+      <div class="content-buttons">
+        <a href="https://quickstarts.teradata.com/modelops/deploy-and-monitor-machine-learning-models-with-teradata-modelops-and-byom.html" title="view" rel="nofollow" class="top-button decoration" target="_blank">Tutorial</a> 
+     </div>  
+    </div>
+    <div class="list-item-top-picks">
+      <div class="top-picks">
+        JDBC Driver - Release 17.20
+        <div class="circle">
+          <img class="icon-3" src="assets/images/icons/tool-icon.svg" alt="tools" title="tools">
+        </div>
+      </div>
+      <div class="top-picks-body">
+            <p>The JDBC Driver allows you to connect to the Teradata database from external applications.</p>
+      </div>
+      <div class="content-buttons">
+        <a href="https://downloads.teradata.com/download/connectivity/jdbc-driver" title="view" rel="nofollow" class="top-button decoration" target="_blank">Driver</a> 
+        <a href="https://docs.teradata.com/r/Teradata-Tools-and-Utilities-Release-Definition/June-2021/Product-Information/Teradata-JDBC-Driver" title="view" rel="nofollow" class="top-button decoration" target="_blank">Product Release</a>                 
+      </div> 
+    </div>
+  </section>
+</div>
+<!--Top picks from Teradata-->
+<!--Stay connected-->
+    <div class="container-fluid">
+      <section>
+        <div class="stay-connected-section">
+          <pc class="jumpin-text">Stay connected</p>
+        </div>
+        <div class="row-cards-stay-connected">
+          <div class="stay-connected">
+            <a href="https://support.teradata.com/community" class="NoDec" target="_blank">
+              <img src="assets/images/icons/people-1.svg" alt="Teradata Community" title="Teradata Community" class="stay-connected-icon">
+              <p class="stay-connected-font">Teradata Community</p>
+            </a>
+          </div>
+          <div class="stay-connected">
+            <a href="https://github.com/Teradata" class="NoDec" target="_blank">
+              <img src="assets/images/icons/github.svg" alt="Github" title="Github" class="stay-connected-icon">
+              <p class="stay-connected-font">Github</p>
+            </a>
+          </div>
+          <div class="stay-connected">
+            <a href="https://stackoverflow.com/questions/tagged/teradata" class="NoDec" target="_blank">
+              <img src="assets/images/icons/stackoverflow.svg" alt="Stack Overflow" title="Stack Overflow" class="stay-connected-icon">
+              <p class="stay-connected-font">Stack Overflow </p>
+            </a>
+          </div>
+          <div class="stay-connected">
+            <a href="https://medium.com/teradata" class="NoDec" target="_blank">
+              <img src="assets/images/icons/medium.png" alt="Medium" title="Medium" class="stay-connected-icon-medium">
+              <p class="stay-connected-font">Teradata Technical Blogs</p>
+            </a>
+          </div>
+        </div>
+        </section>
+    </div>
+<!--Stay connected-->
    
-        <div class="list-item-top-picks">
-          <div class="top-picks-3">
-            Vantage from a Jupyter notebook
-            <div class="circle-3">
-              <img class="icon-2" src="assets/images/icons/tool-icon.svg" alt="tools" title="Tools">
-            </div>
-          </div>
-          <div class="top-picks-body w-card-3">
-                <p>Go through connecting to Teradata Vantage from a Jupyter notebook.</p>
-          </div>
-          <div class="content-buttons">
-            <a href="https://quickstarts.teradata.com/jupyter.html" title="Vantage from a Jupyter notebook" rel="nofollow" class="top-button decoration" target="_blank">How-tos</a> 
-            <a href="https://teradata.github.io/jupyterextensions/#/" target="_blank" title="Jupyter Extensions" rel="nofollow" class="top-button decoration">Tools</a>                 
-          </div>               
-        </div>
-    </section>
-    <section class="container-wide">
-      <div class="items-list-1">
-        <div class="list-item-top-picks">
-          <div class="top-picks">
-            Getting Started with Python 
-            <div class="circle">
-              <img class="icon-3"  src="assets/images/icons/chevron.svg" alt="arrow" title="Arrow">
-            </div>
-          </div>
-          <div class="top-picks-body w-card-4">
-                <p>New Guide - A Walk through on the Teradata Python Connector to get going, and explore the basic operations you can do, and other tools available. </p>
-          </div>
-          <div class="content-buttons">
-            <a href="https://downloads.teradata.com/download/connectivity/teradata-sql-driver-for-python" target="_blank" title="view" rel="nofollow" class="top-button decoration">Libraries</a> 
-            <a href="https://github.com/Teradata/python-driver" title="view" rel="nofollow" class="top-button decoration" target="_blank">APIs</a> 
-            <a href="https://docs.teradata.com/r/Teradata-Tools-and-Utilities-Release-Definition/June-2021/Product-Information/Teradata-SQL-Driver-for-Python" target="_blank" title="view" rel="nofollow" class="top-button decoration">Guides</a>                
-          </div>            
-        </div>
-        <div class="list-item-top-picks">
-          <div class="top-picks">
-            ModelOps
-            <div class="circle">
-              <img class="icon-2"  src="assets/images/icons/book.svg" alt="Library" title="Library">
-            </div>
-          </div>
-          <div class="top-picks-body w-card-5">
-                <p>Create a new project in ModelOps, upload the required data to Vantage, and track the full lifecycle of an imported Diabetes demo model using BYOM mechanisms.</p>
-          </div>
-          <div class="content-buttons">
-            <a href="https://quickstarts.teradata.com/modelops/deploy-and-monitor-machine-learning-models-with-teradata-modelops-and-byom.html" title="view" rel="nofollow" class="top-button decoration" target="_blank">Tutorial</a> 
-         </div>            
-        </div>
-   
-        <div class="list-item-top-picks">
-          <div class="top-picks">
-            JDBC Driver - Release 17.20
-            <div class="circle">
-              <img class="icon-3" src="assets/images/icons/tool-icon.svg" alt="tools" title="tools">
-            </div>
-          </div>
-          <div class="top-picks-body">
-                <p>The JDBC Driver allows you to connect to the Teradata database from external applications.</p>
-          </div>
-          <div class="content-buttons">
-            <a href="https://downloads.teradata.com/download/connectivity/jdbc-driver" title="view" rel="nofollow" class="top-button decoration" target="_blank">Driver</a> 
-            <a href="https://docs.teradata.com/r/Teradata-Tools-and-Utilities-Release-Definition/June-2021/Product-Information/Teradata-JDBC-Driver" title="view" rel="nofollow" class="top-button decoration" target="_blank">Product Release</a>                 
-          </div>               
-        </div>
-    </section>
-    <section class="container-wide">
-      <div class="stay-connected-section">
-        <pc class="jumpin-text">Stay connected</p>
-      </div>
-      <div class="row-cards">
-        <div class="stay-connected">
-          <a href="https://support.teradata.com/community" class="NoDec" target="_blank">
-            <img src="assets/images/icons/people-1.svg" alt="Teradata Community" title="Teradata Community" class="stay-connected-icon">
-            <p class="stay-connected-font">Teradata Community</p>
-          </a>
-        </div>
-        <div class="stay-connected">
-          <a href="https://github.com/Teradata" class="NoDec" target="_blank">
-            <img src="assets/images/icons/github.svg" alt="Github" title="Github" class="stay-connected-icon">
-            <p class="stay-connected-font">Github</p>
-          </a>
-        </div>
-        <div class="stay-connected">
-          <a href="https://stackoverflow.com/questions/tagged/teradata" class="NoDec" target="_blank">
-            <img src="assets/images/icons/stackoverflow.svg" alt="Stack Overflow" title="Stack Overflow" class="stay-connected-icon">
-            <p class="stay-connected-font">Stack Overflow </p>
-          </a>
-        </div>
-        <div class="stay-connected">
-          <a href="https://medium.com/teradata" class="NoDec" target="_blank">
-            <img src="assets/images/icons/medium.png" alt="Medium" title="Medium" class="stay-connected-icon-medium">
-            <p class="stay-connected-font">Teradata Technical Blogs</p>
-          </a>
-        </div>
-      </div>
-      </section>
       <!--footer-->
       <!--footer-->
     <footer class="footer-nav background-grayLight">
@@ -1074,7 +1039,24 @@ try{(new g(100,"r","QSI_S_ZN_8octL9QmYH5wQ9o","https://zn8octl9qmyh5wq9o-teradat
       </section>
   </footer>
 <script>
-    
+  function toggleDropdown() {
+  var dropdown = document.getElementById("myDropdown-1");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+
+// Cerrar el dropdown si se hace clic fuera de él
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn-1')) {
+    var dropdown = document.getElementById("myDropdown-1");
+    if (dropdown.style.display === "block") {
+      dropdown.style.display = "none";
+    }
+  }
+}  
   function community() {
 
     var blackoutElement = document.querySelector('.page-blackout');
