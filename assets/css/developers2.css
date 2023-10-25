@@ -1020,6 +1020,17 @@ form.example button {
 
 /* Begin DESKTOP ONLY Styles */
 @media screen and (min-width: 1024px) {
+  .list-item-top-picks {
+ /*   width: 395.8px;*/
+    height: 188px;
+    background: #ffffff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    border-top: 5px solid transparent;
+    margin: 0.75em 1em 0.75em 0em;
+    flex: 1 1 auto;
+}
   /*Banner*/
   .mySlides {
     display: none;
@@ -1060,7 +1071,7 @@ form.example button {
   .jumpin-text {
     font-family: Inter,sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 24px;
     line-height: 36px;
     color: rgba(0, 0, 0, 0.87);
@@ -1098,31 +1109,6 @@ form.example button {
     margin-left: auto;
   }
   
-  /*Close Jumpin Section*/
-  
-  /*div.list-item-top-picks:nth-child(1), div.list-item-top-picks:nth-child(2) {
-    width: 395.8px;
-    height: 188px;
-    background: #ffffff;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    border: 1px solid transparent;
-    border-top: 5px solid transparent;
-    margin: 0.75em 1em 0.75em 0em;
-    flex: 1 1 auto;
-  }*/
-  /*
-  div.list-item-top-picks:nth-child(3) {
-    width: 395.8px;
-    height: 188px;
-    background: #ffffff;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    border: 1px solid transparent;
-    border-top: 5px solid transparent;
-    margin: 0.75em 0em 0.75em 0em;
-    flex: 1 1 auto;
-  }*/
   .slidetext1 p:nth-child(1) {
     font-family: Inter,sans-serif;
     font-style: normal;
@@ -1349,7 +1335,7 @@ form.example button {
   /*Open Jumpin Section*/
   .jumpin {
   /*  border: 1px solid red;*/
-    max-width: 1236px;
+ /*   max-width: 1236px; */
     width: 100%;
     height: 36px;
     margin-top: 20px;
@@ -1368,13 +1354,7 @@ form.example button {
     /*margin-left: 10px;*/
   }
 
-  div.list-item:nth-child(1), div.list-item:nth-child(2), div.list-item:nth-child(3) {
-    height: 280px;
-    border-radius: 8px 8px 8px 8px;
-    border-top: 5px solid transparent;
-    margin: 0.75em 2px 0.75em 0;
-    flex: 1 1 auto;
-  }
+
   div.list-item:nth-child(4) {
     height: 280px;
     border-radius: 8px 8px 8px 8px;
@@ -1510,6 +1490,7 @@ form.example button {
     margin: 0.75em 1em 0.75em 0em;
     flex: 1 1 auto;
   }
+  
   .circle, .circle-3{
     margin-left: 390px;
   }
@@ -1522,6 +1503,12 @@ form.example button {
 } 
 /*Mobile*/
 @media (max-width: 480px) {
+  #getstartedwithTeradata1{
+    display: none;
+  }
+  .container-fluid{
+    width: 100%;
+  }
   .td-slide-banner {
     height: 545px;
   }
@@ -1534,7 +1521,7 @@ form.example button {
     width: 73%;
   }
   .slidetext1 button{
-    padding: 8px 118px;
+    padding: 8px 112px;
   }
   div.list-item:nth-child(1), div.list-item:nth-child(2), div.list-item:nth-child(3) {
     width: 100%;
@@ -1544,6 +1531,29 @@ form.example button {
     margin: 0.75em 2px 0.75em 0;
     flex: 1 1 auto;
   }
+  div.list-item-1:nth-child(1), div.list-item-1:nth-child(2) {
+    /*  width: 395.8px;*/
+      height: 203px;
+      background: #ffffff;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      border: 1px solid transparent;
+      border-top: 5px solid transparent;
+      margin: 0.75em 0em 0.75em 0em;
+      flex: 1 1 auto;
+    }
+    .list-item-top-picks {
+    /*  width: 395.8px;*/
+      height: 188px;
+      background: #ffffff;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      border: 1px solid transparent;
+      border-top: 5px solid transparent;
+      margin: 0.75em 0em 0.75em 0em;
+      flex: 1 1 auto;
+    }
+
   .card-header-icon {
     margin-left: 80%;
   }
@@ -1586,91 +1596,25 @@ form.example button {
     margin-top: 10%;
   }
   .inside-lake-documentation {
-    max-width: 103%;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
     display: block;
   }
-  /*
-  .container-fluid {
-    display: flex;
-    justify-content: center;
-  }
-  .row-cards-stay-connected {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .stay-connected {
-    width: 100%; 
-    text-align: center;
-    margin: 10px;
-  }
-  .stay-connected-section {
-    text-align: center;  
-    display: flex;
-    align-items: center;  
-    justify-content: center;  
-    min-height: 100px;  
-  }
-  .jumpin-text {
-    font-size: 37px;
-  }
-  .stay-connected-icon{
-    margin-left: 0;
-  }
-  .stay-connected-icon-medium {
-    margin-left: 0;
-  }
-  .items-list {
-    max-width: 100%;
-    width: 100%;
-  }*/
+
   .data-scientist-background, .tab, .tabcontent, .data-scientist-text .text-container{
     display: none;
   }
   .text-container p:nth-child(1), .text-container p:nth-child(2), .getting-started-button{
     display: none;
   }
-  .getting-started-with-td{
-    display: none;
-  }
+   
 
-  /* Estilos para el botón de dropdown */
-  .dropbtn-1 {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 10px;
-    cursor: pointer;
-  }
-
-  /* Estilos para el contenido del dropdown (inicialmente oculto) */
-  .dropdown-content-1 {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-
-  /* Estilos para los enlaces dentro del dropdown */
-  .dropdown-content-1 a {
-    display: block;
-    padding: 12px 16px;
-    text-decoration: none;
-    color: #333;
-  }
-
-  /* Cambiar el color de fondo de los enlaces al pasar el cursor por encima */
-  .dropdown-content-1 a:hover {
-    background-color: #ddd;
-  }
   .row-cards-stay-connected{
     display: list-item !important;
   }
   .jumpin-text {
+    font-weight: 700;
     font-size: 40px;
   }
   .stay-connected {
@@ -1683,6 +1627,79 @@ form.example button {
   }
   .stay-connected-icon-medium {
     margin-left: 40%;
+  }
+  .items-list {
+    margin-top: 48px;
+    max-width: 100% !important;
+  }
+  .dropdown-container {
+		display: block;
+		margin: 10px 0;
+    width: 100%;
+		height: 100%;
+    margin-top: 80px;
+	}
+  #result {
+    display: block; 
+  }
+  .dropdown-select {
+		width: 100%;
+	  background-color: #f9f9f9; /* Color de fondo */
+    border-radius: 8px;
+    height: 68px;
+    border: 1px solid #c8c8c8 !important;
+	  color: #000; /* Color de texto (letras negras) */
+	  padding: 12px 16px;
+	  cursor: pointer;
+	}
+	.result-container {
+		width: 100%;
+	}
+	#dropdown option {
+	  width: 100%;
+	  white-space: nowrap;
+	}
+  .gs-button {
+    display: block;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 9px 144px;
+    width: 100%;
+    height: 36px;
+    left: 585px;
+    top: 218px;
+    border: 1px solid #007373;
+    border-radius: 8px;
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    background-color: white;
+  }
+  .bt{
+    text-transform: uppercase;
+    color: #007373;
+  }
+  .started-text{
+    font-weight: 700;
+    font-size: 20px;
+  }
+  div.td-right-tools-text p{
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .stay-connected-section{
+    max-width: 100%;
+  }
+  .row-cards-stay-connected{
+    max-width: 100%;
+  }
+}
+@media (min-width: 481px) {
+  .dropdown-container {
+    display: none;
   }
 }
 .items-list {
@@ -1705,17 +1722,7 @@ form.example button {
   margin-bottom: 20px;  
 }
 */
-.list-item-top-picks {
-  width: 395.8px;
-  height: 188px;
-  background: #ffffff;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  border: 1px solid transparent;
-  border-top: 5px solid transparent;
-  margin: 0.75em 1em 0.75em 0em;
-  flex: 1 1 auto;
-}
+
 .row-cards-stay-connected {
   max-width: 1236px;
   width: 100%;
